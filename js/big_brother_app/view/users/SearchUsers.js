@@ -191,20 +191,22 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				bodyStyle:'padding:5px 5px 0',
 				
 				xtype:'panel',
-				type: 'hbox',
-				align:'top',
+				layout: 'hbox',
+				align:'middle',
 				items:[{
 					xtype:'textfield',
 					fieldLabel: 'Логин пользователя',
 					name: 'user_login',
-					
-					allowBlank:false,
-					
-					flex: 2
+					msgTarget: 'under',
+					labelAlign: 'left',
+					labelWidth: 150,
+					width: 400,
+					allowBlank:false
 				},{
 					xtype: 'button',
 					text: 'Найти',
-					flex: 1
+					margins: '0 0 0 10',
+					width: 120
 				}]
 				
 				

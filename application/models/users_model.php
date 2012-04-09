@@ -11,7 +11,7 @@ class Users_model extends CI_Model
 
 	parent::__construct();
 	$this->table = $this->db->dbprefix('accounts');
-	$this->idkey = 'id_account';
+	$this->idkey = 'id_accounts';
     }
 
     public function getUserByName($name)
@@ -19,7 +19,7 @@ class Users_model extends CI_Model
 	$query = $this->db->query("
             SELECT `$this->idkey`
             FROM `$this->table`
-            WHERE `login` = '{$this->db->escape_str($name)}'
+            WHERE `login_accounts` = '{$this->db->escape_str($name)}'
 			LIMIT 1
         ");
 	$result = $query->row_array();

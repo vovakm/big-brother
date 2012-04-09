@@ -7,19 +7,39 @@
  */
 
 Ext.define('bb_cpanel.model.User',{
-    extend: 'Ext.data.Model',
+	extend: 'Ext.data.Model',
 
-    fields: [
-        'id',
-        'pass_num',
-        'login',
-        'f_name',
-        'm_name',
-        'l_name',
-        'user_group',
-        'note',
-        'block'
-    ]
+	fields: [{
+		name: 'id',
+		type: 'int'
+	},{
+		name: 'pass_num',
+		type: 'int'
+	},{
+		name: 'login',
+		type: 'string'
+	},{
+		name:'f_name',
+		type: 'string'
+	},{
+		name: 'm_name',
+		type: 'string'
+	},{
+		name: 'l_name',
+		type: 'string'
+	},{
+		name: 'user_group',
+		type: 'string'
+	},{
+		name: 'note',
+		type: 'string'
+	},
+
+	{
+		name:'block',
+		type: 'int'
+	}
+	]
 });
 
 
