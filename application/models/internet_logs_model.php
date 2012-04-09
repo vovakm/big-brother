@@ -56,17 +56,10 @@ class Internet_logs_model extends CI_Model
 				'{$data['id_content_type']}','{$data['id_log_source']}','{$data['md5']}')");
 	}
 
-<<<<<<< HEAD
 	public function getSizeByDay($day = '2011-09-15')
 	{
 		$query = $this->db->query("
 				SELECT `id_user`,`login`, ROUND(SUM(`transfer_size`)/1024/1024, 3) AS 'trafic', `event_date`
-=======
-		public function getSizeByDay($day = '2011-09-15')
-	{
-		$query = $this->db->query("
-				SELECT `id_user`,`login`, ROUND(SUM(`transfer_size`)/1024/1024, 3) AS 'trafic'
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 				FROM `ci_internet_logs`
 				LEFT JOIN `myci`.`ci_accounts` ON  `ci_internet_logs`.`id_user` =`ci_accounts`.`id_account` 
 				WHERE `event_date` =  '$day'
@@ -79,7 +72,6 @@ class Internet_logs_model extends CI_Model
 		if (sizeof($return) == 0)
 			return FALSE;
 		else
-<<<<<<< HEAD
 			return $return;
 	}
 
@@ -87,15 +79,6 @@ class Internet_logs_model extends CI_Model
 	{
 		$query = $this->db->query("
 				SELECT ROUND(SUM(`transfer_size`)/1024/1024, 3) AS 'h_trafic' , HOUR(`event_time`) AS 'hour'
-=======
-			return $return;	
-	}
-	
-	public function getSizeByHour($id_user, $day)
-	{
-		$query = $this->db->query("
-				SELECT `transfer_size` AS 'h_trafic' , HOUR(`event_time`) AS 'hour'
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 				FROM `ci_internet_logs`
 				WHERE `event_date` =  '$day' 
 				AND `id_user` = '$id_user'
@@ -104,7 +87,6 @@ class Internet_logs_model extends CI_Model
 
 		$return = $query->result();
 		//echo $table;
-<<<<<<< HEAD
 		
 		if (sizeof($return) == 0)
 			return FALSE;
@@ -127,13 +109,6 @@ class Internet_logs_model extends CI_Model
 			return FALSE;
 		else
 			return $return;
-=======
-		;
-		if (sizeof($return) == 0)
-			return FALSE;
-		else
-			return $return;	
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 	}
 
 }

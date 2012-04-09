@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 $lang['scaff_view_records']     = 'РџСЂРѕСЃРјРѕС‚СЂ Р·Р°РїРёСЃРµР№';
 $lang['scaff_create_record']    = 'РЎРѕР·РґР°С‚СЊ РЅРѕРІСѓСЋ Р·Р°РїРёСЃСЊ';
 $lang['scaff_add']              = 'Р”РѕР±Р°РІРёС‚СЊ РґР°РЅРЅС‹Рµ';
@@ -11,16 +10,3 @@ $lang['scaff_yes']              = 'Р”Р°';
 $lang['scaff_no']               = 'РќРµС‚';
 $lang['scaff_no_data']          = 'Р’ СЌС‚РѕР№ С‚Р°Р±Р»РёС†Рµ РЅРµС‚ РґР°РЅРЅС‹С….';
 $lang['scaff_del_confirm']      = 'Р’С‹ СѓРІРµСЂРµРЅС‹, С‡С‚Рѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚Сѓ Р·Р°РїРёСЃСЊ:';
-=======
-$lang['scaff_view_records']     = 'Просмотр записей';
-$lang['scaff_create_record']    = 'Создать новую запись';
-$lang['scaff_add']              = 'Добавить данные';
-$lang['scaff_view']             = 'Просмотр данных';
-$lang['scaff_edit']             = 'Редактирование';
-$lang['scaff_delete']           = 'Удаление';
-$lang['scaff_view_all']         = 'Все';
-$lang['scaff_yes']              = 'Да';
-$lang['scaff_no']               = 'Нет';
-$lang['scaff_no_data']          = 'В этой таблице нет данных.';
-$lang['scaff_del_confirm']      = 'Вы уверены, что хотите удалить эту запись:';
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff

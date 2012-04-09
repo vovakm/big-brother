@@ -5,7 +5,6 @@
 .exit a:HOVER{color: #ff3037; text-decoration: none;}
 
 form.authorizaion{
-<<<<<<< HEAD
     padding: 5px 0;
     font-size: 11px;
     letter-spacing: 0.11em;
@@ -27,35 +26,11 @@ form.authorizaion input[type=text], form.authorizaion input[type=password]{
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-=======
-	padding: 5px 0;
-	font-size: 11px;
-	letter-spacing: 0.11em;
-	font-style: italic;
-	float: left;
-	width: 850px;
-	
-
-}
-form.authorizaion input[type=text], form.authorizaion input[type=password]{
-	width: 100px;
-	background: #eee;
-	color: #333;
-	padding: 2px 6px;
-	font-size: 11px;
-	letter-spacing: 0.11em;
-	font-style: italic;
-	border: 1px solid #999;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 }
 form.authorizaion label{margin:0 5px 0 10px;}
 form.authorizaion input[type=text]{width: 150px;}
 form.authorizaion input[type=password]{width: 35px;}
 form.authorizaion #loginBtn{
-<<<<<<< HEAD
     font-size: 11px;
     letter-spacing: 0.11em;
     width: 50px;
@@ -81,21 +56,3 @@ form.authorizaion #loginBtn{
     clear: both;
 
 }
-=======
-	font-size: 11px;
-	letter-spacing: 0.11em;
-	width: 50px;
-	margin-left: 10px;
-	padding: 2px 0px;
-	
-}
-#myClock{
-	position: absolute;
-	top: 44px;
-	left: 875px;
-	width: 60px;
-	font-size: 11px;
-	letter-spacing: 0.11em;
-	font-style: italic;
-}
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff

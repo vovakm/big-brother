@@ -16,7 +16,6 @@ class Logs extends CI_Controller
 		parent::__construct();
 	}
 
-<<<<<<< HEAD
 	public function test()
 	{
 		$this->load->model('Content_type_model');
@@ -28,8 +27,6 @@ class Logs extends CI_Controller
 		echo '</pre>';
 	}
 
-=======
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 	public function index()
 	{
 		echo 'logs controller<pre>';
@@ -40,7 +37,6 @@ class Logs extends CI_Controller
 
 	public function addInternetLog()
 	{
-<<<<<<< HEAD
 		$this->load->model('Internet_logs_model');
 		$this->load->model('Users_model');
 		$this->load->model('Settings_model');
@@ -49,13 +45,6 @@ class Logs extends CI_Controller
 			$seek = $this->Settings_model->getValueByName('parser_seek_access_file');
 //redirect(base_url().current_url().'?seek=asd', 'refresh');
 		$path = '/home/vovakm/tmp/access.log';
-=======
-		$seek = $this->input->get('seek');
-		if ($seek == '')
-			$seek = 0;
-//redirect(base_url().current_url().'?seek=asd', 'refresh');
-		$path = '/home/vovakm/www/www/parser/access.log';
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 //0-1310388340.276 
 //1-941 
 //2-172.16.5.18 
@@ -66,20 +55,13 @@ class Logs extends CI_Controller
 //7-miha_admin 
 //8-DEFAULT_PARENT/172.16.11.1 
 //9-text/html
-<<<<<<< HEAD
 		//$this->load->model('Extend_dictionary_model');
-=======
-		$this->load->model('Internet_logs_model');
-		$this->load->model('Users_model');
-		$this->load->model('Extend_dictionary_model');
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 		$this->load->model('Content_type_model');
 		$this->load->model('Host_model');
 		$this->load->model('Http_code_model');
 		$this->load->model('Http_method_model');
 		$this->load->model('Squid_code_model');
 		$this->load->model('Squid_hierarchy_model');
-<<<<<<< HEAD
 
 		// $dictionary = $this->Extend_dictionary_model->getAll();
 		$all_content_type = $this->Content_type_model->getAll();
@@ -89,36 +71,18 @@ class Logs extends CI_Controller
 		$all_squid_code = $this->Squid_code_model->getAll();
 		$all_squid_hierarchy = $this->Squid_hierarchy_model->getAll();
 
-=======
-		/*
-		  $dictionary = $this->Extend_dictionary_model->getAll();
-		  $all_content_type = $this->Content_type_model->getAll();
-		  $all_host = $this->Host_model->getAll();
-		  $all_http_code = $this->Http_code_model->getAll();
-		  $all_http_method = $this->Http_method_model->getAll();
-		  $all_squid_code = $this->Squid_code_model->getAll();
-		  $all_squid_hierarchy = $this->Squid_hierarchy_model->getAll();
-		 */
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 
 		$handle = fopen($path, "r");
 		$i = 0;
 		$k = 0;
 		echo '<pre>';
-<<<<<<< HEAD
-=======
-//exit;
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 		fseek($handle, $seek);
 		while ($i < 10000 && !feof($handle))
 		{
 			$i++;
 			$data = array();
 			$data = explode(' ', preg_replace('/  +/', ' ', fgets($handle)));
-<<<<<<< HEAD
 			//print_r($data);
-=======
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 			if (trim($data[0]) != '')
 			{
 
@@ -127,7 +91,6 @@ class Logs extends CI_Controller
 			}
 			else
 				continue;
-<<<<<<< HEAD
 			$data['duration'] = trim($data[1]); //how long time 
 			// host here
 			if (sizeof($all_host) > 1) //if database not empty
@@ -158,22 +121,11 @@ class Logs extends CI_Controller
 					$data['id_squid'] = $tmp_dictionary[0];
 					$all_squid_code[$tmp_dictionary[1]]->hit++;
 				}
-=======
-			//if ($data['event_date'] < '2011-11-20')
-			//continue;
-			$data['duration'] = trim($data[1]); //how long time 
-			$data['id_host_user'] = $this->Host_model->getIdByIP(trim($data[2])); //user ip
-			$tmp = explode('/', $data[3]);
-			if (trim($tmp[0]) != '')
-			{
-				$data['id_squid'] = $this->Squid_code_model->getIdByName(trim($tmp[0]));
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 			}
 			else
 				continue;
 			if (trim($tmp[1]) != '')
 			{
-<<<<<<< HEAD
 				if (sizeof($all_http_code) > 1) //if database not empty
 					$tmp_dictionary = $this->checkInDictionaryCache($all_http_code, trim($tmp[1])); // return FALSE if not found on array. return array (id item, line in array) 
 				else
@@ -189,17 +141,10 @@ class Logs extends CI_Controller
 			else
 				continue;
 
-=======
-				$data['id_http_code'] = $this->Http_code_model->getIdByName(trim($tmp[1]));
-			}
-			else
-				continue;
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 			if (trim($data[4]) != '')
 				$data['size'] = intval(trim($data[4]));
 			else
 				continue;
-<<<<<<< HEAD
 
 			if (trim($data[5]) != '')
 			{
@@ -218,15 +163,6 @@ class Logs extends CI_Controller
 			else
 				continue;
 			$data['url'] = mysql_real_escape_string(trim($data[6]));
-=======
-			if (trim($data[5]) != '')
-			{
-				$data['id_http_method'] = $this->Http_method_model->getIdByName(trim($data[5]));
-			}
-			else
-				continue;
-			$data['url'] = (trim($data[6]));
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 
 			if (trim($data[7]) != '')
 			{
@@ -237,10 +173,7 @@ class Logs extends CI_Controller
 			else
 				continue;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 			if (trim($data[8]) != '')
 			{
 				$tmp = explode('/', $data[8]);
@@ -262,7 +195,6 @@ class Logs extends CI_Controller
 			if (trim($data[9]) != '' && trim($data[9]) != '-')
 			{
 
-<<<<<<< HEAD
 				if (sizeof($all_content_type) > 1) //if database not empty
 					$tmp_dictionary = $this->checkInDictionaryCache($all_content_type, trim($data[9])); // return FALSE if not found on array. return array (id item, line in array) 
 				else
@@ -274,9 +206,6 @@ class Logs extends CI_Controller
 					$data['id_content_type'] = $tmp_dictionary[0];
 					$all_content_type[$tmp_dictionary[1]]->hit++;
 				}
-=======
-				$data['id_content_type'] = $this->Content_type_model->getIdByName($this->db->escape_str(trim($data[9])));
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 			}
 			else
 				$data['id_content_type'] = 1;
@@ -291,7 +220,6 @@ class Logs extends CI_Controller
 				$k++;
 			}
 		}
-<<<<<<< HEAD
 		$this->Content_type_model->updateHits($all_content_type);
 		$this->Host_model->updateHits($all_host);
 		$this->Http_code_model->updateHits($all_http_code);
@@ -310,15 +238,6 @@ class Logs extends CI_Controller
 			$seek = ftell($handle);
 			$this->Settings_model->setValueByName('parser_seek_access_file', $seek);
 			exit;
-=======
-		echo $k . '<br/>';
-		echo '--------------<br/>';
-		echo $i . '<br/>';
-		usleep(1000000);
-		if (!feof($handle))
-		{
-			$seek = ftell($handle);
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 			redirect(base_url() . current_url() . '?seek=' . $seek, 'refresh');
 		}
 		else
@@ -328,22 +247,15 @@ class Logs extends CI_Controller
 
 	public function checkInDictionaryCache($dictionary, $target)
 	{
-<<<<<<< HEAD
 		foreach ($dictionary as $key => $row)
 			if ($row->name == $target)
 				return array($row->id, $key);
-=======
-		foreach ($dictionary as $row)
-			if ($row->value_ed == $target)
-				return $row->id_ed;
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 		return FALSE;
 	}
 
 	public function getStatByDay($day = '2011-09-15')
 	{
 		$this->load->model('Internet_logs_model');
-<<<<<<< HEAD
 		if ($this->input->post('date') != '')
 			$day = $this->input->post('date');
 		$stat = $this->Internet_logs_model->getSizeByDay($day);
@@ -368,30 +280,6 @@ class Logs extends CI_Controller
 		  //var_dump(json_encode(($row)));
 		  }
 		 */
-=======
-		$stat = $this->Internet_logs_model->getSizeByDay($day);
-		//echo '<pre>';
-		$result = array();
-		foreach ($stat as $key => $row)
-		{
-			//$stat[$key]->hours = $this->Internet_logs_model->getSizeByHour($row->id_user, $day);
-			$stat[$key]->h_name = array();
-			$stat[$key]->h_trafic = array();
-
-			$hours = $this->Internet_logs_model->getSizeByHour($row->id_user, $day);
-			foreach ($hours as $value)
-			{
-				array_push($stat[$key]->h_name, $value->hour);
-				array_push($stat[$key]->h_trafic, $value->h_trafic);
-			}
-
-			//print_r($stat[$key]);
-			//exit;
-			//array_push($stat[$key], array('hours'=>($this->Internet_logs_model->getSizeByHour($row->id_user, $day))));
-			//var_dump(json_encode(($row)));
-		}
-
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 
 
 		echo(json_encode(($stat)));
@@ -403,7 +291,6 @@ class Logs extends CI_Controller
 		$stat = $this->Internet_logs_model->getSizeByHour($id_user, $day);
 	}
 
-<<<<<<< HEAD
 	public function getDataByUser()
 	{
 		$this->load->model('Internet_logs_model');
@@ -454,8 +341,6 @@ class Logs extends CI_Controller
 		echo json_encode($result);
 	}
 
-=======
->>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 }
 
 /* End of file main.php */
