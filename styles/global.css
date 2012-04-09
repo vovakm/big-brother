@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+html, p{margin: 0; padding: 0;}
+html{ background-color: #eee;
+/*box-sizing:border-box;-moz-box-sizing:content-box !important;-ms-box-sizing:border-box;-webkit-box-sizing:border-box*/
+}
+body{
+	background-color: #eee;
+	height: 95%;
+	font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+.blueText{color: #64cbe8;}
+.redText {color: #ff5f5f; text-shadow: #000 0px 1px 1px;}
+.greenText {color: #8AE68D;}
+.innerBlock{
+	padding: 10px;
+	height: 100%;
+}
+.titleMsg {width: 940px; text-align: center; font-size: 125%; padding: 10px;}
+hr {display: block; height: 1px; margin: 10px 0; padding: 0; width: 100%; background-color: #333; border: none; border-bottom:1px solid #fff;} 
+a{color: #333;}
+a:HOVER {color:#888; text-decoration: none;}
+a:ACTIVE {color:#001e96; text-decoration: underline;}
+form.center{margin: 0 auto;}
+form.wide{width: 850px;}
+form.normal{width: 400px;}
+label {margin: 5px;}
+
+#header{
+	display: block;
+	min-height: 30px;
+	margin-top: -80px;
+	margin-left:-10px;
+	padding: 0 10px;
+	position: absolute;
+	width: inherit;
+	color: #eee;
+	background: url("img/header-background.png");
+	text-shadow: #000 0px 1px 0px;
+	/*color: #333;
+	background: #f5dffc;*/
+	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+}
+#header .userInfo{
+	padding: 8px 10px;
+	margin: 0;
+	font-size: 12px;
+	letter-spacing: 0.11em;
+	font-style: italic;
+	float: left;
+}
+#header .exit{
+	float:right;
+	text-align: right;
+	width: 50px;
+	padding: 7px 10px;
+}
+#container {display: block;	width: 980px; height: 100%; margin: 0 auto; padding: 0;}
+#content{
+	top: 80px;
+	position: absolute;
+	background: #f9f9f9;
+	/*background: url('img/nya.jpg');*/
+	height: inherit;
+	width: inherit;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#footer{
+    position: relative;
+	width: 100%;
+	text-align: center;
+    margin: 0 auto;
+    bottom: 5px;
+}

@@ -1,0 +1,37 @@
+/* 
+    Document   : main
+    Created on : 01-Apr-2012, 19:06:58
+    Author     : vovakm
+    Description:
+        ExtJS styles and icons
+*/
+
+.bmenu {
+    background-image: url(menu-show.gif)	!important;
+}
+/* global menu icons */
+/*   search button */
+.search-global    { background-image: url('/styles/img/icons/16/find.png') !important; }
+.search-simple    { background-image: url('/styles/img/icons/16/attribution.png') !important; }
+.search-advanced  { background-image: url('/styles/img/icons/16/award_star_add.png') !important; }
+.search-by-name   { background-image: url('/styles/img/icons/16/user_student.png') !important; }
+.search-by-ugroup { background-image: url('/styles/img/icons/16/group.png') !important; }
+.search-by-login  { background-image: url('/styles/img/icons/16/key_l.png') !important; }
+.search-by-pass   { background-image: url('/styles/img/icons/16/textfield_rename.png') !important; }
+
+
+.my-account   { background-image: url('/styles/img/icons/16/user_batman.png') !important; }
+.exit         { background-image: url('/styles/img/icons/16/door_out.png') !important; }
+
+#app-name div {
+	text-align: center; 
+	font-size: 13px !important;
+	padding: 0 5px !important;
+	color: #777;
+}
+
+/* panels icons */
+/*    right Side Panels */
+.information-ico   { background-image: url('/styles/img/icons/16/information.png') !important; }
+.settings-ico   { background-image: url('/styles/img/icons/16/setting_tools.png') !important; }
+
