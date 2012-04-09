@@ -55,7 +55,11 @@ $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'ci_';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
+<<<<<<< HEAD
 $db['default']['cache_on'] = FALSE;
+=======
+$db['default']['cache_on'] = TRUE;
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 $db['default']['cachedir'] = '/home/vovakm/www/myci.local/application/cache/';
 $db['default']['char_set'] = 'utf8';
 $db['default']['dbcollat'] = 'utf8_general_ci';

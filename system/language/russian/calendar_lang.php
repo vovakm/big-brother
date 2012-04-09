@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 $lang['cal_su']         = 'Ð’Ñ';
 $lang['cal_mo']         = 'ÐŸÐ½';
 $lang['cal_tu']         = 'Ð’Ñ‚';
@@ -44,3 +45,50 @@ $lang['cal_september']  = 'Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ';
 $lang['cal_october']    = 'ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ';
 $lang['cal_november']   = 'ÐÐ¾ÑÐ±Ñ€ÑŒ';
 $lang['cal_december']   = 'Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ';
+=======
+$lang['cal_su']         = 'Âñ';
+$lang['cal_mo']         = 'Ïí';
+$lang['cal_tu']         = 'Âò';
+$lang['cal_we']         = 'Ñð';
+$lang['cal_th']         = '×ò';
+$lang['cal_fr']         = 'Ïò';
+$lang['cal_sa']         = 'Ñá';
+$lang['cal_sun']        = 'Âñ';
+$lang['cal_mon']        = 'Ïí';
+$lang['cal_tue']        = 'Âò';
+$lang['cal_wed']        = 'Ñð';
+$lang['cal_thu']        = '×ò';
+$lang['cal_fri']        = 'Ïò';
+$lang['cal_sat']        = 'Ñá';
+$lang['cal_sunday']     = 'Âîñêðåñåíüå';
+$lang['cal_monday']     = 'Ïîíåäåëüíèê';
+$lang['cal_tuesday']    = 'Âòîðíèê';
+$lang['cal_wednesday']  = 'Ñðåäà';
+$lang['cal_thursday']   = '×åòâåðã';
+$lang['cal_friday']     = 'Ïÿòíèöà';
+$lang['cal_saturday']   = 'Ñóááîòà';
+$lang['cal_jan']        = 'ßíâ';
+$lang['cal_feb']        = 'Ôåâ';
+$lang['cal_mar']        = 'Ìàð';
+$lang['cal_apr']        = 'Àïð';
+$lang['cal_may']        = 'Ìàé';
+$lang['cal_jun']        = 'Èþí';
+$lang['cal_jul']        = 'Èþë';
+$lang['cal_aug']        = 'Àâã';
+$lang['cal_sep']        = 'Ñåí';
+$lang['cal_oct']        = 'Îêò';
+$lang['cal_nov']        = 'Íîÿ';
+$lang['cal_dec']        = 'Äåê';
+$lang['cal_january']    = 'ßíâàðü';
+$lang['cal_february']   = 'Ôåâðàëü';
+$lang['cal_march']      = 'Ìàðò';
+$lang['cal_april']      = 'Àïðåëü';
+$lang['cal_mayl']       = 'Ìàé';
+$lang['cal_june']       = 'Èþíü';
+$lang['cal_july']       = 'Èþëü';
+$lang['cal_august']     = 'Àâãóñò';
+$lang['cal_september']  = 'Ñåíòÿáðü';
+$lang['cal_october']    = 'Îêòÿáðü';
+$lang['cal_november']   = 'Íîÿáðü';
+$lang['cal_december']   = 'Äåêàáðü';
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff

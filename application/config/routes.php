@@ -41,7 +41,10 @@
 $route['default_controller'] = "main";
 $route['login'] = "users/login";
 $route['logout'] = "users/logout";
+<<<<<<< HEAD
 $route['admin'] = "main/admin";
+=======
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 $route['acounts'] = "acounts";
 $route['404_override'] = '';
 

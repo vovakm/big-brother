@@ -20,6 +20,7 @@ Ext.require([
 	'Ext.layout.container.Column'
 	]);
 
+<<<<<<< HEAD
 Ext.Ajax.timeout = 120000; //2 minutes
 Ext.onReady(function(){
     
@@ -27,6 +28,10 @@ Ext.onReady(function(){
 
 
 	   
+=======
+
+Ext.onReady(function(){
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 	//use a renderer for values in the data view.
 	function perc(v) {
 		return v + '%';
@@ -55,6 +60,7 @@ Ext.onReady(function(){
 		series.highlight = false;
 	}
 
+<<<<<<< HEAD
 //	models
 	Ext.define('ustat',{
 		extend: 'Ext.data.Model',
@@ -72,20 +78,43 @@ Ext.onReady(function(){
 	var store = Ext.create('Ext.data.Store', {
 		model: 'ustat',
 		autoLoad: true,	
+=======
+	
+	Ext.define('ustat',{
+		extend: 'Ext.data.Model',
+		fields: [
+		// set up the fields mapping into the xml doc
+		// The first needs mapping, the others are very basic
+		'event_date',  'login', 'trafic', 'h_name', 'h_trafic'
+		]
+	});
+
+	// create the Data Store
+	var store = Ext.create('Ext.data.Store', {
+		model: 'ustat',
+		autoLoad: true,
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 		proxy: {
 			// load using HTTP
 			type: 'ajax',
 			url: 'index.php/logs/getStatByDay',
+<<<<<<< HEAD
 			actionMethods: {
 				read: 'POST'
 			},
 			reader: {
 				type: 'json'
 				
+=======
+
+			reader: {
+				type: 'json'
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 			}
 		}
 	});
 	
+<<<<<<< HEAD
 	var store_statisticChart = Ext.create('Ext.data.Store', {
 		model: 'model_statisticChart',
 		autoLoad: true,	
@@ -101,17 +130,23 @@ Ext.onReady(function(){
 			}
 		}
 	});
+=======
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 	var ds = Ext.create('Ext.data.ArrayStore', {
 		fields: [
 		{
 			name: 'login', 
 			type: 'string'
 		},
+<<<<<<< HEAD
 
+=======
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 		{
 			name: 'event_date', 
 			type: 'string'
 		},
+<<<<<<< HEAD
 
 		{
 			name: 'trafic', 
@@ -177,13 +212,32 @@ Ext.onReady(function(){
         
 	});
     
+=======
+		{
+			name: 'trafic', 
+			type: 'float'
+		},
+		{
+			name: 'h_hour',
+			type: 'int'
+		},
+		{
+			name: 'h_trafic'
+		}  
+		],
+		data: store
+	});
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 	//create a grid that will list the dataset items.
 	var gridPanel = Ext.create('Ext.grid.Panel', {
 		id: 'statistic',
 		flex: 0.60,
 		store: store,
 		title:'Users',
+<<<<<<< HEAD
 
+=======
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 		columns: [
 		{
 			id     :'login',
@@ -200,29 +254,41 @@ Ext.onReady(function(){
 			dataIndex: 'trafic'
 		}
 		],
+<<<<<<< HEAD
 
 		listeners: {
 			selectionchange: function(model, records) {
 				store_statisticChart.load({
 				params: 'login='+records[0].data.login+'&day='+records[0].data.event_date
 			});
+=======
+		listeners: {
+			selectionchange: function(model, records) {
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 				var json, name, i, l, items, series, fields;
 				if (records[0]) {
 					rec = records[0];
 					if (!form) {
 						form = this.up('form').getForm();
 						fields = form.getFields();
+<<<<<<< HEAD
 					
 					} else {
 						fields = form.getFields();
 					}
                     
+=======
+					} else {
+						fields = form.getFields();
+					}
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 					form.loadRecord(rec);
 				
 				}
 			}
 		}
 	});
+<<<<<<< HEAD
 	var toolbar = Ext.create('Ext.toolbar.Toolbar');
 	toolbar.suspendLayout = true;
 	var menu = Ext.create('Ext.menu.Menu', {
@@ -281,6 +347,8 @@ Ext.onReady(function(){
 		}
 	});
 
+=======
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 	var gridForm = Ext.create('Ext.form.Panel', {
 		title: 'Statistic',
 		frame: true,
@@ -295,8 +363,14 @@ Ext.onReady(function(){
 			type: 'vbox',
 			align: 'stretch'
 		},
+<<<<<<< HEAD
 		items: [
 		toolbar,statisticChart,
+=======
+        
+		items: [
+			{},
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 		{
             
 			layout: {
@@ -308,7 +382,11 @@ Ext.onReady(function(){
 			bodyStyle: 'background-color: transparent',
             
 			items: [
+<<<<<<< HEAD
 			gridPanel, {
+=======
+				gridPanel, {
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 				flex: 0.4,
 				layout: {
 					type: 'vbox',
@@ -340,4 +418,9 @@ Ext.onReady(function(){
 		},],
 		renderTo: 'tt'
 	});
+<<<<<<< HEAD
+=======
+
+	//var gp = Ext.getCmp('statistic');
+>>>>>>> d7c19a200a2d68b9025e17ce4a23b1e0fa4c76ff
 });
