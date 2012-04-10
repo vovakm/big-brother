@@ -30,11 +30,11 @@ Ext.define('bb_cpanel.controller.Users', {
 				specialkey: function(field, e) { 
 					if(e.getKey() == e.ENTER) { 
 						this.searchRequest(field)
-//						console.log(field.ownerCt);
-//						console.log(field.value);
-//						console.log(field.ownerCt.getForm().getValues())
-						//Ext.Msg.alert("Alert","Enter Key Event !");
-						//Ext.getCmp('search-by-name-form').items.items[0].getForm().submit()
+					//						console.log(field.ownerCt);
+					//						console.log(field.value);
+					//						console.log(field.ownerCt.getForm().getValues())
+					//Ext.Msg.alert("Alert","Enter Key Event !");
+					//Ext.getCmp('search-by-name-form').items.items[0].getForm().submit()
 					} 
 				} 
 			},
@@ -81,12 +81,12 @@ Ext.define('bb_cpanel.controller.Users', {
 	loadUsers: function(){
 		Ext.getStore('Users').load({
 			//params: 'action='+'sblog'+'&content='+'ko'+'&type='+'s'
-		});
+			});
 	},
 	searchRequest: function(item){
-//console.log(item.ownerCt.getForm().getValues())
-var data = item.ownerCt.getForm().getValues();
-data.action = item.ownerCt.ownerCt.id;
+		//console.log(item.ownerCt.getForm().getValues())
+		var data = item.ownerCt.getForm().getValues();
+		data.action = item.ownerCt.ownerCt.id;
 		Ext.getStore('Users').load({
 			params: data
 			
