@@ -43,7 +43,18 @@ Ext.application({
 	//'Proxies',
 	//'Reports'
 	],
+
 	launch: function() {
+		Ext.Ajax.request({
+        url: '/js/ext-4.0.7-gpl/locale/ext-lang-ru.js',
+        success: function(response, opts) {
+            eval(response.responseText);
+        },
+        failure: function() {
+            Ext.Msg.alert('Error', 'Couldn\'t load locale file');
+        }
+    });
+		
 		Ext.create('Ext.container.Viewport', {
 			layout: 'border',
 			padding: 6,

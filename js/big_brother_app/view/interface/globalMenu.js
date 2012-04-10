@@ -60,18 +60,11 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 		handler: function(){
 			Ext.MessageBox.show({
 				title:'hello world',
-				msg: 'тыц',
+				msg: 'Не написана еще та функция, которая будет достойна данной кнопочки. <br/>\n\Ну. Правда. Я не знаю зачем мне эта кнопка',
 				buttons: Ext.MessageBox.OK,
 				icon: Ext.MessageBox.INFO,  
 				width: 400
 			});
-//			Ext.MessageBox.show({
-//				title:'hello world',
-//				msg: 'Не написана еще та функция, которая будет достойна данной кнопочки. <br/>\n\Ну. Правда. Я не знаю зачем мне эта кнопка',
-//				buttons: Ext.MessageBox.OK,
-//				icon: Ext.MessageBox.INFO,  
-//				width: 400
-//			});
 		}
 	}
 	,/*'-',*/'->',/*'-',*/{
@@ -81,26 +74,15 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 		action: 'account',
 		handler: function(){
 			Ext.MessageBox.show({
-				title:'hello ext',
-				msg: 'текст <i>окна</i> <b>сообщения</b>',
+				title:'batman :)',
+				msg: '<strong>xxx:</strong> он ваще красавец. Создал опрос:<br/>\n\
+\"А вы заметили, что вариант ответа \"Пыщь! Я Бэтмэн!\" начисто гробит статистику любого опроса?\" <br/>\n\
+<strong>xxx:</strong> и варинты ответов: \"Да\", \"Нет\", \"Пыщь! Я Бэтмэн!\" <br/>\n\
+<strong>xxx:</strong> Про результаты рассказывать?//',
 				buttons: Ext.MessageBox.OK,
 				icon: Ext.MessageBox.WARNING,  
 				width: 600
 			});
-			
-			
-//			Ext.MessageBox.show({
-//				title:'batman :)',
-//				msg: '<strong>xxx:</strong> он ваще красавец. Создал опрос:<br/>\n\
-//\"А вы заметили, что вариант ответа \"Пыщь! Я Бэтмэн!\" начисто гробит статистику любого опроса?\" <br/>\n\
-//<strong>xxx:</strong> и варинты ответов: \"Да\", \"Нет\", \"Пыщь! Я Бэтмэн!\" <br/>\n\
-//<strong>xxx:</strong> Про результаты рассказывать?//',
-//				buttons: Ext.MessageBox.OK,
-//				icon: Ext.MessageBox.WARNING,  
-//				width: 600
-//			});
-			
-			
 		}
 	},'-',{
 		height: 34,

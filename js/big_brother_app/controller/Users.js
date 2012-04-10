@@ -29,16 +29,18 @@ Ext.define('bb_cpanel.controller.Users', {
 			'SearchUsers textfield': { 
 				specialkey: function(field, e) { 
 					if(e.getKey() == e.ENTER) { 
-						console.log(field.ownerCt.ownerCt.id);
-						console.log(field.value);
+						this.searchRequest(field)
+//						console.log(field.ownerCt);
+//						console.log(field.value);
+//						console.log(field.ownerCt.getForm().getValues())
 						//Ext.Msg.alert("Alert","Enter Key Event !");
-						//field.up('form').getForm().submit(); 
+						//Ext.getCmp('search-by-name-form').items.items[0].getForm().submit()
 					} 
 				} 
 			},
-			'SearchUsers button':{
+			'SearchUsers button[action=send-search]':{
 				click: function(button){
-					console.log(button);
+					click: this.searchRequest(button)
 				}
 			}
 
@@ -79,6 +81,15 @@ Ext.define('bb_cpanel.controller.Users', {
 	loadUsers: function(){
 		Ext.getStore('Users').load({
 			//params: 'action='+'sblog'+'&content='+'ko'+'&type='+'s'
+		});
+	},
+	searchRequest: function(item){
+//console.log(item.ownerCt.getForm().getValues())
+var data = item.ownerCt.getForm().getValues();
+data.action = item.ownerCt.ownerCt.id;
+		Ext.getStore('Users').load({
+			params: data
+			
 		});
 	}
 	
