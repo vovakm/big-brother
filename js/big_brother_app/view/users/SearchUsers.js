@@ -150,6 +150,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				columnWidth: .75,
 				xtype: 'form',
 				frame:false,
+				layout: 'hbox',
 				title: 'Поиск по группам',
 				bodyStyle:'padding:5px 5px 0',
 				fieldDefaults: {
@@ -164,10 +165,12 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				items: [{
 					fieldLabel: 'First Name',
 					name: 'first',
-					allowBlank:false
+					allowBlank:false,
+					width: 150
 				},{
 					fieldLabel: 'Last Name',
-					name: 'last'
+					name: 'last',
+					width: 150
 				}],
 
 				buttons: [{
@@ -205,6 +208,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				},{
 					xtype: 'button',
 					text: 'Найти',
+					cls: 'searchUserBtn',
 					margins: '0 0 0 10',
 					width: 120
 				}]

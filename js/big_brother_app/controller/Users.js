@@ -30,11 +30,17 @@ Ext.define('bb_cpanel.controller.Users', {
 				specialkey: function(field, e) { 
 					if(e.getKey() == e.ENTER) { 
 						console.log(field.ownerCt.ownerCt.id);
+						console.log(field.value);
 						//Ext.Msg.alert("Alert","Enter Key Event !");
 						//field.up('form').getForm().submit(); 
 					} 
 				} 
-			} 
+			},
+			'SearchUsers button':{
+				click: function(button){
+					console.log(button);
+				}
+			}
 
 
 			
