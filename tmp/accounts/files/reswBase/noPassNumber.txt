@@ -1,0 +1,217 @@
+default | default | demchenka_aa | Демченка А А | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | yurchenko_nyu | Юрченко Наталя Юрьевна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ФК-117 | 0
+default | default | akselenko_yua | Акселенко Антоон Юрьевич | me | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | МК-117 | 0
+default | default | kuzmenko_ao | Кузьменко Артем Олексійович | guest | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | МО-127 | 0
+default | default | moskalenko_ma | Москаленко М А | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | Ф-226К | 0
+default | default | premelenniy_oi | Премеленний Олексій Ігорович | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | sergeeva_ao | Сергєєва Альона Олександрівна | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | rozumovich_da | Розумович Дмитрий Андреевич | me | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | МЭ-117 | 0
+default | default | tretyak_ei | [mo] Третяк Евгения Игоревна | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | ogogov_ea | Ожогов Євген Анатолійович | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | didenko_ei | Диденко Екатерина Игоревна | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | silanteva_yuo | Силантьева Ю О | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ЭП-236К | 0
+default | default | gega_ae | Жежа Александр Э | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | True | 50000:75000:5000:7500 |  |  | 0
+default | default | tancura_aa | Танцура А А | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | temp_csis | temp_csis | csis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | Suser1 | Suser1 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser2 | Suser2 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser3 | Suser3 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser4 | Suser4 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser5 | Suser5 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser6 | Suser6 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser7 | Suser7 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser8 | Suser8 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser9 | Suser9 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | burlakov_as | Бурлаков А С | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | Suser10 | Suser10 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | orel_tm | Орел Т МИ | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ЕП-115К | 0
+default | default | Suser11 | Suser11 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | kim_en | Ким Э Н | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | Suser12 | Suser12 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser13 | Suser13 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser14 | Suser14 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser15 | Suser15 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | polyakova_ef | Полякова Евгения Федоровна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | buchackiy_av | Бучацкий Артем В | kd | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | tyurin_iv | Тюрин Игорь Викторович | ocsis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | vagis_pi | Вагис Полина И | kd | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | boyko_tv | Бойко Татьяна Валерьевна | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | sherbak_kd | Щербак Кристина Дмитривна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | Suser16 | Suser16 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser17 | Suser17 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | Suser18 | Suser18 | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | malinovich_ao | Малинович Александр Олегович | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | 13773 | 0
+default | default | ilkova_av | Илькова А В | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ЭП-236К | 0
+default | default | palval_tv | Пальваль Т В | p | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | П-226К | 0
+default | default | zayac_sa | Заяц С А | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | shoshina_en | [p] Шошина Елена Никитична | p | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | denisenko_sa | Денисенко Станислав Аркадьевич | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | serogodskiy_sa | Серогодский С А | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kubyshko_vo | Кубышко В О | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | arhipov_da | Архипов Дмитрий Александрович | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | bogomolov_ss | Богомолов Станислав Сергеевич | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kireenkova_ayu | Киреенкова Анастасия Юрьевна | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | toha_admin | Майсак Антон Олегович | csis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | 002 | 0
+default | default | nazarov_dn | [no] Назаров Денис Назарович | no | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | sanosyan_am | Саносян А М | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ЭП 236К | 0
+default | default | gigin_sm | Жижин С М | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ЭП-216 | 0
+default | default | shiryaeva_vg | Ширяева Виктория Григорьевна | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | КСиС 225 | 0
+default | default | nazarova_yui | Назарова Юлия Ивановна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | zlydennyy_aa | Злыденный А А | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ОКСИС-216 | 0
+default | default | agarkov_da | Агарков А Д | csis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | miheenko_la | [me] Михеенко Лариса Александровна | me | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | semenyuta_aa | Семенюта А А | ep | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | harchenko_dv | Харченко Дмитрий Владимирович | csis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | КСиС-217 | 0
+default | default | mahlinec_yav | [ec] Махлинец Ярослав Василевич | ec | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kovalev_ss | [ep] Ковалев Степан Сергеевич | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | mashenko_aa | [ep] Мащенко Андрей Албертович | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | ulyashin_vr | [ep] Уляшин Валентин Романович | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | krohmal_te | [ep] Крохмал Таисия Евгеневна | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kulkov_aa | Кульков А А | pgs | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | ПГС-217 | 0
+default | default | rumyancev_vm | Румянцев В М | pgs | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | ПГС-217 | 0
+default | default | tlepova_ev | Тлепова Елена Викторовна | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | Ф-217 | 0
+default | default | school | [lyceum] school | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | user | user | guest | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | tishenko_ov | Тищенко Ольга Васильевна | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | ФК-217 | 0
+default | default | stroy_na | Строй Наталья Андреевна | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | bikov_av | [f] | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | galchenko_vv | [ep] Галченко Валерия Владимировна | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kovun_vg | Ковун Владимир Григорьевич | guest | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | novojilova_ee | [mo] | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kokucenko_mv | [no] Кокуценко Марина Василевна | no | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | tolpincev_vv | [f] Толпинцев Владимир Владимирович | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | korolko_an | Королько Алина Николаевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | shapovalova_es | Шаповалова Елена Сергеевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kondrateva_yas | Кондратьева Яна Сергеевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kalina_ar | Калина Анна Романовна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kalashnikova_va | Калашникова Валерия Александровна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kovinackiy_mv | Ковинацкий Матвей Владимирович | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | surguckaya_av | Сургуцкая Алена Валерьевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | dunihina_ai | Дунихина Анастасия Игоревна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | shinkarenko_eg | Шинкаренко Евгений Геннадиевич | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | megueva_nv | Межуева Надежда Валерьевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | demchenko_ov | Демченко Оксана Валерьевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | demina_ma | Демина Марина Андреевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | stasik_ea | Стасик Екатерина Алексеевна | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | artyuh_ma | Артюх Марина Анатольевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | andreeva_ev | Андреева Екатерина Вячеславовна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | derevyanko_aa | Деревянко Алина Александровна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | popov_yus | Попов Юрий Сергеевич | ocsis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | ОКСИС-118 | 0
+default | default | ipatov_tyu | [ep] Ипатов Тимофей Юревич | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | berestovoi_sp | [f] Берестовой Сергей Петрович | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp01 | olymp01 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | anisenko_fh | Анисенко Фалидия Хосаиновна | ep | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | ЭП-217 | 0
+default | default | krivickaya_ov | Кривицкая Олеся Владимировна | ep | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | МК-217 | 0
+default | default | olymp02 | olymp02 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp03 | olymp03 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp04 | olymp04 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp05 | olymp05 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp06 | olymp06 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | sabadash_eyu | [ep] Сабадаш Евгений Юревич | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp07 | olymp07 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp08 | olymp08 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | deremedved_yue | [ep] Деремедвед Юлия Евгеневна | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp09 | olymp09 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp10 | olymp10 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp11 | olymp11 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp12 | olymp12 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp13 | olymp13 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp14 | olymp14 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp15 | olymp15 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp16 | olymp16 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp17 | olymp17 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp18 | olymp18 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp19 | olymp19 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | olymp20 | olymp20 | olympiad | default | /bin/csh | 0:0:0:0:257 | False | 0:0:0:0 |  |  | 0
+default | default | site | site | olympiad | default | /sbin/nologin | 0:0:0:0:257 | False | 0:0:0:0 |  |  | 0
+default | default | gurjii_ei | [ep] Гуржий Евгений Игоревич | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | djuman_oi | [ep] Джуман Олег Йосифович | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | blagko_ta | Блажко Татьяна Александровна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | litvinyuk_vn | Литвинюк Виктория Николаевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | baskakova_tv | Баскакова Татьяна Васильевна | guest | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | balickaya_av | Балицкая Анастасия Васильевна | f | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kuchinskaya_yua | [f] Кучинская Юлия Александровна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | neumitov_en | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | gaidash_ds | [lyceum] Гайдаш Денис Сергеевич | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | mihailova_sv | [lyceum] Михайлова Софя Викторовна | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | mahlinec_rv | [lyceum] Махлинец Роман Василевич | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | nesmashnyy_ms | Несмашный Максим Сергеевич | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | sapojnikova_av | Сапожникова А В | kd | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | КД-117к | 0
+default | default | zinchenko_sn | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | zimbachevskiy_vv | Зимбачевский Владимир Владимирович | mo | default | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | МО-217 | 0
+default | default | konienko_yav | Кониенко Ярослав Виталиевич | guest | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | МЭ-119 | 0
+default | default | artyuh_vyu | [f] | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | pirojok_aa | [ep] | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kalinin_aa | [csis] | csis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | jaglo_aa | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | True | 50000:75000:5000:7500 |  |  | 0
+default | default | korniec_is | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | morgun_ra | [f] | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | dabija_yua | [f] | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | shramko_av | [f] | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kucevol_yuo | [f] | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | korobova_lv | [f] | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | stremidlo_ayu | [f] | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | morshnev_ns | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kompanec_ma | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | cherkasova_tg | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | pastushenko_bd | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | burka_sg | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | naiden_dr | Найдьон Д Р | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | МО-117 | 0
+default | default | vlasenko_aa | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | motorenko_av | Моторенко Алексей Владимирович | csis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | kalashnikov_gyu | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | petrenko_vv | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | samoilenko_le | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | terenteva_kb | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | fedosov_aa | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | arefev_oa | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | koshevoy_ra | Кошевой Родион Андреевич | mo | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | puchnin_eo | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | True | 50000:75000:5000:7500 |  |  | 0
+default | default | kononenko_ar | [ep] | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | ivahov_av | (lyceum) [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | ученик |  | 0
+default | default | chepijko_ds | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | orel_tm | [ep] | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | varnavskii_eyu | [ep] | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | pedyash_vs | Педяш Виктория Сергеевна | ocsis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | deenikov_aa | [f] | guest | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | ftpusr | [csis] | csis | russian | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | bardakov_yav | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | velikanov_na | [lyceum] | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | gorbulya_an | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | polyuga_va | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | romanenko_ev | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | dichok_an | [csis] | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | galka_bv | Галка Богдан Вадимович | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kalashnik_ai | kalashnik_ai | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | Ф-217 | 0
+default | default | romanova_aa | Романова Анастасия Александровна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | ulitenko_es | ulitenko_es | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | Ф-217 | 0
+default | default | kostjuchenko_dr | Костюченко Д Р | jep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | lukina_aa | Лукина Анастасия А | ep | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | chepurko_no | Чепурко Наталья О | kd | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | gramovich_vi | Грамович Владислав И | kd | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | kublickij_vo | Кублицкий Владислав Олегович | kd | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | savelev_da | Савельев Денис Аркадьевич | ocsis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | zablockij_ap | Заблоцкий А П | me | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | levykina_an | levykina_an | mk | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | dvornik_vn | dvornik_vn | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | lucenko_sv | lucenko_sv | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | shtepa_sv | shtepa_sv | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | vasilenko_of | vasilenko_of | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | bujnyj_os | bujnyj_os | n | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | grechanyj_di | grechanyj_di | n | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+1302776674 | default | kirichenko_iju | kirichenko_iju | n | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | krugljak_mju | krugljak_mju | n | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | ljapota_av | ljapota_av | n | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | popova_mje | popova_mje | n | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+1278326013 | default | pilgun_bo | Пильгун Борис Олегович | csis | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | КСиC-117 | 0
+default | default | zlydennyj_aa | zlydennyj_aa | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | starushko_ea | starushko_ea | ua | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | zhuk_ts |  | f | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | olymp21 |  | olympiad | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | olymp22 |  | olympiad | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | olymp23 | olymp23 | olympiad | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | olymp24 |  | olympiad | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | olymp25 |  | olympiad | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | kotenev_dv | Котенев Дмитрий Вячеславович | guest | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | vorobev_rs | Воробьев Радион Сергеевич | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 0
+default | default | stapai_eg |  | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | преподаватель |  | 0

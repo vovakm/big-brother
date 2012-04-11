@@ -1,0 +1,1 @@
+default | default | kopot_vv | Копоть Володимир Володимирович | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | КСИС-127 | 13179

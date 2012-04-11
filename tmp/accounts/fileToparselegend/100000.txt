@@ -1,0 +1,24 @@
+default | default | admin | Кревсун Юрий Николаевич | wheel | ukrainian | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 | преподаватель |  | 0
+default | default | bereznyak_vv | Березняк Виктория Виталиевна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ФК-117 | 8849
+default | default | babchenko_av | Бабченко А В | csis | russian | /sbin/nologin | 0:0:0:0:0 | False | 50000:75000:5000:7500 |  | 002 | 13188
+default | default | biryukov_dg | Бирюков Д Г | mo | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | МО-127 | 9164
+default | default | tockiy_sv | Тоцкий Сергей Владимирович | ua | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | УА-117 | 8821
+default | default | zablodskaya_yav | Заблодская Яна Василиевна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | ФК-117 | 8832
+default | default | kalashnikova_mv | Калашникова Мария Валерьевна | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 11554
+default | default | zaliskiy_sa | Заліський Станіслав Анатолійович | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | КСіМ-210 | 13810
+default | default | filipenko_mv | Филипенко М В | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | ФН-117 | 11057
+default | default | timoshova_es | Тимошова Екатерина Сергеевна | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 11534
+default | default | demchenka_aa | Демченка А А | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 0
+default | default | tkachenko_vi | Ткаченко Владислав Игоревич | me | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | МЭ-110 | 13582
+default | default | miroshnichenk_aa | Мирошниченко Алена Алексеевна | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 13697
+default | default | kuzmenko_va | Кузьменко Віталій Анатолійович | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | КСіМ-210 | 13811
+default | default | bortnikova_oo | Бортнікова Олена Олексанлрівна | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 14333
+default | default | kazamacka_nm | Казамацька Надія Миколаївна | csis | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 14330
+default | default | barhudarov_ak | Бархударов Армен Карменович | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент |  | 10524
+default | default | revkova_ak | Ревкова Анна Константиновна | lyceum | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 9844
+default | default | masenkova_em | Масенкова Елизавета Михайловна | lyceum | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 9843
+default | default | samsonova_ov | Самсонова Олеся Владимировна | f | russian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 9362
+default | default | melnik_sl | Мельник Сергей Леонидович | f | default | /bin/csh | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  |  | 7613
+default | default | moskovskaya_aa | Московская Анна Артуровна | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | ФК-117 | 8804
+default | default | kalnysh_da | Кальныш Д А | me | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | МЭ-116 | 7854
+default | default | calkina_vg | Цалкина В Г | f | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 |  | Ф-125 | 9203

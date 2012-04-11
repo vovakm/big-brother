@@ -75,9 +75,10 @@ Ext.define('bb_cpanel.controller.Users', {
 	},
 	menuitem_handler: function(menuitem){
 		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(menuitem.action+'-form');
+		Ext.getCmp('id_SearchUsers').getLayout().getActiveItem().items.items[0].items.items[0].focus(false, 700)
 		if(Ext.getCmp('id_SearchUsersPanel').collapsed){
 				Ext.getCmp('id_SearchUsersPanel').expand();
-				Ext.getCmp('aaa').focus(false, 700)
+				//Ext.getCmp('aaa').focus(false, 700)
 					//textField.setFocus('', 10);
 		}
 	},

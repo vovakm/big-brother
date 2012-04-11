@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+html, p{margin: 0; padding: 0;}
+html{ background-color: #eee;}
+body{
+	background-color: #eee;
+	height: 95%;
+	font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+.blueText{color: #64cbe8;}
+.redText {color: #DE0007;}
+.greenText {color: #8AE68D;}
+.innerBlock{padding: 10px;}
+.titleMsg {width: 940px; text-align: center; font-size: 125%; padding: 10px;}
+hr {display: block; height: 1px; margin: 10px 0; padding: 0; width: 100%; background-color: #333; border: none; border-bottom:1px solid #fff;} 
+a{color: #333;}
+a:HOVER {color:#888; text-decoration: none;}
+a:ACTIVE {color:#001e96; text-decoration: underline;}
+form.center{margin: 0 auto;}
+form.wide{width: 850px;}
+form.normal{width: 400px;}
+label {margin: 5px;}
+
+#container {display: block;	width: 980px; height: 1200px; margin: 0 auto; padding: 0;}
+#content{
+	top: 80px;
+	position: absolute;
+	background: #f9f9f9;
+	/*background: url('img/nya.jpg');*/
+	height: inherit;
+	width: inherit;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}

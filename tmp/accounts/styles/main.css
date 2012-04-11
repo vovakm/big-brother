@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+#header{
+	display: block;
+	top: 0;
+	min-height: 30px;
+	margin-left:-10px;
+	padding: 0 10px;
+	position: fixed;
+	width: inherit;
+	color: #eee;
+	background: url("img/header-background.png");
+	/*color: #333;
+	background: #f5dffc;*/
+	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+}
+#header .userInfo{
+	padding: 8px 10px;
+	margin: 0;
+	font-size: 12px;
+	letter-spacing: 0.11em;
+	font-style: italic;
+	float: left;
+}
+#header .exit{
+	float:right;
+	text-align: right;
+	width: 50px;
+	padding: 7px 10px;
+}
+.exit a{color: #eee; text-decoration: underline;}
+.exit a:HOVER{color: #ff3037; text-decoration: none;}
+
+form.authorizaion{
+	padding: 5px 0;
+	font-size: 11px;
+	letter-spacing: 0.11em;
+	font-style: italic;
+	float: left;
+	width: 800px;
+	
+
+}
+form.authorizaion input[type=text], form.authorizaion input[type=password]{
+	width: 100px;
+	background: #eee;
+	color: #333;
+	padding: 1px 6px;
+	font-size: 11px;
+	letter-spacing: 0.11em;
+	font-style: italic;
+	border: 1px solid #999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+form.authorizaion label{margin:0 5px 0 10px;}
+form.authorizaion input[type=text]{width: 150px;}
+form.authorizaion input[type=password]{width: 30px;}
+form.authorizaion input[type=submit]{
+	font-size: 11px;
+	letter-spacing: 0.11em;
+	width: 50px;
+	margin-left: 20px;
+}
+#myClock{
+	position: absolute;
+	top: 45px;
+	left: 875px;
+	width: 45px;
+	font-size: 11px;
+	letter-spacing: 0.11em;
+}
