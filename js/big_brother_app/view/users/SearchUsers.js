@@ -22,40 +22,29 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 			items: [{
 				columnWidth: .75,
 				xtype: 'form',
+				layout: 'hbox',
 				frame:true,
 				title: 'Быстрый поиск',
 				bodyStyle:'padding:5px 5px 0',
 				fieldDefaults: {
 					msgTarget: 'side',
-					labelWidth: 75
+					labelWidth: 150
 				},
 				defaultType: 'textfield',
 				defaults: {
 					anchor: '50%'
 				},
 				items: [{
-					fieldLabel: 'First Name',
-					name: 'first',
-					allowBlank:false
+					emptyText: 'Ключевое слово для поиска',
+					name: 'content',
+					allowBlank:false,
+					width: 400
 				},{
-					fieldLabel: 'Last Name',
-					name: 'last'
-				}],
-				keys: [
-				{
-					key: [Ext.EventObject.ENTER], 
-					handler: function() {
-						Ext.Msg.alert("Alert","Enter Key Event !");
-					}
-				}
-				],
-				buttons: [{
-					text: 'Save',
-					handler:function(){
-						Ext.Msg.alert("Alert","save!");
-					}
-				},{
-					text: 'Cancel'
+					xtype: 'button',
+					text: 'Найти',
+					action: 'send-search',
+					margins: '0 0 0 10',
+					width: 120
 				}]
 			 
 				
@@ -111,6 +100,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				columnWidth: .75,
 				xtype: 'form',
 				frame:false,
+				url:'asd.php',
 				title: 'Поиск по имени пользователя',
 				bodyStyle:'padding:5px 5px 0',
 				fieldDefaults: {
@@ -193,7 +183,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				title: 'Поиск по имени учетной записи',
 				bodyStyle:'padding:5px 5px 0',
 				
-				xtype:'panel',
+				xtype:'form',
 				layout: 'hbox',
 				align:'middle',
 				items:[{
