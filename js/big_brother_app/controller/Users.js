@@ -75,8 +75,11 @@ Ext.define('bb_cpanel.controller.Users', {
 	},
 	menuitem_handler: function(menuitem){
 		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(menuitem.action+'-form');
-		if(Ext.getCmp('id_SearchUsersPanel').collapsed)
-			Ext.getCmp('id_SearchUsersPanel').expand();
+		if(Ext.getCmp('id_SearchUsersPanel').collapsed){
+				Ext.getCmp('id_SearchUsersPanel').expand();
+				Ext.getCmp('aaa').focus(false, 700)
+					//textField.setFocus('', 10);
+		}
 	},
 	loadUsers: function(){
 		Ext.getStore('Users').load({
@@ -85,12 +88,13 @@ Ext.define('bb_cpanel.controller.Users', {
 	},
 	searchRequest: function(item){
 		//console.log(item.ownerCt.getForm().getValues())
-		var data = item.ownerCt.getForm().getValues();
-		data.action = item.ownerCt.ownerCt.id;
-		Ext.getStore('Users').load({
-			params: data
-			
-		});
+		if (item.ownerCt.getForm().isValid()){
+			var data = item.ownerCt.getForm().getValues();
+			data.action = item.ownerCt.ownerCt.id;
+			data.type = 's';
+			Ext.getCmp('userList').getStore().getProxy().extraParams = data
+			Ext.getStore('Users').load();
+		}
 	}
 	
 /*

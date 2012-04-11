@@ -24,23 +24,13 @@ class Search_users extends CI_Controller
 
 		$start = $this->input->post('start');
 		$limit = $this->input->post('limit');
-		if (
-				
-				$this->input->post('action') !== FALSE && //вызываемый метод
-				$this->input->post('content') !== FALSE && //данные для поиска
-				$this->input->post('type') !== FALSE  // тип передаваемых данных (строка, массив)
-		)
+		if ($this->input->post('action') !== FALSE && $this->input->post('content') !== FALSE && $this->input->post('type') !== FALSE)
 		{
 			$a = $this->input->post('action');
-			$p = $this->input->post('content');
-			$a = 'sblog';
+			$c = $this->input->post('content');
 			$t = $this->input->post('type'); //на данный момент не нужно
-			if ($a === 'sblog')
-				return $this->searchByLogin($p, $start, $limit);
-			elseif ($a === 'sbfio')
-			{
-				return $this->searchByLogin($p, $start, $limit);
-			}
+			if ($a === 'search-by-login-form')
+				return $this->searchUsers($a, $c, $t, $start, $limit);
 			else
 				return json_encode(array(
 							'success' => FALSE,
@@ -57,21 +47,34 @@ class Search_users extends CI_Controller
 			$content = $this->searchByLastEdit($start, $limit);
 		}
 	}
-
-	public function searchByLogin($login = '', $start = 0, $limit = 50)
+	public function searchUsers($action, $content, $type, $start = 0, $limit = 25)
 	{
-		$users = $this->Search_user_model->searchByLogin($login, $start, $limit);
+		if ($action === 'search-by-login-form')
+			$users = $this->Search_user_model->searchByLogin($content, $start, $limit);
+		elseif ($action === 'search-simple-form')
+			$users = $this->Search_user_model->searchSimple($content, $start, $limit);
+		elseif ($action === 'search-by-pass-form')
+			$users = $this->Search_user_model->searchByPass($content, $start, $limit);
+		elseif ($action === 'search-by-name-form')
+			$users = $this->Search_user_model->searchByName($content, $start, $limit);
+		elseif ($action === 'search-advanced-form')
+		{
+			//$users = $this->Search_user_model->searchByLogin($content, $start, $limit);
+		}
+		elseif ($action === 'search-by-ugroup-form')
+			$users = $this->Search_user_model->searchByGroup($content, $start, $limit);
+		
 		if ($users !== FALSE)
 			echo json_encode(array(
 				'success' => TRUE,
-				'totalCount' => $users[0],
-				'users' => $users[1]
+				'totalCount' => $users['num_rows'],
+				'users' => $users['users_array']
 			));
 		else
 			echo json_encode(array(
 				'success' => TRUE,
 				'totalCount' => 0,
-				'users' => FALSE
+				'users' => array()
 			));
 	}
 	

@@ -10,19 +10,19 @@ if (!defined('BASEPATH'))
  *  @description
  */
 
-class Search_user_model extends CI_Model
+class Search_user_model extends BB_Model
 {
 
 	public $table = '';
 	public $idkey = '';
-	public $table_sufics = '';
+	public $suffix = '';
 
 	function __construct()
 	{
 		parent::__construct();
-		$this->table = $this->db->dbprefix('accounts');
-		$this->idkey = 'id_accounts';
-		$this->table_sufics = '_accounts';
+		$this->table = $this->db->dbprefix($this->db_structure['accounts']['name']);
+		$this->idkey = 'id'.$this->db_structure['accounts']['suffix'];
+		$this->suffix = $this->db_structure['accounts']['suffix'];
 	}
 
 	public function index()
@@ -32,56 +32,62 @@ class Search_user_model extends CI_Model
 
 	public function searchByLogin($login, $start, $limit)
 	{
-		$ts = $this->table_sufics;
-		//num rows
-		/*$this->db->select("COUNT(*) AS `total`");
-		$this->db->like("login$ts", $login);
-		$count = $this->db->get($this->table);
-		$total = $count->result_array();*/
-		$this->db->select("
-				id$ts AS id,
-				number_pass$ts AS pass_num,
-				login$ts AS login,
-				first_name$ts AS f_name,
-				middle_name$ts AS m_name,
-				last_name$ts AS l_name,
-				name_usergroup AS user_group,
-				account_note$ts AS note,
-				blocked$ts AS block
-			");
-		//TODO вынести все имена таблиц и суффиксы в CRUD
-		$this->db->like("login$ts", $login);
-		$this->db->join("ci_usergroups", "ci_usergroups.id_usergroup = $this->table.id_usergroup_accounts", "left");
-		
-		$this->db->limit($start, $limit);
-		
-		$query = $this->db->get($this->table);
 
+		$usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
+		$usergroup_s = $this->db_structure['usergroups']['suffix'];
+		$usergroup_i = 'id'.$this->db_structure['usergroups']['suffix'];
+		//num rows
+		$this->db->select("COUNT(`{$this->idkey}`) AS `total`");
+		$this->db->like("login{$this->suffix}", $login);
+		$count = $this->db->get($this->table);
+		$total = $count->result_array();
+		
+		$this->db->select("
+				id{$this->suffix} AS id,
+				number_pass{$this->suffix} AS pass_num,
+				login{$this->suffix} AS login,
+				first_name{$this->suffix} AS f_name,
+				middle_name{$this->suffix} AS m_name,
+				last_name{$this->suffix} AS l_name,
+				name{$usergroup_s} AS user_group,
+				account_note{$this->suffix} AS note,
+				blocked{$this->suffix} AS block
+			");
+		$this->db->like("login{$this->suffix}", $login);
+		$this->db->join($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$this->table}.id_usergroup{$this->suffix}", "left");
+		
+		$this->db->limit($limit, $start);
+		
+		$query = $this->db->from($this->table);
+		$query = $this->db->get();
 		return array(
-			0=>$this->db->count_all_results(),
-			1=>$query->result_array()
+			'num_rows'=>$total[0]['total'],
+			'users_array'=>$query->result_array()
 				);
 	}
 
 	public function searchByLastEdit($start, $limit)
 	{
 
-		$ts = $this->table_sufics;
+		$usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
+		$usergroup_s = $this->db_structure['usergroups']['suffix'];
+		$usergroup_i = 'id'.$this->db_structure['usergroups']['suffix'];
+		
 		$this->db->select("
-				id$ts AS id,
-				number_pass$ts AS pass_num,
-				login$ts AS login,
-				first_name$ts AS f_name,
-				middle_name$ts AS m_name,
-				last_name$ts AS l_name,
-				name_usergroup AS user_group,
-				account_note$ts AS note,
-				blocked$ts AS block
+				id{$this->suffix} AS id,
+				number_pass{$this->suffix} AS pass_num,
+				login{$this->suffix} AS login,
+				first_name{$this->suffix} AS f_name,
+				middle_name{$this->suffix} AS m_name,
+				last_name{$this->suffix} AS l_name,
+				name{$usergroup_s} AS user_group,
+				account_note{$this->suffix} AS note,
+				blocked{$this->suffix} AS block
 			");
 		//TODO вынести все имена таблиц и суффиксы в CRUD
 		$this->db->from($this->table);
-		$this->db->order_by("update_date_accounts", "desc"); 
-		$this->db->join("ci_usergroups", "ci_usergroups.id_usergroup = $this->table.id_usergroup_accounts", "left");
+		$this->db->order_by("update_date{$this->suffix}", "desc"); 
+		$this->db->join($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$this->table}.id_usergroup{$this->suffix}", "left");
 
 		$this->db->limit($limit, $start);
 		$query = $this->db->get();

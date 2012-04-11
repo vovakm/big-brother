@@ -22,6 +22,7 @@ Ext.define('bb_cpanel.view.users.List',{
 	title: 'Пользователи',
 	layout: 'fit',
 	forceFit: true,
+	id: 'userList',
 	store: 'Users',
 	iconCls: 'users',
 	closable: false,
@@ -35,7 +36,8 @@ Ext.define('bb_cpanel.view.users.List',{
 	},
 	columns: [{
 		header: 'ID',
-		dataIndex: 'id'
+		dataIndex: 'id',
+		hidden: true
 	},{
 		header: 'login',
 		dataIndex: 'login',

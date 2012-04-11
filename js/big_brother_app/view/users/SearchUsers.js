@@ -4,8 +4,6 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 	//itemId: 'id_SearchUsers',
 	id: 'id_SearchUsersPanel',
 	region: 'north',
-	//Ext.getCmp('id_SearchUsers').expand()
-
 	split: true,
 	collapsed: true,
 	collapsible: true,
@@ -23,7 +21,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				columnWidth: .75,
 				xtype: 'form',
 				layout: 'hbox',
-				frame:true,
+				frame:false,
 				title: 'Быстрый поиск',
 				bodyStyle:'padding:5px 5px 0',
 				fieldDefaults: {
@@ -38,7 +36,9 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 					emptyText: 'Ключевое слово для поиска',
 					name: 'content',
 					allowBlank:false,
-					width: 400
+					width: 400,
+					minLength: 2,
+					maxLength: 23
 				},{
 					xtype: 'button',
 					text: 'Найти',
@@ -60,12 +60,13 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 			items: [{
 				columnWidth: .75,
 				xtype: 'form',
+				//layout: 'hbox',
 				frame:false,
 				title: 'Расширенный поиск',
 				bodyStyle:'padding:5px 5px 0',
 				fieldDefaults: {
 					msgTarget: 'side',
-					labelWidth: 75
+					width: 300
 				},
 				defaultType: 'textfield',
 				defaults: {
@@ -73,12 +74,11 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				},
 
 				items: [{
-					fieldLabel: 'First Name',
-					name: 'first',
-					allowBlank:false
+					emptyText: 'Логин',
+					name: 'login',
 				},{
-					fieldLabel: 'Last Name',
-					name: 'last'
+					emptyText: 'группа',
+					name: 'group'
 				}],
 
 				buttons: [{
@@ -99,6 +99,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 			items: [{
 				columnWidth: .75,
 				xtype: 'form',
+				layout: 'hbox',
 				frame:false,
 				url:'asd.php',
 				title: 'Поиск по имени пользователя',
@@ -113,18 +114,19 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				},
 
 				items: [{
-					fieldLabel: 'First Name',
-					name: 'first',
-					allowBlank:false
+					emptyText: 'Имя пользователя',
+					name: 'content',
+					id: 'aaa',
+					allowBlank:false,
+					width: 400,
+					minLength: 4,
+					maxLength: 23
 				},{
-					fieldLabel: 'Last Name',
-					name: 'last'
-				}],
-
-				buttons: [{
-					text: 'Save'
-				},{
-					text: 'Cancel'
+					xtype: 'button',
+					text: 'Найти',
+					action: 'send-search',
+					margins: '0 0 0 10',
+					width: 120
 				}]
 				
 			},{
@@ -139,8 +141,8 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 			items: [{
 				columnWidth: .75,
 				xtype: 'form',
-				frame:false,
 				layout: 'hbox',
+				frame: false,
 				title: 'Поиск по группам',
 				bodyStyle:'padding:5px 5px 0',
 				fieldDefaults: {
@@ -153,20 +155,18 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				},
 
 				items: [{
-					fieldLabel: 'First Name',
-					name: 'first',
+					emptyText: 'Название группы',
+					name: 'ugroup',
 					allowBlank:false,
-					width: 150
+					width: 400,
+					minLength: 2,
+					maxLength: 7
 				},{
-					fieldLabel: 'Last Name',
-					name: 'last',
-					width: 150
-				}],
-
-				buttons: [{
-					text: 'Save'
-				},{
-					text: 'Cancel'
+					xtype: 'button',
+					text: 'Найти',
+					action: 'send-search',
+					margins: '0 0 0 10',
+					width: 120
 				}]
 				
 			},{
@@ -182,23 +182,24 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				columnWidth: .75,
 				title: 'Поиск по имени учетной записи',
 				bodyStyle:'padding:5px 5px 0',
-				
+				frame:false,
 				xtype:'form',
 				layout: 'hbox',
 				align:'middle',
 				items:[{
 					xtype:'textfield',
-					fieldLabel: 'Логин пользователя',
-					name: 'user_login',
-					msgTarget: 'under',
-					labelAlign: 'left',
-					labelWidth: 150,
+					emptyText: 'Логин пользователя',
+					name: 'content',
+					msgTarget: 'side',
 					width: 400,
-					allowBlank:false
+					allowBlank:false,
+					minLength: 2,
+					maxLength: 23
+					
 				},{
 					xtype: 'button',
 					text: 'Найти',
-					cls: 'searchUserBtn',
+					action: 'send-search',
 					margins: '0 0 0 10',
 					width: 120
 				}]
@@ -218,7 +219,8 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 			items: [{
 				columnWidth: 0.75,
 				xtype: 'form',
-				frame:false,
+				frame: false,
+				layout: 'hbox',
 				title: 'Поиск по номеру пропуска',
 				bodyStyle:'padding:5px 5px 0',
 				fieldDefaults: {
@@ -229,20 +231,22 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				defaults: {
 					anchor: '50%'
 				},
-
-				items: [{
-					fieldLabel: 'First Name',
-					name: 'first',
-					allowBlank:false
+				items:[{
+					xtype:'textfield',
+					emptyText: 'Номер пропуска',
+					name: 'content',
+					msgTarget: 'side',
+					labelAlign: 'left',
+					width: 400,
+					allowBlank:false,
+					minLength: 4,
+					maxLength: 7
 				},{
-					fieldLabel: 'Last Name',
-					name: 'last'
-				}],
-
-				buttons: [{
-					text: 'Save'
-				},{
-					text: 'Cancel'
+					xtype: 'button',
+					text: 'Найти',
+					action: 'send-search',
+					margins: '0 0 0 10',
+					width: 120
 				}]
 				
 			},{

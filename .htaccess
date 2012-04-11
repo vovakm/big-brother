@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 AddDefaultCharset UTF-8
 RewriteEngine on
 RewriteCond $1 !^(index\.php|robots\.txt|img|styles|js)
 RewriteRule ^(.*)$ /index.php?/$1 [L]
-=======
+
 AddDefaultCharset UTF-8
 RewriteEngine on
 RewriteCond $1 !^(index\.php|robots\.txt|img|styles|js)
 RewriteRule ^(.*)$ /index.php?/$1 [L]
->>>>>>> b62ec45af198c342f08c0e7cd5cfb6bed207def4
