@@ -9,12 +9,12 @@
 Ext.define('bb_cpanel.view.users.List',{
 	extend: 'Ext.grid.Panel',
 	alias: 'widget.userList',
-	flex: 0.7,
-	plugins: [
+	//flex: 0.7,
+	/*plugins: [
 	Ext.create('Ext.grid.plugin.RowEditing', {
 		clicksToEdit: 1
 	})
-	],
+	],*/
 	/*selModel: Ext.create('Ext.selection.CheckboxModel', {
         checkOnly: true
     }),*/

@@ -12,62 +12,57 @@ Ext.define('bb_cpanel.controller.Users', {
 	stores: ['Users'],
 	models: ['User'],
 	views: [
-	'users.List'
+	'users.List',
+	'users.EditUser'
 	],
 
 	init : function () {		
 		this.control({
-			'globalMenu button[action=search-simple]':{
-				click: this.search_simple
-			},
-			'globalMenu menuitem':{
+			'globalMenu menuitem':{ //клик на пункте меню
 				click: this.menuitem_handler
 			},
-			'viewport userList':{
-				afterrender: this.loadUsers
+			'viewport userList':{//загрузка таблици пользователей
+				afterrender: this.loadUsers,
+				beforeitemdblclick: this.dblclickItem
 			},
-			'SearchUsers textfield': { 
+			'SearchUsers textfield': { //поле поиска 
 				specialkey: function(field, e) { 
 					if(e.getKey() == e.ENTER) { 
 						this.searchRequest(field)
-					//						console.log(field.ownerCt);
-					//						console.log(field.value);
-					//						console.log(field.ownerCt.getForm().getValues())
-					//Ext.Msg.alert("Alert","Enter Key Event !");
-					//Ext.getCmp('search-by-name-form').items.items[0].getForm().submit()
 					} 
 				} 
 			},
-			'SearchUsers button[action=send-search]':{
+			'SearchUsers button[action=send-search]':{ // клик на кнопке поиска
 				click: function(button){
 					click: this.searchRequest(button)
 				}
+			},
+			'globalMenu #search-simple': { //быстрый поиск. полее ввода
+				specialkey: function(field, e) { 
+					if(e.getKey() == e.ENTER) { 
+						this.fastSearchRequest();
+					} 
+				} 
+			},
+			'globalMenu button[action=search-simple]':{ //быстрый поиск. клик кнопки
+				click: function(button){
+					click: this.fastSearchRequest();
+				}
+			},
+			'userList':{
+				
+				
+				
 			}
 
-
-			
-		/*,
-			'globalMenu menuitem[action=search-advanced]':{
-				click: this.search_advanced
-			},
-			'globalMenu menuitem[action=search-by-name]':{
-				click: this.search_by_name
-			},
-			'globalMenu menuitem[action=search-by-ugroup]':{
-				click: this.search_by_ugroup
-			},
-			'globalMenu menuitem[action=search-by-login]':{
-				click: this.search_by_login
-			},
-			'globalMenu menuitem[action=search-by-pass]':{
-				click: this.search_by_pass
-			},
-			'globalMenu menuitem[action=search-templates]':{
-				click: this.search_templates
-			}*/
-			
 		});
 	},
+	dblclickItem: function(grid, selected){
+		
+					console.log('asdasd');
+        var win = Ext.widget('user-window').show();
+        win.down('form').getForm().loadRecord(selected);
+    },
 	search_simple: function(button){
 		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(button.action+'-form');
 		if(Ext.getCmp('id_SearchUsersPanel').collapsed)
@@ -77,21 +72,28 @@ Ext.define('bb_cpanel.controller.Users', {
 		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(menuitem.action+'-form');
 		Ext.getCmp('id_SearchUsers').getLayout().getActiveItem().items.items[0].items.items[0].focus(false, 700)
 		if(Ext.getCmp('id_SearchUsersPanel').collapsed){
-				Ext.getCmp('id_SearchUsersPanel').expand();
-				//Ext.getCmp('aaa').focus(false, 700)
-					//textField.setFocus('', 10);
+			Ext.getCmp('id_SearchUsersPanel').expand();
+		//Ext.getCmp('aaa').focus(false, 700)
+		//textField.setFocus('', 10);
 		}
 	},
 	loadUsers: function(){
-		Ext.getStore('Users').load({
-			//params: 'action='+'sblog'+'&content='+'ko'+'&type='+'s'
-			});
+		Ext.getStore('Users').load();
 	},
 	searchRequest: function(item){
-		//console.log(item.ownerCt.getForm().getValues())
 		if (item.ownerCt.getForm().isValid()){
 			var data = item.ownerCt.getForm().getValues();
 			data.action = item.ownerCt.ownerCt.id;
+			data.type = 's';
+			Ext.getCmp('userList').getStore().getProxy().extraParams = data
+			Ext.getStore('Users').load();
+		}
+	},
+	fastSearchRequest: function(){
+		if (Ext.getCmp('search-simple').isValid()){
+			var data = new Object;
+			data.content = Ext.getCmp('search-simple').getValue();
+			data.action = 'search-simple-form';
 			data.type = 's';
 			Ext.getCmp('userList').getStore().getProxy().extraParams = data
 			Ext.getStore('Users').load();

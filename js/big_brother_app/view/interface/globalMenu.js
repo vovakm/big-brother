@@ -12,6 +12,16 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 		value: '<b>Control&nbsp;Panel</b>',
 		id: 'app-name'
 	},'-',{
+		height: 24,
+		emptyText: 'Ключевое слово для поиска',
+		name: 'content',
+		id: 'search-simple',
+		allowBlank:false,
+		width: 150,
+		xtype: 'textfield',
+		minLength: 2,
+		maxLength: 20
+	},{
 		height: 34,
 		text: 'Поиск',
 		iconCls: 'search-global',
@@ -24,15 +34,6 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 		},
 		menu : {
 			items: [{
-				text: 'Быстрый поиск',
-				iconCls: 'search-simple',
-				action: 'search-simple',
-				tooltip: {
-					html:'Поиск по номеру пропуска,<br> имени учетной записи', 
-					title:'Быстрый поиск',
-					trackMouse: true
-				}
-			}, {
 				iconCls: 'search-advanced',
 				action: 'search-advanced',		
 				text: 'Рассширенный поиск'//, handler: onItemClick
@@ -67,7 +68,12 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 			});
 		}
 	}
-	,/*'-',*/'->',/*'-',*/{
+	,/*'-',*/'->',
+	{
+		text: 'тыц',
+        url: 'mailto:vovakop@gmail.com',
+        tooltip: 'Предложения и замечания прошу отправлять на почту. <br/> vovakop@gmail.com'
+	},'-',{
 		height: 34,
 		text:'Мой профиль',
 		iconCls: 'my-account',

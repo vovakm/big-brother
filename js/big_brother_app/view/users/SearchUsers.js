@@ -1,7 +1,14 @@
+/* 
+ *  @author		Vladimir Kopot
+ *  @email		vovakop@gmail.com
+ *  @copyright	2012
+ *  @license	GNU/GPL
+ *  @description
+ */
+
 Ext.define('bb_cpanel.view.users.SearchUsers', {
 	extend: 'Ext.panel.Panel',
 	alias : 'widget.SearchUsers',
-	//itemId: 'id_SearchUsers',
 	id: 'id_SearchUsersPanel',
 	region: 'north',
 	split: true,
@@ -116,10 +123,9 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				items: [{
 					emptyText: 'Имя пользователя',
 					name: 'content',
-					id: 'aaa',
 					allowBlank:false,
 					width: 400,
-					minLength: 4,
+					minLength: 2,
 					maxLength: 23
 				},{
 					xtype: 'button',

@@ -35,3 +35,4 @@
 .information-ico   { background-image: url('/styles/img/icons/16/information.png') !important; }
 .settings-ico   { background-image: url('/styles/img/icons/16/setting_tools.png') !important; }
 
+#search-simple input { border-radius: 2px !important; }
