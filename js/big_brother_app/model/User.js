@@ -19,13 +19,7 @@ Ext.define('bb_cpanel.model.User',{
 		name: 'login',
 		type: 'string'
 	},{
-		name:'f_name',
-		type: 'string'
-	},{
-		name: 'm_name',
-		type: 'string'
-	},{
-		name: 'l_name',
+		name:'name',
 		type: 'string'
 	},{
 		name: 'user_group',

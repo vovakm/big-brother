@@ -18,12 +18,15 @@ Ext.define('bb_cpanel.controller.Users', {
 
 	init : function () {		
 		this.control({
-			'globalMenu menuitem':{ //клик на пункте меню
+			'globalMenu #SearchUserBtn menuitem':{ //клик на пункте меню
 				click: this.menuitem_handler
 			},
 			'viewport userList':{//загрузка таблици пользователей
 				afterrender: this.loadUsers,
 				beforeitemdblclick: this.dblclickItem
+			},
+			'user-window':{//загрузка таблици пользователей
+				afterrender: this.imageload
 			},
 			'SearchUsers textfield': { //поле поиска 
 				specialkey: function(field, e) { 
@@ -58,10 +61,12 @@ Ext.define('bb_cpanel.controller.Users', {
 		});
 	},
 	dblclickItem: function(grid, selected){
-		
-					console.log('asdasd');
         var win = Ext.widget('user-window').show();
         win.down('form').getForm().loadRecord(selected);
+    },
+	imageload: function(){
+		console.log(this);
+    
     },
 	search_simple: function(button){
 		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(button.action+'-form');

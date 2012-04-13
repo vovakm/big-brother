@@ -18,7 +18,12 @@
 .search-by-ugroup { background-image: url('/styles/img/icons/16/group.png') !important; }
 .search-by-login  { background-image: url('/styles/img/icons/16/key_l.png') !important; }
 .search-by-pass   { background-image: url('/styles/img/icons/16/textfield_rename.png') !important; }
-
+/*   statistic button */
+.stat-global	{ background-image: url('/styles/img/icons/16/diagramm.png') !important; }
+.stat-users		{ background-image: url('/styles/img/icons/16/user_astronaut.png') !important; }
+.stat-sites		{ background-image: url('/styles/img/icons/16/page_white_world.png') !important; }
+.stat-data		{ background-image: url('/styles/img/icons/16/traffic_usage.png') !important; }
+.stat-date		{ background-image: url('/styles/img/icons/16/date.png') !important; }
 
 .my-account   { background-image: url('/styles/img/icons/16/user_batman.png') !important; }
 .exit         { background-image: url('/styles/img/icons/16/door_out.png') !important; }

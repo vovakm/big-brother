@@ -68,7 +68,6 @@ class Search_user_model extends BB_Model
 
 	public function searchByLastEdit($start, $limit)
 	{
-
 		$usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
 		$usergroup_s = $this->db_structure['usergroups']['suffix'];
 		$usergroup_i = 'id' . $this->db_structure['usergroups']['suffix'];
@@ -77,9 +76,7 @@ class Search_user_model extends BB_Model
 				id{$this->suffix} AS id,
 				number_pass{$this->suffix} AS pass_num,
 				login{$this->suffix} AS login,
-				first_name{$this->suffix} AS f_name,
-				middle_name{$this->suffix} AS m_name,
-				last_name{$this->suffix} AS l_name,
+				CONCAT_WS(' ',`last_name{$this->suffix}` ,  `first_name{$this->suffix}` ,  `middle_name{$this->suffix}` ) AS name,
 				name{$usergroup_s} AS user_group,
 				account_note{$this->suffix} AS note,
 				blocked{$this->suffix} AS block
@@ -104,7 +101,6 @@ class Search_user_model extends BB_Model
 		$usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
 		$usergroup_s = $this->db_structure['usergroups']['suffix'];
 		$usergroup_i = 'id' . $this->db_structure['usergroups']['suffix'];
-
 
 		//WHERE
 		if ($action === 'search-by-login-form')
@@ -165,22 +161,21 @@ class Search_user_model extends BB_Model
 		}
 		elseif ($action === 'search-by-ugroup-form')
 		{
+
 			$this->db->select("COUNT(`{$this->idkey}`) AS `total`");
-			$this->db->or_like("name{$usergroup_s}", $content); // `name)_sergroup` LIKE '%somename%'
+			$this->db->like("name{$usergroup_s}", $content); // `name)_sergroup` LIKE '%somename%'
 			$this->db->join($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$this->table}.id_usergroup{$this->suffix}", "left"); //leftjoin with usergroup table
 			$count = $this->db->get($this->table);
 			$total = $count->result_array();
 			$total = $total[0]['total'];
-			$this->db->or_like("name{$usergroup_s}", $content); // `name)_sergroup` LIKE '%somename%'
+			$this->db->like("name{$usergroup_s}", $content); // `name)_sergroup` LIKE '%somename%'
 		}
 
 		$this->db->select("
 				id{$this->suffix} AS id,
 				number_pass{$this->suffix} AS pass_num,
 				login{$this->suffix} AS login,
-				first_name{$this->suffix} AS f_name,
-				middle_name{$this->suffix} AS m_name,
-				last_name{$this->suffix} AS l_name,
+				CONCAT_WS(' ',`last_name{$this->suffix}` ,  `first_name{$this->suffix}` ,  `middle_name{$this->suffix}` ) AS name,
 				name{$usergroup_s} AS user_group,
 				account_note{$this->suffix} AS note,
 				blocked{$this->suffix} AS block

@@ -24,11 +24,13 @@ class Search_users extends CI_Controller
 
 		$start = $this->input->post('start');
 		$limit = $this->input->post('limit');
+		
 		if ($this->input->post('action') !== FALSE && $this->input->post('content') !== FALSE && $this->input->post('type') !== FALSE)
 		{
 			$a = $this->input->post('action');
 			$c = $this->input->post('content');
 			$t = $this->input->post('type'); //на данный момент не нужно
+			
 			if ($a !== '')
 				return $this->searchUsers($a, $c, $t, $start, $limit);
 			else

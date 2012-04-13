@@ -17,7 +17,8 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 	title: 'Параметры поиска',
 	items: [{
 		region: 'center',
-		xtype: 'panel',		
+		xtype: 'panel',
+		height:100,
 		layout: 'card',
 		id: 'id_SearchUsers',
 		items:[{
@@ -66,6 +67,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 			layout: 'column',
 			items: [{
 				columnWidth: .75,
+		border: false,
 				xtype: 'form',
 				//layout: 'hbox',
 				frame:false,
@@ -162,7 +164,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 
 				items: [{
 					emptyText: 'Название группы',
-					name: 'ugroup',
+					name: 'content',
 					allowBlank:false,
 					width: 400,
 					minLength: 2,

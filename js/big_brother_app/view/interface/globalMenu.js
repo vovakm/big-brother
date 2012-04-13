@@ -26,6 +26,7 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 		text: 'Поиск',
 		iconCls: 'search-global',
 		action: 'search-simple',
+		id: 'SearchUserBtn',
 		xtype: 'splitbutton',
 		tooltip: {
 			text:'Выберите наиболее подходящий тип поиска', 
@@ -56,6 +57,7 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 			}]
 		}
 	},'-',{
+		//TODO придумсать что-то  с этой кнопкой
 		height: 34,
 		text: 'кнопка для которой<br/>еще не придуман функционал',
 		handler: function(){
@@ -67,11 +69,41 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 				width: 400
 			});
 		}
-	}
-	,/*'-',*/'->',
-	{
+	},'-',{
+		height: 34,
+		text: 'Статистика',
+		iconCls: 'stat-global',
+		//action: 'search-simple',
+		id: 'Statistic-mb',
+		xtype: 'splitbutton',
+		tooltip: {
+			text:'Выберите тип статистики', 
+			title:'Статистика использования сетевых ресурсов',
+			width: 300,
+			trackMouse: true
+		},
+		menu : {
+			items: [{
+				iconCls: 'stat-users',
+				action: 'stat-users',		
+				text: 'по Пользователям'
+			},{
+				iconCls: 'stat-sites',
+				action: 'stat-sites',
+				text: 'по Сайтам'
+			},{
+				iconCls: 'stat-data',
+				action: 'stat-data',
+				text: 'по Данным'
+			},{
+				iconCls: 'stat-date',
+				action: 'stat-date',
+				text: 'по Дням'
+			}]
+		}
+	},'->',{
 		text: 'тыц',
-        url: 'mailto:vovakop@gmail.com',
+//        url: 'mailto:vovakop@gmail.com',
         tooltip: 'Предложения и замечания прошу отправлять на почту. <br/> vovakop@gmail.com'
 	},'-',{
 		height: 34,

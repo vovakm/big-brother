@@ -39,14 +39,14 @@ Ext.define('bb_cpanel.view.users.List',{
 		dataIndex: 'id',
 		hidden: true
 	},{
-		header: 'login',
+		header: 'Имя пользователя',
 		dataIndex: 'login',
 		editor: {
 			xtype: 'textfield',
 			allowBlank: false
 		}
 	},{
-		header: 'pass_num',
+		header: 'Номер пропуска',
 		dataIndex: 'pass_num',
 		width: 30,
 		editor: {
@@ -55,22 +55,29 @@ Ext.define('bb_cpanel.view.users.List',{
 			allowBlank: false
 		}
 	},{
-		header: 'l_name',
-		dataIndex: 'l_name',
+		header: 'Имя студента',
+		dataIndex: 'name',
 		editor: {
 			xtype: 'textfield',
 			allowBlank: false
 		}
 	},{
-		header: 'block',
+		header: 'Группа студента',
+		dataIndex: 'user_group',
+		editor: {
+			xtype: 'textfield',
+			allowBlank: false
+		}
+	},{
+		header: 'Блокировка',
 		dataIndex: 'block',
 		width: 30,
 		renderer: function(val){
 			return (val == '1') ? ('Да') : ('Нет');
 		},
 		editor: {
-                xtype: 'checkbox'
-            }
+			xtype: 'checkbox'
+		}
 	}]
 });
 
