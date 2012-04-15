@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyLogicWorkspace WorkspaceVersion="1.8" AnyLogicVersion="5.4.1.772">
+<Projects>
+<Item Name="12" Expanded="y">
+<Compatibility GenerateGetThis="n" DontGenerateToString="n" DontGenerateClone="n" GenerateGetOwnerForTimer="n"/>
+<OCLOptions/>
+<HLA/>
+<Packages>
+<Item Name="_12" Expanded="y">
+<ActiveObjectClasses>
+<Item Name="Main" Expanded="y">
+<Animations>
+<Item Name="animation" Expanded="y">
+<AnimationDiagram>
+<Area ID="1" Rect="-350 -330 850 400"/>
+<Slider Flags="6" Pen="no 0" Brush="no" ID="7" Name="slider" Rect="-120 140 180 170" VariableName="M" Font="Tahoma,12" Label="slider" MinValue="10" MaxValue="500"/>
+<Text ID="13" Name="text2" Rect="-110 130 81.1 147.1" Flags="28680" Pen="no 0" Brush="#000000" Font="Tahoma,12">
+<Text><![CDATA[Первая страна - Масса денег]]></Text></Text>
+<Text ID="12" Name="text1" Rect="250 140 265.8 156.4" Flags="28680" Pen="no 0" Brush="#000000" Font="Tahoma,12">
+<Text><![CDATA[12]]></Text>
+<TextExpr><![CDATA[Exchange2]]></TextExpr></Text>
+<Text ID="11" Name="text" Rect="220 140 237.4 156.4" Flags="28680" Pen="no 0" Brush="#000000" Font="Tahoma,12">
+<Text><![CDATA[1 :]]></Text></Text>
+<Rectangle ID="9" Name="rectangle5" Rect="30 -320 360 -150"/>
+<Rectangle ID="6" Name="rectangle3" Rect="30 -80 360 90"/>
+<Rectangle ID="5" Name="rectangle4" Rect="-320 -80 10 90"/>
+<Rectangle ID="3" Name="rectangle1" Rect="-320 -320 10 -150"/>
+</AnimationDiagram></Item>
+</Animations>
+<StructureDiagram>
+<ChartTimer ID="99" Name="MKurveDraw2" Excluded="y" Pos="-60 -170" NamePos="-50 -170" ExpireAtStartup="1" Timeout="0.01">
+<ExpiryAction><![CDATA[
+int i;
+RforMKurve2 = 0;
+MoneyMarket1.reset();
+
+for (i=0;i<40;i++){
+    RforMKurve2=RforMKurve2+0.05;
+    MKurve2 = 0.06*Yall1+4/RforMKurve2; 
+    MoneyMarket1.update();
+    }
+
+MKurveDraw1.reset();
+]]></ExpiryAction></ChartTimer>
+<ChartTimer ID="100" Name="MKurveReset2" Excluded="y" Pos="-60 -190" NamePos="-50 -190" Type="2" ExpireAtStartup="1" Timeout="0.1">
+<ExpiryAction><![CDATA[MKurveDraw2.action();]]></ExpiryAction></ChartTimer>
+<ChartTimer ID="72" Name="MKurveDraw1" Excluded="y" Pos="-330 -170" NamePos="-320 -170" ExpireAtStartup="1" Timeout="0.01">
+<ExpiryAction><![CDATA[
+int i;
+EXforMKurve = 0;
+EXRATE.reset();
+
+for (i=0;i<40;i++){
+    EXforMKurve=EXforMKurve+0.05;
+    EXKurve = 7*Rall1/EXforMKurve; 
+    EXRATE.update();
+    }
+
+MKurveDraw1.reset();
+]]></ExpiryAction></ChartTimer>
+<ChartTimer ID="73" Name="MKurveReset1" Excluded="y" Pos="-330 -190" NamePos="-320 -190" Type="2" ExpireAtStartup="1" Timeout="0.1">
+<ExpiryAction><![CDATA[MKurveDraw1.action();]]></ExpiryAction></ChartTimer>
+<ChartTimer ID="74" Name="MKurveDraw" Excluded="y" Pos="-190 -170" NamePos="-180 -170" ExpireAtStartup="1" Timeout="0.01">
+<ExpiryAction><![CDATA[
+int i;
+RforMKurve = 0;
+MoneyMarket.reset();
+
+for (i=0;i<40;i++){
+    RforMKurve=RforMKurve+0.05;
+    MKurve = 0.11*Yall+2.5/RforMKurve; 
+    MoneyMarket.update();
+    }
+
+MKurveDraw.reset();
+]]></ExpiryAction></ChartTimer>
+<ChartTimer ID="75" Name="MKurveReset" Excluded="y" Pos="-190 -190" NamePos="-180 -190" Type="2" ExpireAtStartup="1" Timeout="0.1">
+<ExpiryAction><![CDATA[MKurveDraw.action();]]></ExpiryAction></ChartTimer>
+<Variable ID="78" Name="Y1" Pos="590 -30" NamePos="600 -30">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="alfa1 * (E1 - Yall1)"/></Variable>
+<Variable ID="79" Name="Mreal1" Pos="760 330" NamePos="770 330">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="M1/P1"/></Variable>
+<Variable ID="80" Name="pin1" Pos="730 280" NamePos="740 280">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="0.01 * (M1/L1 - P1)"/></Variable>
+<Variable ID="81" Name="P1" Pos="700 240" NamePos="710 239.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[M/L]]></Value>
+<Equation Type="0" RightHandSide="pin1"/></Variable>
+<Variable ID="82" Name="M1" Pos="670 320" NamePos="680 319.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[50]]></Value>
+<Equation Type="1" RightHandSide="(0.03*Yall1+2/Rall)*P1"/></Variable>
+<Variable ID="83" Name="Rall1" Pos="460 350" NamePos="470 350">
+<VarType ScalarType="real"/>
+<Value><![CDATA[0.5]]></Value>
+<Equation Type="0" RightHandSide="R1"/></Variable>
+<Variable ID="84" Name="AP1" Pos="410 0" NamePos="420 0">
+<Comment><![CDATA[Автономное потребление]]></Comment>
+<VarType ScalarType="real"/>
+<Equation/></Variable>
+<Variable ID="85" Name="Yall1" Pos="660 30" NamePos="670 29.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[3]]></Value>
+<Equation Type="0" RightHandSide="Y1"/></Variable>
+<Variable ID="86" Name="T1" Pos="410 60" NamePos="420 59.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[15]]></Value>
+<Equation/></Variable>
+<Variable ID="87" Name="beta1" Pos="550 330" NamePos="560 330">
+<VarType ScalarType="real"/>
+<Value><![CDATA[0.05]]></Value>
+<Equation/></Variable>
+<Variable ID="88" Name="alfa1" Pos="630 -60" NamePos="640 -59.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[0.015]]></Value>
+<Equation/></Variable>
+<Variable ID="89" Name="R1" Pos="460 330" NamePos="470 330">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="beta1*(L1-M1/P1)"/></Variable>
+<Variable ID="90" Name="NX1" Pos="460 150" NamePos="470 150">
+<VarType ScalarType="real"/>
+<Value><![CDATA[0]]></Value>
+<Equation Type="1" RightHandSide="-((-0.015*(Yall-T))+ 0.012*(Yall1-T1) + 0.075*Exchange2*P1/P) / Exchange2"/></Variable>
+<Variable ID="91" Name="G1" Pos="460 120" NamePos="470 120">
+<VarType ScalarType="real"/>
+<Value><![CDATA[7]]></Value>
+<Equation/></Variable>
+<Variable ID="92" Name="I1" Pos="470 90" NamePos="480 90">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="4/Rall1 * 0.25*Yall1"/></Variable>
+<Variable ID="93" Name="C1" Pos="470 30" NamePos="480 30">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="AP1 + 0.25*(Yall1-T1)"/></Variable>
+<Variable ID="94" Name="E1" Pos="520 30" NamePos="520 9.9">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="C1 + I1 + G1 + NX1"/></Variable>
+<Variable ID="95" Name="L1" Pos="670 360" NamePos="680 359.9">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="(0.03*Yall1+2/Rall1)"/></Variable>
+<Variable ID="71" Name="Y" Pos="-10 -30" NamePos="0 -30">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="alfa * (E - Yall)"/></Variable>
+<Variable ID="27" Name="Mreal" Pos="160 330" NamePos="170 330">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="M/P"/></Variable>
+<Variable ID="30" Name="pin" Pos="130 280" NamePos="140 280">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="0.01 * (M/L - P)"/></Variable>
+<Variable ID="31" Name="Exchange2" Pos="310 120" NamePos="320 109.9">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="7*Rall1/Rall"/></Variable>
+<Variable ID="51" Name="P" Pos="100 240" NamePos="110 239.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[M/L]]></Value>
+<Equation Type="0" RightHandSide="pin"/></Variable>
+<Variable ID="52" Name="M" Pos="70 320" NamePos="80 319.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[150]]></Value>
+<Equation RightHandSide="0.1"/></Variable>
+<Variable ID="53" Name="Rall" Pos="-140 350" NamePos="-130 350">
+<VarType ScalarType="real"/>
+<Value><![CDATA[0.5]]></Value>
+<Equation Type="0" RightHandSide="R"/></Variable>
+<Variable ID="55" Name="AP" Pos="-190 0" NamePos="-180 0">
+<Comment><![CDATA[Автономное потребление]]></Comment>
+<VarType ScalarType="real"/>
+<Equation/></Variable>
+<Variable ID="56" Name="Yall" Pos="60 30" NamePos="70 29.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[25]]></Value>
+<Equation Type="0" RightHandSide="Y"/></Variable>
+<Variable ID="57" Name="T" Pos="-190 60" NamePos="-180 59.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[15]]></Value>
+<Equation/></Variable>
+<Variable ID="58" Name="beta" Pos="-50 330" NamePos="-40 330">
+<VarType ScalarType="real"/>
+<Value><![CDATA[0.05]]></Value>
+<Equation/></Variable>
+<Variable ID="59" Name="alfa" Pos="30 -60" NamePos="40 -59.9">
+<VarType ScalarType="real"/>
+<Value><![CDATA[0.015]]></Value>
+<Equation/></Variable>
+<Variable ID="60" Name="R" Pos="-140 330" NamePos="-130 330">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="beta*(L-M/P)"/></Variable>
+<Variable ID="63" Name="NX" Pos="-140 150" NamePos="-130 150">
+<VarType ScalarType="real"/>
+<Value><![CDATA[0]]></Value>
+<Equation Type="1" RightHandSide="(-0.015*(Yall-T))+ 0.012*(Yall1-T1) + 0.075*Exchange2*P1/P"/></Variable>
+<Variable ID="64" Name="G" Pos="-140 120" NamePos="-130 120">
+<VarType ScalarType="real"/>
+<Value><![CDATA[10]]></Value>
+<Equation/></Variable>
+<Variable ID="65" Name="I" Pos="-130 90" NamePos="-120 90">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="3/Rall * 0.115*Yall"/></Variable>
+<Variable ID="66" Name="C" Pos="-130 30" NamePos="-120 30">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="AP + 0.5*(Yall-T)"/></Variable>
+<Variable ID="67" Name="E" Pos="-80 30" NamePos="-80 9.9">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="C + I + G + NX"/></Variable>
+<Variable ID="68" Name="L" Pos="70 360" NamePos="80 359.9">
+<VarType ScalarType="real"/>
+<Equation Type="1" RightHandSide="(0.11*Yall+2.5/Rall)"/></Variable>
+<Object OriginOffset="25.5 15.5" Flags="10" ID="104" Name="chartTime3" Pos="250 -80" NamePos="217.5 -108.5" Type="com.xj.anylogic.lib.business_graphics_library.ChartTime">
+<Parameters>
+<Item Name="Placeholder" Value="animation.rectangle1"/>
+<Item Name="Data0" Value="Rall"/>
+<Item Name="LegendText0" Value="&quot;Процентная ставка страны 1&quot;"/>
+<Item Name="Data1" Value="Rall1"/>
+<Item Name="LegendText1" Value="&quot;Процентная ставка страны 2&quot;"/>
+</Parameters></Object>
+<Object OriginOffset="25.5 15.5" Flags="10" ID="101" Name="MoneyMarket1" Excluded="y" Pos="-30 -110" NamePos="-62.5 -138.5" Type="com.xj.anylogic.lib.business_graphics_library.XYChart">
+<Parameters>
+<Item Name="UpdateMode" Value="MANUAL - USE update FUNCTION"/>
+<Item Name="Placeholder" Value="animation.rectangle6"/>
+<Item Name="X0" Value="MKurve2"/>
+<Item Name="Y0" Value="RforMKurve2"/>
+<Item Name="LegendText0" Value="&quot;Кривая Спроса на деньги&quot;"/>
+<Item Name="YScaleType" Value="FIXED"/>
+<Item Name="YMaximum" Value="1.5"/>
+<Item Name="X1" Value="Mreal1"/>
+<Item Name="Y1" Value="RforMKurve2"/>
+<Item Name="LegendText1" Value="&quot;Кривая предложеения денег&quot;"/>
+<Item Name="XMaximum" Value="200"/>
+<Item Name="X2" Value="MKurve2"/>
+<Item Name="Y2" Value="Rall1"/>
+<Item Name="Color0" Value="BGBase.GREEN"/>
+<Item Name="Color2" Value="BGBase.BLUE"/>
+<Item Name="LegendText2" Value="&quot;Уровень ставки процента&quot;"/>
+<Item Name="YGridTextPosition" Value="RIGHT"/>
+</Parameters></Object>
+<Object OriginOffset="25.5 15.5" Flags="10" ID="98" Name="chartTime2" Pos="570 -120" NamePos="537.5 -148.5" Type="com.xj.anylogic.lib.business_graphics_library.ChartTime">
+<Parameters>
+<Item Name="Placeholder" Value="animation.rectangle5"/>
+<Item Name="Data0" Value="Exchange2"/>
+<Item Name="LegendText0" Value="&quot;Курс валюты&quot;"/>
+<Item Name="LegendText1" Value="&quot;Ставка процента 2&quot;"/>
+</Parameters></Object>
+<Object OriginOffset="25.5 15.5" Flags="10" ID="97" Name="chartTime1" Pos="460 -80" NamePos="427.5 -108.5" Type="com.xj.anylogic.lib.business_graphics_library.ChartTime">
+<Parameters>
+<Item Name="Placeholder" Value="animation.rectangle3"/>
+<Item Name="Data0" Value="Yall"/>
+<Item Name="Data1" Value="Yall1"/>
+<Item Name="LegendText0" Value="&quot;ВВП страны 1&quot;"/>
+<Item Name="LegendText1" Value="&quot;ВВП страны 2&quot;"/>
+</Parameters></Object>
+<Object OriginOffset="25.5 15.5" Flags="10" ID="76" Name="EXRATE" Excluded="y" Pos="-300 -110" NamePos="-332.5 -138.5" Type="com.xj.anylogic.lib.business_graphics_library.XYChart">
+<Parameters>
+<Item Name="UpdateMode" Value="MANUAL - USE update FUNCTION"/>
+<Item Name="Placeholder" Value="animation.rectangle1"/>
+<Item Name="X0" Value="EXKurve"/>
+<Item Name="Y0" Value="EXforMKurve"/>
+<Item Name="LegendText0" Value="&quot;Спрос на активы в валюте 1&quot;"/>
+<Item Name="YScaleType" Value="FIXED"/>
+<Item Name="YMaximum" Value="1.5"/>
+<Item Name="XScaleType" Value="FIXED"/>
+<Item Name="Y1" Value="Rall"/>
+<Item Name="LegendText1" Value="&quot;Ставка процента&quot;"/>
+<Item Name="Y2" Value="EXforMKurve"/>
+<Item Name="Color0" Value="BGBase.GREEN"/>
+<Item Name="LegendText2" Value="&quot;Курс валюты к первой стране&quot;"/>
+<Item Name="X1" Value="EXKurve"/>
+<Item Name="Color1" Value="BGBase.BLUE"/>
+<Item Name="XMaximum" Value="100"/>
+<Item Name="X2" Value="Exchange2"/>
+</Parameters></Object>
+<Object OriginOffset="25.5 15.5" Flags="10" ID="77" Name="MoneyMarket" Excluded="y" Pos="-160 -110" NamePos="-192.5 -138.5" Type="com.xj.anylogic.lib.business_graphics_library.XYChart">
+<Parameters>
+<Item Name="UpdateMode" Value="MANUAL - USE update FUNCTION"/>
+<Item Name="Placeholder" Value="animation.rectangle2"/>
+<Item Name="X0" Value="MKurve"/>
+<Item Name="Y0" Value="RforMKurve"/>
+<Item Name="LegendText0" Value="&quot;Кривая Спроса на деньги&quot;"/>
+<Item Name="YScaleType" Value="FIXED"/>
+<Item Name="YMaximum" Value="1.5"/>
+<Item Name="X1" Value="Mreal"/>
+<Item Name="Y1" Value="RforMKurve"/>
+<Item Name="LegendText1" Value="&quot;Кривая предложеения денег&quot;"/>
+<Item Name="XMaximum" Value="200"/>
+<Item Name="X2" Value="MKurve"/>
+<Item Name="Y2" Value="Rall"/>
+<Item Name="Color0" Value="BGBase.GREEN"/>
+<Item Name="Color2" Value="BGBase.BLUE"/>
+<Item Name="LegendText2" Value="&quot;Уровень ставки процента&quot;"/>
+<Item Name="YGridTextPosition" Value="RIGHT"/>
+</Parameters></Object>
+<Object OriginOffset="25.5 15.5" Flags="10" ID="96" Name="chartTime" Pos="360 -80" NamePos="327.5 -108.5" Type="com.xj.anylogic.lib.business_graphics_library.ChartTime">
+<Parameters>
+<Item Name="Placeholder" Value="animation.rectangle4"/>
+<Item Name="Data0" Value="NX"/>
+<Item Name="LegendText0" Value="&quot;Чситый экспорт страны 1&quot;"/>
+</Parameters></Object>
+<Bounds Flags="1" Pen="#808080 20" Brush="#000000" ID="1" Name="Main" Rect="0 0 400 200" NamePos="10 10"/>
+</StructureDiagram><Image/>
+<Parameters>
+<Item Name="MKurve"/>
+<Item Name="RforMKurve"/>
+<Item Name="EXforMKurve"/>
+<Item Name="EXKurve"/>
+<Item Name="RforMKurve2"/>
+<Item Name="MKurve2"/>
+</Parameters></Item>
+</ActiveObjectClasses></Item>
+</Packages></Item>
+</Projects>
+<Experiments>
+<SimulationExperiments>
+<Item Name="Simulation" StopAtTime="0" Time="100" RootObject="_12.Main" Current="1" RealTimeMode="1">
+<Desktop xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">
+AAAAAPsBAAABAAAAAwAAAKkAAAABAAAAAQAAAP//AAASAENYSk1ESU1vbm9DaGlsZFduZAAA
+AAAAAAAAAQAAAJYBAAD//wAAEwBDTW9kZWxTdHJ1Y3R1cmVWaWV3AwAAAARyb290AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAAAAAAwAAAP//////////9v///+D///9L
+AAAASwAAAF8EAADBAgAAAQAAAGQAAAABAAAAngAAAAEAAAABAAAA//8AABIAQ1hKTURJTW9u
+b0NoaWxkV25kAAAAAAAAAAABAAAAkgEAAP//AAAQAENNb2RlbE9iamVjdFZpZXcDAAAABHJv
+b3QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAADAAAA///////////2
+////4P///68AAACvAAAA4AMAADsCAAAAAAAAoAAAAAEAAAABAAAA//8AABIAQ1hKTURJTW9u
+b0NoaWxkV25kAAAAAAAAAAABAAAAuwEAAP//AAAOAENBbmltYXRpb25WaWV3AwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAAAAAIAAAADAAAA///////////2////4P//
+/wAAAAAAAAAAFAQAAAADAAABAAAAZAAAAAAAAAA=</Desktop></Item>
+</SimulationExperiments></Experiments>
+<AnimatonSettings/>
+<EditorDesktop xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">
+AAAAALoBAAABAAAAAgAAANgAAAABAAAAAQAAAP//AAASAENYSk1ESU1vbm9DaGlsZFduZAAA
+AAAAAAAAAQAAAIoBAAD//wAAFQBDQW5pbWF0aW9uRGlhZ3JhbVZpZXcDAAAAH1xQcm9qZWN0
+c1wxMlxfMTJcTWFpblxhbmltYXRpb24AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LAAAAAAAAAADAAAA///////////2////4P///5YAAACWAAAApAEAACgCAAADAAAAAQAHAAAA
+ZAAAAAUEAAD5AwAAAAAAAAAAAADSAAAAAQAAAAEAAAD//wAAEgBDWEpNRElNb25vQ2hpbGRX
+bmQAAAAAAAAAAAEAAACGAQAA//8AABUAQ1N0cnVjdHVyZURpYWdyYW1WaWV3AwAAABVcUHJv
+amVjdHNcMTJcXzEyXE1haW4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAAAAAIA
+AAADAAAA///////////2////4P///zIAAAAyAAAAUwEAAL4BAAADAAAAAQBbAAAAZAAAAPoF
+AABrBAAAAAAAAAEAAAABAAAA</EditorDesktop>
+<ControlBars>
+<Editor PropertiesBarState="6"/>
+<Viewer/></ControlBars>
+</AnyLogicWorkspace>
