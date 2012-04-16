@@ -31,7 +31,7 @@ if (!function_exists('translit'))
 		'ы'=>'y',		'ъ'=>'',
 		
 		//smbols
-		'\''=>'',		'"'=>'',
+		'\''=>'',		'"'=>'',		' '=>'_',
     );
     return strtr($str,$tr);
 	}

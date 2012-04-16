@@ -9,14 +9,14 @@
 Ext.define('bb_cpanel.view.users.List',{
 	extend: 'Ext.grid.Panel',
 	alias: 'widget.userList',
-	//flex: 0.7,
-	/*plugins: [
+	
+	plugins: [
 	Ext.create('Ext.grid.plugin.RowEditing', {
 		clicksToEdit: 1
 	})
-	],*/
+	],
 	/*selModel: Ext.create('Ext.selection.CheckboxModel', {
-        checkOnly: true
+        checkOnly: false
     }),*/
 	region: 'center',
 	title: 'Пользователи',
@@ -37,7 +37,8 @@ Ext.define('bb_cpanel.view.users.List',{
 	columns: [{
 		header: 'ID',
 		dataIndex: 'id',
-		hidden: true
+		hidden: true,
+		hideable: false
 	},{
 		header: 'Имя пользователя',
 		dataIndex: 'login',
@@ -55,11 +56,18 @@ Ext.define('bb_cpanel.view.users.List',{
 			allowBlank: false
 		}
 	},{
-		header: 'Имя студента',
+		header: 'Ф. И. О.',
 		dataIndex: 'name',
 		editor: {
 			xtype: 'textfield',
 			allowBlank: false
+		}
+	},{
+		header: 'Пароль',
+		dataIndex: 'name',
+		editor: {
+		xtype: 'textfield',
+        inputType: 'password'
 		}
 	},{
 		header: 'Группа студента',
@@ -69,17 +77,27 @@ Ext.define('bb_cpanel.view.users.List',{
 			allowBlank: false
 		}
 	},{
+		header: 'День рождения',
+		dataIndex: 'bday',
+		xtype: 'datecolumn',
+		format: 'j M. Y',
+            editor: {
+                xtype: 'datefield',
+                allowBlank: false,
+                minValue: '01/01/1900',
+                minText: '',
+                maxValue: new Date()
+            }
+	},{
 		header: 'Блокировка',
 		dataIndex: 'block',
 		width: 30,
-		renderer: function(val){
-			return (val == '1') ? ('Да') : ('Нет');
-		},
-		editor: {
+//		renderer: function(val){
+//			return (val == '1') ? ('Да') : ('Нет');
+//		},
+			  xtype: 'checkcolumn'
+		/*editor: {
 			xtype: 'checkbox'
-		}
+		}*/
 	}]
 });
-
-
-

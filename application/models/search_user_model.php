@@ -46,12 +46,15 @@ class Search_user_model extends BB_Model
 				id{$this->suffix} AS id,
 				number_pass{$this->suffix} AS pass_num,
 				login{$this->suffix} AS login,
-				first_name{$this->suffix} AS f_name,
-				middle_name{$this->suffix} AS m_name,
-				last_name{$this->suffix} AS l_name,
+				first_name{$this->suffix} AS f_name, middle_name{$this->suffix} AS m_name, last_name{$this->suffix} AS l_name,
 				name{$usergroup_s} AS user_group,
 				account_note{$this->suffix} AS note,
-				blocked{$this->suffix} AS block
+				blocked{$this->suffix} AS block,
+				birthday_date{$this->suffix} AS bday,
+				create_date{$this->suffix} AS cday,
+				update_date{$this->suffix} AS uday,
+				deleted{$this->suffix} AS deleted,
+				internet_lock{$this->suffix} AS internet_lock
 			");
 		$this->db->like("login{$this->suffix}", $login);
 		$this->db->join($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$this->table}.id_usergroup{$this->suffix}", "left");
@@ -79,7 +82,12 @@ class Search_user_model extends BB_Model
 				CONCAT_WS(' ',`last_name{$this->suffix}` ,  `first_name{$this->suffix}` ,  `middle_name{$this->suffix}` ) AS name,
 				name{$usergroup_s} AS user_group,
 				account_note{$this->suffix} AS note,
-				blocked{$this->suffix} AS block
+				blocked{$this->suffix} AS block,
+				birthday_date{$this->suffix} AS bday,
+				create_date{$this->suffix} AS cday,
+				update_date{$this->suffix} AS uday,
+				deleted{$this->suffix} AS deleted,
+				internet_lock{$this->suffix} AS internet_lock
 			");
 		//TODO вынести все имена таблиц и суффиксы в CRUD
 		$this->db->from($this->table);

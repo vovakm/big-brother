@@ -27,14 +27,26 @@ Ext.define('bb_cpanel.model.User',{
 	},{
 		name: 'note',
 		type: 'string'
-	},
-
-	{
+	},{
 		name:'block',
+		type: 'boolean'
+	},{
+		name:'bday',
+		type: 'date', 
+		dateFormat: 'Y-m-d'
+	},{
+		name:'cday',
+		type: 'date'
+	},{
+		name:'uday',
+		type: 'date'
+	},{
+		name:'deleted',
+		type: 'int'
+	},{
+		name:'internet_lock',
 		type: 'int'
 	}
 	]
 });
-
-
 

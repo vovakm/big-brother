@@ -5,6 +5,10 @@
  *  @license	GNU/GPL
  *  @description
  */
+Ext.require([
+
+    'Ext.ux.CheckColumn'
+]);
 
 Ext.define('bb_cpanel.controller.Users', {
 	extend: 'Ext.app.Controller',

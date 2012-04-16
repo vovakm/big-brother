@@ -21,6 +21,7 @@ Ext.application({
 	name: 'bb_cpanel',
 	version: '1.0',
 	enableQuickTips: true,
+	timeout: 120000, //2 minutes
 	appFolder: '/js/big_brother_app', 
 	autoCreateViewport: false,
 	historyTokenDelimiter: ':',

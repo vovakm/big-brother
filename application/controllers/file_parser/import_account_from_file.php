@@ -50,12 +50,14 @@ class Import_account_from_file extends CI_Controller
 				$m_name = $fields[3]; //Отчество
 
 				if (function_exists('date_parse_from_format'))
+				{
 					$bdate = date_parse_from_format("d.m.Y", $fields[4]); //парсинг строки даты  в массив
+					$bdate = $bdate['year'] . '-' . $bdate['month'] . '-' . $bdate['day']; //собираем строку даты для MySQL
+				}
 				else
-					$bdate = substr($fields[4], 6, 4) . "-" . substr($fields[4], 0, 2) . "-" . substr($fields[4], 3, 2);
+					$bdate = substr($fields[4], 6, 4) . "-" . substr($fields[4], 3, 2) . "-" . substr($fields[4], 0, 2);
 
 
-				$bdate = $bdate['year'] . '-' . $bdate['month'] . '-' . $bdate['day']; //собираем строку даты для MySQL
 				$login = $this->generateLogin($l_name, $f_name, $m_name); // генерируем логин пользователя
 				$photo_file_name = explode('\\', $fields[6]); //разбираем строку пути к файлу
 				$image = $this->getImage(end($photo_file_name), 'tmp/accounts/fileToparselegend/Fotos/'); //получаем контент файла картинки
