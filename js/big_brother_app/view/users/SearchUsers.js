@@ -84,7 +84,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 
 				items: [{
 					emptyText: 'Логин',
-					name: 'login',
+					name: 'login'
 				},{
 					emptyText: 'группа',
 					name: 'group'

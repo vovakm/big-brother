@@ -84,7 +84,6 @@ class Search_user_model extends BB_Model
 				account_note{$this->suffix} AS note,
 				blocked{$this->suffix} AS block,
 				birthday_date{$this->suffix} AS bday,
-				create_date{$this->suffix} AS cday,
 				update_date{$this->suffix} AS uday,
 				deleted{$this->suffix} AS deleted,
 				internet_lock{$this->suffix} AS internet_lock
@@ -186,7 +185,11 @@ class Search_user_model extends BB_Model
 				CONCAT_WS(' ',`last_name{$this->suffix}` ,  `first_name{$this->suffix}` ,  `middle_name{$this->suffix}` ) AS name,
 				name{$usergroup_s} AS user_group,
 				account_note{$this->suffix} AS note,
-				blocked{$this->suffix} AS block
+				blocked{$this->suffix} AS block,
+				birthday_date{$this->suffix} AS bday,
+				update_date{$this->suffix} AS uday,
+				deleted{$this->suffix} AS deleted,
+				internet_lock{$this->suffix} AS internet_lock
 			");
 		$this->db->from($this->table); //selected table
 		$this->db->order_by("update_date{$this->suffix}", "desc"); //ordering by last edit

@@ -5,20 +5,13 @@
  *  @license	GNU/GPL
  *  @description
  */
-Ext.require([
-
-    'Ext.ux.CheckColumn'
-]);
 
 Ext.define('bb_cpanel.controller.Users', {
 	extend: 'Ext.app.Controller',
-
+	//controllers:['EditUser'],
 	stores: ['Users'],
 	models: ['User'],
-	views: [
-	'users.List',
-	'users.EditUser'
-	],
+	views: ['users.List','users.EditUser'],
 
 	init : function () {		
 		this.control({
@@ -29,9 +22,9 @@ Ext.define('bb_cpanel.controller.Users', {
 				afterrender: this.loadUsers,
 				beforeitemdblclick: this.dblclickItem
 			},
-			'user-window':{//загрузка таблици пользователей
+			/*'user-window':{//загрузка таблици пользователей
 				afterrender: this.imageload
-			},
+			},*/
 			'SearchUsers textfield': { //поле поиска 
 				specialkey: function(field, e) { 
 					if(e.getKey() == e.ENTER) { 
@@ -65,12 +58,20 @@ Ext.define('bb_cpanel.controller.Users', {
 		});
 	},
 	dblclickItem: function(grid, selected){
-        var win = Ext.widget('user-window').show();
-        win.down('form').getForm().loadRecord(selected);
-    },
+		
+		console.log('t');
+		var win = Ext.widget('EditUser').show();
+		win.down('form').getForm().loadRecord(selected);
+	},
 	imageload: function(){
 		console.log(this);
-    
+		//return '<img src="http://placehold.it/255x150">';
+		//var photo = Ext.get('simg');
+		//photo.dom.attributes['src'].value="http://placehold.it/55x50";
+		//photo.dom.attributes['src'].value="http://placehold.it/55x50";
+
+		//console.log(Ext.get('simg'));
+		//Ext.get('simg').dom.src ='http://placehold.it/55x50';
     },
 	search_simple: function(button){
 		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(button.action+'-form');
@@ -82,8 +83,6 @@ Ext.define('bb_cpanel.controller.Users', {
 		Ext.getCmp('id_SearchUsers').getLayout().getActiveItem().items.items[0].items.items[0].focus(false, 700)
 		if(Ext.getCmp('id_SearchUsersPanel').collapsed){
 			Ext.getCmp('id_SearchUsersPanel').expand();
-		//Ext.getCmp('aaa').focus(false, 700)
-		//textField.setFocus('', 10);
 		}
 	},
 	loadUsers: function(){
@@ -108,13 +107,4 @@ Ext.define('bb_cpanel.controller.Users', {
 			Ext.getStore('Users').load();
 		}
 	}
-	
-/*
-	params: {
-			action: 'sblog',
-			content: 'kot',
-			type: 's'
-		},
-	*/
-	
 });

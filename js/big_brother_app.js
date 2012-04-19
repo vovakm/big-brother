@@ -13,9 +13,6 @@ Ext.Loader.setConfig({
 		Ext: '/js/ext-4.0.7-gpl/src'
 	}
 });
-
-//Ext.require(["bb_cpanel.view.globalMenu"]);
-//Ext.require(["bb_cpanel.controller.Main"]);
 Ext.application({
 	enabled: true,
 	name: 'bb_cpanel',
@@ -39,6 +36,7 @@ Ext.application({
 	'Main',
 	//'Login',
 	'Users',
+	'EditUser',
 	'SearchUsers'
 	//'Pages',
 	//'Proxies',

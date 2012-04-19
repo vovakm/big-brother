@@ -35,9 +35,6 @@ Ext.define('bb_cpanel.model.User',{
 		type: 'date', 
 		dateFormat: 'Y-m-d'
 	},{
-		name:'cday',
-		type: 'date'
-	},{
 		name:'uday',
 		type: 'date'
 	},{
@@ -46,6 +43,9 @@ Ext.define('bb_cpanel.model.User',{
 	},{
 		name:'internet_lock',
 		type: 'int'
+	},{
+		name:'password',
+		type: 'string'
 	}
 	]
 });
