@@ -8,11 +8,9 @@
 
 Ext.define('bb_cpanel.controller.Users', {
 	extend: 'Ext.app.Controller',
-	//controllers:['EditUser'],
 	stores: ['Users'],
 	models: ['User'],
-	views: ['users.List','users.EditUser'],
-
+	views: ['users.List'],
 	init : function () {		
 		this.control({
 			'globalMenu #SearchUserBtn menuitem':{ //клик на пункте меню
@@ -22,14 +20,10 @@ Ext.define('bb_cpanel.controller.Users', {
 				afterrender: this.loadUsers,
 				beforeitemdblclick: this.dblclickItem
 			},
-			/*'user-window':{//загрузка таблици пользователей
-				afterrender: this.imageload
-			},*/
 			'SearchUsers textfield': { //поле поиска 
 				specialkey: function(field, e) { 
-					if(e.getKey() == e.ENTER) { 
-						this.searchRequest(field)
-					} 
+					if(e.getKey() == e.ENTER)
+						this.searchRequest(field) 
 				} 
 			},
 			'SearchUsers button[action=send-search]':{ // клик на кнопке поиска
@@ -39,9 +33,8 @@ Ext.define('bb_cpanel.controller.Users', {
 			},
 			'globalMenu #search-simple': { //быстрый поиск. полее ввода
 				specialkey: function(field, e) { 
-					if(e.getKey() == e.ENTER) { 
-						this.fastSearchRequest();
-					} 
+					if(e.getKey() == e.ENTER)  
+						this.fastSearchRequest(); 
 				} 
 			},
 			'globalMenu button[action=search-simple]':{ //быстрый поиск. клик кнопки
@@ -50,60 +43,55 @@ Ext.define('bb_cpanel.controller.Users', {
 				}
 			},
 			'userList':{
-				
-				
-				
-			}
+		}
 
 		});
 	},
 	dblclickItem: function(grid, selected){
-		
-		console.log('t');
-		var win = Ext.widget('EditUser').show();
-		win.down('form').getForm().loadRecord(selected);
+		console.log('edit_user_window');
+		Ext.getStore('EditUser').load();
+		var store = Ext.getStore('EditUser');
+		var win = Ext.widget('EditUser-window');
+		win.show();
+		win.down('form').getForm().loadRecord(store.data.items[0]);
 	},
 	imageload: function(){
 		console.log(this);
-		//return '<img src="http://placehold.it/255x150">';
-		//var photo = Ext.get('simg');
-		//photo.dom.attributes['src'].value="http://placehold.it/55x50";
-		//photo.dom.attributes['src'].value="http://placehold.it/55x50";
-
-		//console.log(Ext.get('simg'));
-		//Ext.get('simg').dom.src ='http://placehold.it/55x50';
-    },
+	},
 	search_simple: function(button){
+		Ext.getCmp('id-globalPanel').getLayout().setActiveItem('id-user-managment'); // перключились на отображение пользователей
 		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(button.action+'-form');
-		if(Ext.getCmp('id_SearchUsersPanel').collapsed)
-			Ext.getCmp('id_SearchUsersPanel').expand();
+		if(Ext.getCmp('id_SearchUsersPanel').collapsed) //свернутое?
+			Ext.getCmp('id_SearchUsersPanel').expand(); //развернем!
 	},
 	menuitem_handler: function(menuitem){
-		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(menuitem.action+'-form');
-		Ext.getCmp('id_SearchUsers').getLayout().getActiveItem().items.items[0].items.items[0].focus(false, 700)
-		if(Ext.getCmp('id_SearchUsersPanel').collapsed){
-			Ext.getCmp('id_SearchUsersPanel').expand();
-		}
+		Ext.getCmp('id-globalPanel').getLayout().setActiveItem('id-user-managment'); // перключились на отображение пользователей
+		Ext.getCmp('id_SearchUsers').getLayout().setActiveItem(menuitem.action+'-form'); //перевернули курту
+		Ext.getCmp('id_SearchUsers').getLayout().getActiveItem().items.items[0].items.items[0].focus(false, 700) //ставим фокус в поле ввода, после 0,7 секунд
+		if(Ext.getCmp('id_SearchUsersPanel').collapsed) //свернутое?
+			Ext.getCmp('id_SearchUsersPanel').expand(); //сим-сим.... откройся
 	},
 	loadUsers: function(){
 		Ext.getStore('Users').load();
 	},
 	searchRequest: function(item){
 		if (item.ownerCt.getForm().isValid()){
-			var data = item.ownerCt.getForm().getValues();
-			data.action = item.ownerCt.ownerCt.id;
-			data.type = 's';
-			Ext.getCmp('userList').getStore().getProxy().extraParams = data
-			Ext.getStore('Users').load();
+			Ext.getCmp('id-globalPanel').getLayout().setActiveItem('id-user-managment'); // перключились на отображение пользователей
+			var data = item.ownerCt.getForm().getValues(); // получили данные формф
+			data.action = item.ownerCt.ownerCt.id; //добавили параметр action и внесли значение типа поиска
+			data.type = 's'; //тип переменой - срока
+			Ext.getCmp('userList').getStore().getProxy().extraParams = data; // запульнули в стор новые параметры
+			Ext.getStore('Users').load(); //пуф! грузим!
 		}
 	},
 	fastSearchRequest: function(){
 		if (Ext.getCmp('search-simple').isValid()){
+			Ext.getCmp('id-globalPanel').getLayout().setActiveItem('id-user-managment'); // перключились на отображение пользователей
 			var data = new Object;
 			data.content = Ext.getCmp('search-simple').getValue();
 			data.action = 'search-simple-form';
 			data.type = 's';
-			Ext.getCmp('userList').getStore().getProxy().extraParams = data
+			Ext.getCmp('userList').getStore().getProxy().extraParams = data;
 			Ext.getStore('Users').load();
 		}
 	}

@@ -34,13 +34,11 @@ Ext.application({
 	},
 	controllers: [
 	'Main',
-	//'Login',
 	'Users',
 	'EditUser',
-	'SearchUsers'
+	'SearchUsers',
+	'Statistic'
 	//'Pages',
-	//'Proxies',
-	//'Reports'
 	],
 
 	launch: function() {

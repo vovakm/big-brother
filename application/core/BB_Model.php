@@ -55,7 +55,7 @@ class BB_Model extends CI_Model
 				),
 			'statuses' => array(
 				'name'		=> 'statuses',
-				'suffix'	=> '_statuse'
+				'suffix'	=> '_status'
 				),
 			'usergroups' => array(
 				'name'		=> 'usergroups',

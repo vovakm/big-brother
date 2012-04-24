@@ -27,7 +27,6 @@ class Users extends CI_Controller
 	public function logout()
 	{
 		$this->session->unset_userdata('userData');
-
 		redirect(base_url(), 'refresh');
 	}
 
@@ -38,10 +37,8 @@ class Users extends CI_Controller
 
 		$this->form_validation->set_rules($this->login_rules);
 		if ($this->form_validation->run() == FALSE)
-		{
 			//validation error. login and password fields are required
 			echo json_encode(array('status' => 'no', 'errorMsg' => printMessage('errorLoginValidation')));
-		}
 		else
 		{
 			$this->load->model('Authorization_model');
@@ -54,12 +51,27 @@ class Users extends CI_Controller
 			{
 				$this->session->set_userdata(array(
 					'userData' => $auth_result
-						)
-				);
+				));
 				echo json_encode(array('status' => 'ok', 'redirect' => base_url()));
 			}
 			else
 				echo json_encode(array('status' => 'no', 'errorMsg' => printMessage('accessToDatabaseDeny')));
+		}
+	}
+
+	public function getUserData()
+	{
+		//if ($this->input->post('action') == 'getUserData' && is_int($this->input->post('uid')))
+		{
+			$this->load->model('Users_model');
+			$user = $this->Users_model->getUserById(mt_rand(1, 15));
+			
+			echo json_encode(array(
+				'success' => TRUE,
+				'totalCount' => 1,
+				'user' => $user[0]
+			));
+			
 		}
 	}
 

@@ -6,22 +6,22 @@
  *  @description
  */
 
-Ext.define('bb_cpanel.store.combo.allUGroups',{
-	alias: 'widget.allUGroups-store',
+Ext.define('bb_cpanel.store.statistic.Stat_Users',{
+	alias: 'widget.stat-user-store',
 	extend: 'Ext.data.Store',
-	id: 'allUGroupsid',
-	model: 'bb_cpanel.model.combo.allUGroup',
+	model: 'bb_cpanel.model.statistic.Stat_Users',
 	autoLoad: false,
-	pageSize: 40,
+	pageSize: 50,
 	proxy:{
 		type: 'ajax',
-		url: 'combo/allUGroups',
+		url: 'statistic',
 		actionMethods:{
              method: 'post'
         },
 		reader:{
 			type: 'json',
-			root: 'groups',
+//			root: 'users',
+			totalProperty: 'totalCount',
 			successProperty: 'success'
 		}
 	}

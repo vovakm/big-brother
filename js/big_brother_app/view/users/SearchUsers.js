@@ -22,7 +22,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 		layout: 'card',
 		id: 'id_SearchUsers',
 		items:[{
-			xtype: 'panel',		
+			xtype: 'container',		
 			id: 'search-simple-form',
 			layout: 'column',
 			items: [{
@@ -62,7 +62,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				html: 'Content'
 			}]
 		},{
-			xtype: 'panel',		
+			xtype: 'container',		
 			id: 'search-advanced-form',
 			layout: 'column',
 			items: [{
@@ -102,7 +102,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				html: 'Content'
 			}]
 		},{
-			xtype: 'panel',		
+			xtype: 'container',		
 			id: 'search-by-name-form',
 			layout: 'column',
 			items: [{
@@ -143,7 +143,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				html: 'Content'
 			}]
 		},{
-			xtype: 'panel',		
+			xtype: 'container',		
 			id: 'search-by-ugroup-form',
 			layout: 'column',
 			items: [{
@@ -183,7 +183,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 				html: 'Content'
 			}]
 		},{
-			xtype: 'panel',		
+			xtype: 'container',		
 			id: 'search-by-login-form',
 			layout: 'column',
 			items: [{
@@ -221,7 +221,7 @@ Ext.define('bb_cpanel.view.users.SearchUsers', {
 		},
 		{
 
-			xtype: 'panel',		
+			xtype: 'container',		
 			id: 'search-by-pass-form',
 			layout: 'column',
 			items: [{

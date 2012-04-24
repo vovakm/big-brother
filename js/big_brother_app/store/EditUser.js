@@ -6,22 +6,22 @@
  *  @description
  */
 
-Ext.define('bb_cpanel.store.combo.allUGroups',{
-	alias: 'widget.allUGroups-store',
+Ext.define('bb_cpanel.store.EditUser',{
+	//alias: 'widget.EditUser-store',
 	extend: 'Ext.data.Store',
-	id: 'allUGroupsid',
-	model: 'bb_cpanel.model.combo.allUGroup',
+	model: 'bb_cpanel.model.EditUser',
 	autoLoad: false,
 	pageSize: 40,
 	proxy:{
 		type: 'ajax',
-		url: 'combo/allUGroups',
+		url: 'users/getUserData',
 		actionMethods:{
              method: 'post'
         },
 		reader:{
 			type: 'json',
-			root: 'groups',
+			root: 'user',
+			totalProperty: 'totalCount',
 			successProperty: 'success'
 		}
 	}

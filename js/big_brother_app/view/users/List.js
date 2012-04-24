@@ -9,7 +9,6 @@
 Ext.define('bb_cpanel.view.users.List',{
 	extend: 'Ext.grid.Panel',
 	alias: 'widget.userList',
-	
 //	plugins: [
 //	Ext.create('Ext.grid.plugin.RowEditing', {
 //		clicksToEdit: 1
@@ -42,6 +41,7 @@ Ext.define('bb_cpanel.view.users.List',{
 	},{
 		header: 'Имя пользователя',
 		dataIndex: 'login',
+		width: 100,
 		editor: {
 			xtype: 'textfield',
 			allowBlank: false
@@ -49,7 +49,7 @@ Ext.define('bb_cpanel.view.users.List',{
 	},{
 		header: 'Номер пропуска',
 		dataIndex: 'pass_num',
-		width: 30,
+		width: 60,
 		editor: {
 			xtype: 'numberfield',
 			minValue: 0,
@@ -58,6 +58,7 @@ Ext.define('bb_cpanel.view.users.List',{
 	},{
 		header: 'Ф. И. О.',
 		dataIndex: 'name',
+		width: 150,
 		editor: {
 			xtype: 'textfield',
 			allowBlank: false
@@ -79,6 +80,7 @@ Ext.define('bb_cpanel.view.users.List',{
 	},{
 		header: 'День рождения',
 		dataIndex: 'bday',
+		width: 60,
 		xtype: 'datecolumn',
 		format: 'd.m.Y'
 	//		,
@@ -92,7 +94,7 @@ Ext.define('bb_cpanel.view.users.List',{
 	},{
 		header: 'Блокировка',
 		dataIndex: 'block',
-		width: 30,
+		width: 60,
 		renderer: function(val){
 			return (val == '1') ? ('Да') : ('Нет');
 		},

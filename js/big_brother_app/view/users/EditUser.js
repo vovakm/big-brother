@@ -8,7 +8,8 @@
 
 Ext.define('bb_cpanel.view.users.EditUser',{
 	extend: 'Ext.window.Window',
-alias: 'widget.EditUser',
+	alias: 'widget.EditUser-window',
+	id: 'EditUser-window',
 	title: 'Редактирование пользователя',
 	autoHeight: true,
 	width: 600,
@@ -99,7 +100,7 @@ alias: 'widget.EditUser',
 								emptyText: 'Логин',
 								allowBlank: false
 							}, {
-								name: 'f_name',
+								name: 'password',
 								inputType: 'password',
 								fieldLabel: 'Пароль',
 								flex: 6,
@@ -131,25 +132,27 @@ alias: 'widget.EditUser',
 								emptyText: 'Номер пропуска',
 								allowBlank: false
 							}, {
-								name: 'ugroup',
 								fieldLabel: 'Группа',
+								//id: 'mmcombo',
 								flex: 5,
 								margins: '0 0 0 6',
-								
 								allowBlank: false,
-			
-				xtype: 'combobox',
-				hideTrigger:false,
-				typeAhead: true,
-				triggerAction: 'all',
-				selectOnTab: true,
-				store: Ext.getStore('allUGroups'),
-				
-				valueField:'name',
-				displayField:'name',
-				shadow:true,		
-				lazyRender: true,
-				listClass: 'x-combo-list-small'
+								name: 'user_group',
+								xtype: 'combo',
+								hideTrigger:true,
+								typeAhead: true,
+								triggerAction: 'all',
+								selectOnTab: true,
+								mode: 'local',
+								store: 'combo.allUGroups',
+								valueField:'id',
+								displayField:'name',
+								shadow:true,		
+								minChars: 1,
+								valueNotFoundText:"Не найдено",
+								lazyRender: true,
+								forceSelection:true,
+								listClass: 'x-combo-list-small'
 							}]
 						}]
 					}]
@@ -159,11 +162,11 @@ alias: 'widget.EditUser',
 
 					items: [{
 						fieldLabel: 'Home',
-						name: 'home',
-						value: '(888) 555-1212'
+						xtype: 'textfield',
+						name: 'shell'
 					},{
 						fieldLabel: 'Business',
-						name: 'business'
+						name: 'bday'
 					},{
 						fieldLabel: 'Mobile',
 						name: 'mobile'
@@ -199,81 +202,4 @@ alias: 'widget.EditUser',
 		};
 		this.callParent(arguments);
 	}
-/*initComponent: function(){
-		this.items = {
-			xtype: 'form',
-			frame: true,
-			items: [{
-				xtype: 'fieldset',
-				title: 'Настойки профиля',
-				items: [{
-					xtype: 'textfield',
-					fieldLabel: 'Email',
-					name: 'email'
-				},{
-					xtype: 'textfield',
-					fieldLabel: 'Имя',
-					name: 'name'
-				}]
-			},{
-				xtype: 'fieldset',
-				title: 'Состояние',
-				items: [{
-					xtype: 'textfield',
-					name: 'id',
-					hidden: true
-				},{
-					xtype: 'radiogroup',
-					fieldLabel: 'Статус',
-					columns: 1,
-					items: [{
-						boxLabel: 'admin',
-						inputValue: 'admin',
-						name: 'status'
-					},{
-						boxLabel: 'user',
-						inputValue: 'user',
-						name: 'status'
-					}]
-				},{
-					xtype: 'checkboxgroup',
-					columns: 1,
-					fieldLabel: 'Активный?',
-					items: [{
-						name: 'enabled',
-						inputValue: '1',
-						uncheckedValue: '0'
-					}]
-				}]
-			},{
-				xtype: 'fieldset',
-				title: this.passTitle,
-				checkboxToggle: this.passToggle,
-				collapsed: this.passToggle,
-				items: [{
-					xtype: 'textfield',
-					fieldLabel: 'Пароль',
-					name: 'password1'
-				},{
-					xtype: 'textfield',
-					fieldLabel: 'Повторите пароль',
-					name: 'password2'
-				},{
-					xtype: 'panel',
-					layout: 'fit',
-					items: [{
-						height: 100,
-						title: 'photo',
-						html: '<img id="simg" src="http://placehold.it/255x150" />'
-					}]
-				}]
-			}],
-			buttons:[{
-				text: 'Отправить',
-				action: 'saveUser',
-				formBind: true
-			}]
-		};
-		this.callParent(arguments);
-	}*/
 });
