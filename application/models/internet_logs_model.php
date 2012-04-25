@@ -78,16 +78,16 @@ class Internet_logs_model extends CI_Model
 	public function getSizeByHour($id_user, $day)
 	{
 		$query = $this->db->query("
-				SELECT ROUND(SUM(`transfer_size`)/1024/1024, 3) AS 'h_trafic' , HOUR(`event_time`) AS 'hour'
+				SELECT ROUND(SUM(`transfer_size_internet_log`)/1024/1024, 3) AS 'h_trafic' , HOUR(`event_time_internet_log`) AS 'hour'
 				FROM `ci_internet_logs`
-				WHERE `event_date` =  '$day' 
-				AND `id_user` = '$id_user'
-				 GROUP BY HOUR(`event_time`)
+				WHERE `event_date_internet_log` =  '$day'
+				AND `id_user_internet_log` = '$id_user'
+				 GROUP BY HOUR(`event_time_internet_log`)
 				");
 
+
 		$return = $query->result();
-		//echo $table;
-		
+
 		if (sizeof($return) == 0)
 			return FALSE;
 		else

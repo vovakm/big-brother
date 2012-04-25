@@ -285,24 +285,25 @@ class Logs extends CI_Controller
 		echo(json_encode(($stat)));
 	}
 
-	public function generateHourlyReport($id_user, $day)
+	public function generateHourlyReport($id_user = 0, $day = 0)
 	{
 		$this->load->model('Internet_logs_model');
-		$stat = $this->Internet_logs_model->getSizeByHour($id_user, $day);
+		$stat = $this->Internet_logs_model->getSizeByHour(1, '2011-09-05');
+		 print_r($stat);
 	}
 
 	public function getDataByUser()
 	{
 		$this->load->model('Internet_logs_model');
-		$this->load->model('Users_model');
+		//$this->load->model('Users_model');
 		if ($this->input->post('day') != '')
 			$day = $this->input->post('day');
 		if ($this->input->post('login') != '')
 			$login = $this->input->post('login');
 		$result = array();
 
-		$id_user = $this->Users_model->getUserByName($login);
-		$hours = $this->Internet_logs_model->getSizeByHour($id_user, $day);
+		//$id_user = $this->Users_model->getUserByName($login);
+		$hours = $this->Internet_logs_model->getSizeByHour(60174, '2011-09-05');
 		//print_r($hours);
 		
 		$max = 1;
@@ -311,10 +312,10 @@ class Logs extends CI_Controller
 				$max = $value->h_trafic;
 		foreach ($hours as $value)
 		{
-			//if ($value->h_trafic > (float)0.01)	
+			//if ($value->h_trafic > (float)0.01)
 			$result[] = array('hour' => $value->hour, 'trafic' => $value->h_trafic / $max);
 		}
-		echo json_encode($result);
+		echo json_encode($hours);
 	}
 
 	public function allTrffiAllUserDay()

@@ -10,7 +10,7 @@ Ext.define('bb_cpanel.store.statistic.Stat_Users',{
 	alias: 'widget.stat-user-store',
 	extend: 'Ext.data.Store',
 	model: 'bb_cpanel.model.statistic.Stat_User',
-	autoLoad: true,
+	autoLoad: false,
 	pageSize: 50,
 	proxy:{
 		type: 'ajax',
@@ -20,7 +20,7 @@ Ext.define('bb_cpanel.store.statistic.Stat_Users',{
         },
 		reader:{
 			type: 'json',
-//			root: 'users',
+			root: 'users',
 			totalProperty: 'totalCount',
 			successProperty: 'success'
 		}

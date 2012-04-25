@@ -12,8 +12,9 @@ Ext.define('bb_cpanel.view.statistic.itemslist.by_users', {
 	layout: 'fit',
 	items: [{
 		xtype: 'grid',
+        id: 'id-iUsers',
 		forceFit: true,	
-		store: Ext.getStore('statistic.stat-user-store'),
+		store: 'statistic.Stat_Users',
 		title: 'Пользователи',
 		columns: [{
 			header: 'uid',
@@ -44,9 +45,9 @@ Ext.define('bb_cpanel.view.statistic.itemslist.by_users', {
 			width: 80
 		},{
 			header: 'Последняя активность',
-			dataIndex: 'last_activity',
-			xtype: 'datecolumn',
-			format: 'H:i:s'
+			dataIndex: 'last_activity'
+//			xtype: 'datecolumn',
+//			format: 'H:i:s'
 		}]
 	}]
 

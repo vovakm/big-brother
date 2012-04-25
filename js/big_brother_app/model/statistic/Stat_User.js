@@ -28,11 +28,13 @@ Ext.define('bb_cpanel.model.statistic.Stat_User',{
 		//группа пользователя. Для тултипа
 		name: 'user_group',
 		type: 'string'
-	},{
-		//общий трафик за день
-		name:'daily_traffic',
-		type: 'float'
-	},{
+	},
+//	{
+//		//общий трафик за день
+//		name:'daily_traffic',
+//		type: 'float'
+//	},
+		{
 		//в какие часы была активность
 		name:'active_hours',
 		type: 'auto'

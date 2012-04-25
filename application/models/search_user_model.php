@@ -158,6 +158,7 @@ class Search_user_model extends BB_Model
 			$count = $this->db->get($this->table);
 			$total = $count->result_array();
 			$total = $total[0]['total'];
+
 			$this->db->like("last_name{$this->suffix}", $content); // `last_name` LIKE '%somename%' OR
 			$this->db->or_like("first_name{$this->suffix}", $content); // `first_name` LIKE '%somename% OR'
 			$this->db->or_like("middle_name{$this->suffix}", $content); // `middle_name` LIKE '%somename%'
@@ -194,7 +195,8 @@ class Search_user_model extends BB_Model
 		$this->db->from($this->table); //selected table
 		$this->db->order_by("update_date{$this->suffix}", "desc"); //ordering by last edit
 		$this->db->join($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$this->table}.id_usergroup{$this->suffix}", "left"); //leftjoin with usergroup table
-		$this->db->limit($limit, $start); // limiting 
+		$this->db->limit($limit, $start); // limiting
+		//print_r($this->db);
 		$query = $this->db->get(); //execute query
 
 		return array(
