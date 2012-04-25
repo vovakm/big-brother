@@ -9,8 +9,8 @@
 Ext.define('bb_cpanel.store.statistic.Stat_Users',{
 	alias: 'widget.stat-user-store',
 	extend: 'Ext.data.Store',
-	model: 'bb_cpanel.model.statistic.Stat_Users',
-	autoLoad: false,
+	model: 'bb_cpanel.model.statistic.Stat_User',
+	autoLoad: true,
 	pageSize: 50,
 	proxy:{
 		type: 'ajax',

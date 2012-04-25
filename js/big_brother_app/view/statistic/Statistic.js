@@ -10,13 +10,15 @@ Ext.define('bb_cpanel.view.statistic.Statistic', {
 	extend: 'Ext.panel.Panel',
 	alias : 'widget.statistic-layout',
 	id: 'id-statistic-layout',
-	region: 'center',
 	frame: true,
-	layout: 'vbox',
+	layout: {
+		type: 'vbox',
+		align: 'stretch',
+		pack: 'start'
+	},
 	items: [{
 		xtype: 'graphics-card'
 	},{
 		xtype: 'itemlist-card'
 	}]
-
 });

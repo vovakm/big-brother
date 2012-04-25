@@ -7,14 +7,12 @@
  */
 
 Ext.define('bb_cpanel.view.statistic.graphics.users_bars', {
-	extend: 'Ext.panel.Panel',
+	extend: 'Ext.container.Container',
 	alias : 'widget.gUsersBars',
-	frame: true,
 	layout: 'fit',
 	items: [{
 		title: 'graphics',
-		html: 'temp text',
-		frame: false
+		html: 'temp text'
 	}]
 
 });

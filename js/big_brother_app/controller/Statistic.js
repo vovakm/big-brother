@@ -13,9 +13,7 @@ Ext.define('bb_cpanel.controller.Statistic', {
 	views: [
 		'statistic.Statistic',
 		'statistic.GraphicsViews',
-		'statistic.ItemsViews',
-		'statistic.itemslist.users_bars',
-		'statistic.graphics.users_bars',
+		'statistic.ItemsViews'
 	],
 	init : function () {		
 		this.control({

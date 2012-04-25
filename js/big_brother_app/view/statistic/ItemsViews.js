@@ -7,11 +7,12 @@
  */
 
 Ext.define('bb_cpanel.view.statistic.ItemsViews', {
-	extend: 'Ext.panel.Panel',
+	extend: 'Ext.container.Container',
 	alias : 'widget.itemlist-card',
+	flex: 2,
 	layout: 'card',
 	items: [{
-		xtype: 'iUsersBars'
+		xtype: 'iUsers'
 	}]
 
 });

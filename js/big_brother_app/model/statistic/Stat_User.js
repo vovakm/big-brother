@@ -6,18 +6,22 @@
  *  @description
  */
 
-Ext.define('bb_cpanel.model.statistic.Stat_Users',{
+Ext.define('bb_cpanel.model.statistic.Stat_User',{
 	extend: 'Ext.data.Model',
 	fields: [{
+			//хм... правда?
 		name: 'id_user',
 		type: 'int'
 	},{
+		//номер пропуска
 		name: 'pass_num',
 		type: 'int'
 	},{
+		//логин. ORLY?
 		name: 'login',
 		type: 'string'
 	},{
+		//ФИО пользователя
 		name:'name',
 		type: 'string'
 	},{
@@ -25,22 +29,23 @@ Ext.define('bb_cpanel.model.statistic.Stat_Users',{
 		name: 'user_group',
 		type: 'string'
 	},{
-		name:'current_day',
-		type: 'date', 
-		dateFormat: 'Y-m-d'
-	},{
+		//общий трафик за день
 		name:'daily_traffic',
 		type: 'float'
 	},{
+		//в какие часы была активность
 		name:'active_hours',
 		type: 'auto'
 	},{
+		//трафик по часам
 		name:'hourly_traffic',
-		type: 'auto'
+		type: 'auto' //<- auto... может быть сотворит чудо
 	},{
-		name:'last_active_ip',
+		//IP с которого последний раз заходил пользователь
+		name:'last_active_ip', 
 		type: 'string'
 	},{
+		//время последней активности пользователя
 		name:'last_activity',
 		type: 'string',
 		dateFormat: 'H:i:s'

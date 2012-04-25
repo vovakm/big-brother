@@ -7,8 +7,10 @@
  */
 
 Ext.define('bb_cpanel.view.statistic.GraphicsViews', {
-	extend: 'Ext.panel.Panel',
+	extend: 'Ext.container.Container',
 	alias : 'widget.graphics-card',
+	flex: 3,
+	margins: '0 0 5 0',
 	layout: 'card',
 	items: [{
 		xtype: 'gUsersBars'

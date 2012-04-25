@@ -34,6 +34,7 @@ Ext.application({
 	},
 	controllers: [
 	'Main',
+	'statistic.by_users',
 	'Users',
 	'EditUser',
 	'SearchUsers',
