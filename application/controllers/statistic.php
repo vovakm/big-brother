@@ -16,7 +16,7 @@ class Statistic extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct ();
-		//$this->load->model('Search_user_model');
+		$this->load->model ('Statistic_model');
 	}
 
 	public function index()
@@ -30,6 +30,12 @@ class Statistic extends CI_Controller
 		{
 			$c = $this->input->post ('content');
 			$t = $this->input->post ('type'); //тип отображения статистики
+
+
+			if ( $t == 'users' )
+			{
+
+			}
 
 			if ( $c !== '' )
 				echo json_encode (
@@ -99,6 +105,30 @@ class Statistic extends CI_Controller
 					)
 				)
 			);
+		}
+	}
+
+	public function usersList( $day = '2011-09-01', $start = 0, $limit = 50 )
+	{
+		echo '<pre>';
+		//выборка за конкретный день
+		//список пользователей
+		//информация по каждому пользователю
+		$users = $this->Statistic_model->usersList ($day, $start, $limit);
+		if ( $users !== FALSE )
+		{
+
+//			foreach ( $users as $key => $value )
+//			{
+//			}
+		}
+		else
+		{
+			json_encode (array(
+				'success' => FALSE,
+				'error_code' => 'e1',
+				'msg' => printMessage ('e1')
+			));
 		}
 	}
 

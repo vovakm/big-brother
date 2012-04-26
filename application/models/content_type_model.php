@@ -7,19 +7,18 @@
 
 class Content_type_model extends MY_Model
 {
-
-	public $table_name = '';
-	public $table_id_field = '';
-	public $table_base_name = '';
+	public $table = '';
+	public $idkey = '';
+	public $suffix = '';
 
 	function __construct()
 	{
 		parent::__construct();
-		$this->table_base_name = 'content_type';
-		$this->table_name = $this->db->dbprefix($this->table_base_name);
-		$this->table_id_field = 'id_'.$this->table_base_name;
+		$this->table = $this->db->dbprefix($this->db_structure['content_types']['name']);
+		$this->idkey = 'id'.$this->db_structure['content_types']['suffix'];
+		$this->suffix = $this->db_structure['content_types']['suffix'];
 	}
 
-	
+
 }
 

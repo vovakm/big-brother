@@ -7,17 +7,17 @@
  */
 
 Ext.define('bb_cpanel.view.statistic.GraphicsViews', {
-    extend:'Ext.container.Container',
-    alias:'widget.graphics-card',
-    flex:3,
-    margins:'0 0 5 0',
-    layout:'card',
-    items:[
-{
-	xtype:'gUsersLines'
-},
+	extend:'Ext.container.Container',
+	alias:'widget.graphics-card',
+	flex:3,
+	margins:'0 0 5 0',
+	layout:'card',
+	items:[
 		{
-            xtype:'gUsersBars'
-        }
-    ]
+			xtype:'gUsersLines'
+		},
+		{
+			xtype:'gUsersBars'
+		}
+	]
 });

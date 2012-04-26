@@ -21,7 +21,7 @@ class Users_model extends BB_Model
 		$query = $this->db->query("
             SELECT `$this->idkey`
             FROM `$this->table`
-            WHERE `login_accounts` = '{$this->db->escape_str($name)}'
+            WHERE `login{$this->suffix}` = '{$this->db->escape_str($name)}'
 			LIMIT 1
         ");
 		$result = $query->row_array();

@@ -14,8 +14,9 @@ class Internet_logs_model extends CI_Model
 	function __construct()
 	{
 		parent::__construct();
-		$this->table = $this->db->dbprefix('internet_logs');
-		$this->idkey = 'id_log';
+		$this->table = $this->db->dbprefix ($this->db_structure['internet_logs']['name']);
+		$this->idkey = 'id' . $this->db_structure['internet_logs']['suffix'];
+		$this->suffix = $this->db_structure['internet_logs']['suffix'];
 	}
 
 	public function index()
@@ -41,12 +42,13 @@ class Internet_logs_model extends CI_Model
 
 	public function addNewLog($data)
 	{
+
 		return $query = $this->db->query("
 				INSERT INTO `$this->table` (
-				`id_log`, `event_date`, `event_time`, `duration`, 
-				`id_host_user`, `id_squid`, `id_http_code`, 
-				`transfer_size`, `id_http_method`, `url`, 
-				`id_user`, `id_squid_hierarchy`, `id_host_requested`, 
+				`id_log{$this->suffix}`, `event_date{$this->suffix}`, `event_time{$this->suffix}`, `duration{$this->suffix}`,
+				`id_host_user{$this->suffix}`, `id_squid{$this->suffix}`, `id_http_code{$this->suffix}`,
+				`transfer_size{$this->suffix}`, `id_http_method{$this->suffix}`, `url{$this->suffix}`,
+				`id_user{$this->suffix}`, `id_squid_hierarchy{$this->suffix}`, `id_host_requested{$this->suffix}`,
 				`id_content_type`, `log_source`, `md5`) 
 				VALUES (
 				NULL,'{$data['event_date']}','{$data['event_time']}','{$data['duration']}',

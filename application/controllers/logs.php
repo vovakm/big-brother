@@ -55,13 +55,15 @@ class Logs extends CI_Controller
 //7-miha_admin 
 //8-DEFAULT_PARENT/172.16.11.1 
 //9-text/html
-		//$this->load->model('Extend_dictionary_model');
-		$this->load->model('Content_type_model');
-		$this->load->model('Host_model');
-		$this->load->model('Http_code_model');
-		$this->load->model('Http_method_model');
-		$this->load->model('Squid_code_model');
-		$this->load->model('Squid_hierarchy_model');
+
+		$this->load->model(
+			'Content_type_model',
+			'Host_model',
+			'Http_code_model',
+			'Http_method_model',
+			'Squid_code_model',
+			'Squid_hierarchy_model'
+		);
 
 		// $dictionary = $this->Extend_dictionary_model->getAll();
 		$all_content_type = $this->Content_type_model->getAll();
@@ -86,8 +88,8 @@ class Logs extends CI_Controller
 			if (trim($data[0]) != '')
 			{
 
-				$data['event_date'] = date('Y-m-d', $data[0]);  //date:time
-				$data['event_time'] = date('H:i:s', $data[0]);  //date:time
+				$data['event_date'] = date('Y-m-d', $data[0]); //date:time
+				$data['event_time'] = date('H:i:s', $data[0]); //date:time
 			}
 			else
 				continue;
@@ -97,7 +99,7 @@ class Logs extends CI_Controller
 				$tmp_dictionary = $this->checkInDictionaryCache($all_host, trim($data[2])); // return FALSE if not found on array. return array (id item, line in array) 
 			else
 				$tmp_dictionary = FALSE;
-			if ($tmp_dictionary === FALSE || !isset($tmp_dictionary))//user ip
+			if ($tmp_dictionary === FALSE || !isset($tmp_dictionary)) //user ip
 				$data['id_host_user'] = $this->Host_model->getIdByIP(trim($data[2]));
 			else
 			{
@@ -212,7 +214,7 @@ class Logs extends CI_Controller
 
 
 			$data['id_log_source'] = 1; //$this->Extend_dictionary_model->getIdByName('access.log');
-			$data['md5'] = md5($data['event_time'] . $data['id_user'] . $data['url']);
+			$data['md5'] = md5($data['event_time'].$data['id_user'].$data['url']);
 
 //if (!$this->Internet_logs_model->findByHash($data['md5']))
 			{
@@ -228,9 +230,9 @@ class Logs extends CI_Controller
 		$this->Squid_hierarchy_model->updateHits($all_squid_hierarchy);
 
 
-		echo $k . '<br/>';
+		echo $k.'<br/>';
 		echo '--------------<br/>';
-		echo $i . '<br/>';
+		echo $i.'<br/>';
 
 		usleep(100);
 		if (!feof($handle))
@@ -238,7 +240,7 @@ class Logs extends CI_Controller
 			$seek = ftell($handle);
 			$this->Settings_model->setValueByName('parser_seek_access_file', $seek);
 			exit;
-			redirect(base_url() . current_url() . '?seek=' . $seek, 'refresh');
+			redirect(base_url().current_url().'?seek='.$seek, 'refresh');
 		}
 		else
 			echo 'done';
@@ -259,27 +261,7 @@ class Logs extends CI_Controller
 		if ($this->input->post('date') != '')
 			$day = $this->input->post('date');
 		$stat = $this->Internet_logs_model->getSizeByDay($day);
-		//echo '<pre>';
 		$result = array();
-		/* foreach ($stat as $key => $row)
-		  {
-		  //$stat[$key]->hours = $this->Internet_logs_model->getSizeByHour($row->id_user, $day);
-		  $stat[$key]->h_name = array();
-		  $stat[$key]->h_trafic = array();
-
-		  $hours = $this->Internet_logs_model->getSizeByHour($row->id_user, $day);
-		  foreach ($hours as $value)
-		  {
-		  array_push($stat[$key]->h_name, $value->hour);
-		  array_push($stat[$key]->h_trafic, $value->h_trafic);
-		  }
-
-		  //print_r($stat[$key]);
-		  //exit;
-		  //array_push($stat[$key], array('hours'=>($this->Internet_logs_model->getSizeByHour($row->id_user, $day))));
-		  //var_dump(json_encode(($row)));
-		  }
-		 */
 
 
 		echo(json_encode(($stat)));
@@ -289,23 +271,23 @@ class Logs extends CI_Controller
 	{
 		$this->load->model('Internet_logs_model');
 		$stat = $this->Internet_logs_model->getSizeByHour(1, '2011-09-05');
-		 print_r($stat);
+		print_r($stat);
 	}
 
 	public function getDataByUser()
 	{
 		$this->load->model('Internet_logs_model');
-		//$this->load->model('Users_model');
+
 		if ($this->input->post('day') != '')
 			$day = $this->input->post('day');
 		if ($this->input->post('login') != '')
 			$login = $this->input->post('login');
 		$result = array();
 
-		//$id_user = $this->Users_model->getUserByName($login);
+
 		$hours = $this->Internet_logs_model->getSizeByHour(60174, '2011-09-05');
 		//print_r($hours);
-		
+
 		$max = 1;
 		foreach ($hours as $value)
 			if ($value->h_trafic > $max)

@@ -8,36 +8,41 @@
 class Settings_model extends MY_Model
 {
 
-    public $table_name = '';
-    public $table_id_field = '';
-    public $table_base_name = '';
+	public $table = '';
+	public $idkey = '';
+	public $suffix = '';
 
-    function __construct()
-    {
-	parent::__construct();
-	$this->table_base_name = 'settings';
-	$this->table_name = $this->db->dbprefix($this->table_base_name);
-	$this->table_id_field = 'id_' . $this->table_base_name;
-    }
+	function __construct()
+	{
+		parent::__construct();
+		$this->table = $this->db->dbprefix($this->db_structure['settings']['name']);
+		$this->idkey = 'id'.$this->db_structure['settings']['suffix'];
+		$this->suffix = $this->db_structure['settings']['suffix'];
+	}
 
-    public function getValueByName($name)
-    {
-	$this->db->cache_off();
-	$query = $this->db->query("SELECT `value_{$this->table_base_name}` AS `value` FROM `{$this->table_name}` WHERE `name_{$this->table_base_name}` = '{$name}' LIMIT 1");
-	$return = $query->row_array();
-	$this->db->cache_on();
-	if (sizeof($return) == 0)
-	    return '0';
-	else
-	    return $return['value'];
-    }
+	public function getValueByName($name)
+	{
+		$this->db->cache_off();
+		$this->db->select("value{$this->suffix} AS value");
 
-    public function setValueByName($name, $value)
-    {
-	$sql = "UPDATE `{$this->table_name}` SET `value_{$this->table_base_name}` = '{$value}' WHERE `name_{$this->table_base_name}` = '{$name}'";
-	$this->db->query($sql);
-	return $this->db->insert_id();
-    }
+		$this->db->where("name{$this->suffix}", $name);
+		$this->db->from($this->table);
+		$query = $this->db->get();
+
+		$return = $query->row_array();
+		$this->db->cache_on();
+		if (sizeof($return) == 0)
+			return '0';
+		else
+			return $return['value'];
+	}
+
+	public function setValueByName($name, $value)
+	{
+		$sql = "UPDATE `{$this->table}` SET `value{$this->suffix}` = '{$value}' WHERE `name{$this->suffix}` = '{$name}'";
+		$this->db->query($sql);
+		return $this->db->insert_id();
+	}
 
 }
 

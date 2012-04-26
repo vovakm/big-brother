@@ -12,7 +12,7 @@ Ext.define('bb_cpanel.view.statistic.graphics.users_lines', {
     layout: 'fit',
     items: [{
         xtype: 'chart',
-        animate: false,
+        animate: true,
         store: 'statistic.graph-store',
         insetPadding: 30,
         axes: [{
