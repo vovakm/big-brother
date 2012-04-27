@@ -5,58 +5,64 @@
  * @license 	Apache/BSD-style open source license
  */
 
-class Host_model extends MY_Model
+class Host_model extends BB_Model
 {
+	public $table = '';
+	public $idkey = '';
+	public $suffix = '';
 
-    public $table_name = '';
-    public $table_id_field = '';
-    public $table_base_name = '';
+	function __construct()
+	{
+		parent::__construct();
+		$this->table = $this->db->dbprefix($this->db_structure['hosts']['name']);
+		$this->idkey = 'id'.$this->db_structure['hosts']['suffix'];
+		$this->suffix = $this->db_structure['hosts']['suffix'];
+	}
 
-    function __construct()
-    {
-	parent::__construct();
-	$this->table_base_name = 'host';
-	$this->table_name = $this->db->dbprefix($this->table_base_name);
-	$this->table_id_field = 'id_' . $this->table_base_name;
-	$this->table_ip_field = 'ip_address_' . $this->table_base_name;
-    }
 
-    public function getIdByIP($ip)
-    {
-	$this->db->cache_off();
-	$sql = "SELECT `{$this->table_id_field}` FROM `{$this->table_name}` WHERE `{$this->table_ip_field}` LIKE '{$ip}'";
-	$query = $this->db->query($sql);
-	$return = $query->row_array();
-	$this->db->cache_on();
-	if (sizeof($return) == 0)
-	    return $this->addNewIP($ip);
-	else
-	    return $return[$this->table_id_field];
-    }
+	public function getIdByIP($ip)
+	{
+		$this->db->cache_off();
+		$this->db->select($this->idkey);
+		$this->db->from($this->table);
+		$this->db->where('ip_address'.$this->suffix, $ip);
+		$query = $this->db->get();
+		$return = $query->row_array();
+		$this->db->cache_on();
+		if (sizeof($return) == 0)
+			return $this->addNewIP($ip);
+		else
+			return $return[$this->idkey];
+	}
 
-    public function addNewIP($ip)
-    {
-	$sql = "INSERT INTO `$this->table_name` (
-			`$this->table_id_field`, `{$this->table_ip_field}`, `name_{$this->table_base_name}`, `hit_{$this->table_base_name}`)
-			VALUES (
-			NULL,'{$ip}',  '', 0)";
-	$this->db->query($sql);
-	return $this->db->insert_id();
-    }
+	public function addNewIP($ip)
+	{
 
-    public function getAllIP($type_order = 'DESC')
-    {
-	$this->db->cache_off();
-	$query = $this->db->query("SELECT `id_{$this->table_base_name}` AS `id`, `{$this->table_ip_field}` AS `name`, `hit_{$this->table_base_name}` AS `hit`
-	FROM `{$this->table_name}`
-	ORDER BY `hit` $type_order");
-	$return = $query->result();
-	$this->db->cache_on();
-	if (sizeof($return) == 0)
-	    return FALSE;
-	else
-	    return $return;
-    }
+		$this->db->set('ip_address'.$this->suffix, $ip);
+		$this->db->set('name'.$this->suffix, '');
+		$this->db->set('hit'.$this->suffix, 1);
+		$this->db->insert($this->table);
+		return $this->db->insert_id();
+	}
+
+	public function getAllIP($type_order = 'DESC')
+	{
+		$this->db->cache_off();
+		$this->db->select("
+		$this->idkey AS id,
+		ip_address{$this->suffix} AS name,
+		hit{$this->suffix} AS hit
+		");
+		$this->db->from($this->table);
+		$this->db->order_by('hit'.$this->suffix, $type_order);
+		$query = $this->db->get();
+		$return = $query->result();
+		$this->db->cache_on();
+		if (sizeof($return) == 0)
+			return FALSE;
+		else
+			return $return;
+	}
 
 }
 

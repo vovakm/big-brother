@@ -18,13 +18,14 @@ class Users_model extends BB_Model
 
 	public function getUserByName($name)
 	{
-		$query = $this->db->query("
-            SELECT `$this->idkey`
-            FROM `$this->table`
-            WHERE `login{$this->suffix}` = '{$this->db->escape_str($name)}'
-			LIMIT 1
-        ");
+//		echo $name;
+		$this->db->select($this->idkey);
+		$this->db->from($this->table);
+		$this->db->like("login$this->suffix", $name);
+		$this->db->limit(1);
+		$query = $this->db->get();
 		$result = $query->row_array();
+//		var_dump($result[$this->idkey]);
 		if (sizeof($result) == 1)
 			return $result[$this->idkey];
 		else

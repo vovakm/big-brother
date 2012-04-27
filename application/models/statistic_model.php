@@ -1,6 +1,6 @@
 <?php
 
-if ( !defined ('BASEPATH') )
+if (!defined('BASEPATH'))
 	exit('No direct script access allowed');
 /*
  *  @author		Vladimir Kopot
@@ -19,29 +19,29 @@ class Statistic_model extends BB_Model
 
 	function __construct()
 	{
-		parent::__construct ();
-		$this->table = $this->db->dbprefix ($this->db_structure['internet_logs']['name']);
-		$this->idkey = 'id' . $this->db_structure['internet_logs']['suffix'];
+		parent::__construct();
+		$this->table = $this->db->dbprefix($this->db_structure['internet_logs']['name']);
+		$this->idkey = 'id'.$this->db_structure['internet_logs']['suffix'];
 		$this->suffix = $this->db_structure['internet_logs']['suffix'];
 	}
 
 	public function index()
 	{
-		hash ('sha512', 'test');
+		hash('sha512', 'test');
 
 	}
 
 
 	public function usersList($day, $start, $limit)
 	{
-		$account_t = $this->db->dbprefix ($this->db_structure['accounts']['name']);
+		$account_t = $this->db->dbprefix($this->db_structure['accounts']['name']);
 		$account_s = $this->db_structure['accounts']['suffix'];
-		$account_i = 'id' . $this->db_structure['accounts']['suffix'];
-		$usergroup_t = $this->db->dbprefix ($this->db_structure['usergroups']['name']);
+		$account_i = 'id'.$this->db_structure['accounts']['suffix'];
+		$usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
 		$usergroup_s = $this->db_structure['usergroups']['suffix'];
-		$usergroup_i = 'id' . $this->db_structure['usergroups']['suffix'];
+		$usergroup_i = 'id'.$this->db_structure['usergroups']['suffix'];
 
-		$this->db->select ("
+		$this->db->select("
 				id_user{$this->suffix} AS id_user,
 				number_pass{$account_s} AS pass_num,
 				login{$account_s} AS login,
@@ -49,55 +49,66 @@ class Statistic_model extends BB_Model
 				name{$usergroup_s} AS user_group,
 				SUM(transfer_size{$this->suffix}) AS daily_traffic
 			");
-		$this->db->join ($account_t, "{$account_t}.{$account_i} = {$this->table}.id_user{$this->suffix}", "left");
-		$this->db->join ($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$account_t}.id_usergroup{$account_s}", "left");
-		$this->db->like ("event_date{$this->suffix}", $day);
-		$this->db->limit ($limit, $start);
+		$this->db->join($account_t, "{$account_t}.{$account_i} = {$this->table}.id_user{$this->suffix}", "left");
+		$this->db->join($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$account_t}.id_usergroup{$account_s}", "left");
+		$this->db->like("event_date{$this->suffix}", $day);
+		$this->db->limit($limit, $start);
 		$this->db->group_by('id_user'.$this->suffix);
-		$this->db->order_by ('daily_traffic', 'desc');
-		$this->db->from ($this->table);
-		$query = $this->db->get ();
+		$this->db->order_by('daily_traffic', 'desc');
+		$this->db->from($this->table);
+		$query = $this->db->get();
+		return $query->result_array();
 
 	}
 
-
-	public function searchByLogin( $login, $start, $limit )
+	public function getUserLastActivityByDay($id_user, $day)
 	{
-
-		$usergroup_t = $this->db->dbprefix ($this->db_structure['usergroups']['name']);
-		$usergroup_s = $this->db_structure['usergroups']['suffix'];
-		$usergroup_i = 'id' . $this->db_structure['usergroups']['suffix'];
-		//num rows
-		$this->db->select ("COUNT(`{$this->idkey}`) AS `total`");
-		$this->db->like ("login{$this->suffix}", $login);
-		$count = $this->db->get ($this->table);
-		$total = $count->result_array ();
-
-		$this->db->select ("
-				id{$this->suffix} AS id,
-				number_pass{$this->suffix} AS pass_num,
-				login{$this->suffix} AS login,
-				first_name{$this->suffix} AS f_name, middle_name{$this->suffix} AS m_name, last_name{$this->suffix} AS l_name,
-				name{$usergroup_s} AS user_group,
-				account_note{$this->suffix} AS note,
-				blocked{$this->suffix} AS block,
-				birthday_date{$this->suffix} AS bday,
-				create_date{$this->suffix} AS cday,
-				update_date{$this->suffix} AS uday,
-				deleted{$this->suffix} AS deleted,
-				internet_lock{$this->suffix} AS internet_lock
-			");
-		$this->db->like ("login{$this->suffix}", $login);
-		$this->db->join ($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$this->table}.id_usergroup{$this->suffix}", "left");
-
-		$this->db->limit ($limit, $start);
-
-		$query = $this->db->from ($this->table);
-		$query = $this->db->get ();
-		return array(
-			'num_rows' => $total[0]['total'],
-			'users_array' => $query->result_array ()
-		);
+		$hosts_t = $this->db->dbprefix($this->db_structure['hosts']['name']);
+		$hosts_s = $this->db_structure['hosts']['suffix'];
+		$hosts_i = 'id'.$this->db_structure['hosts']['suffix'];
+		$this->db->select("
+				event_time{$this->suffix} AS last_activity,
+				ip_address{$hosts_s} AS last_active_ip
+		");
+		$this->db->from($this->table);
+		$this->db->join($hosts_t, "{$hosts_t}.{$hosts_i} = {$this->table}.id_host_user{$this->suffix}", 'left');
+		$this->db->where('event_date'.$this->suffix, $day);
+		$this->db->where('id_user'.$this->suffix, $id_user);
+		$this->db->order_by($this->idkey, $day);
+		$this->db->limit(1);
+		$query = $this->db->get();
+		//print_r($this->db);
+		return $query->row_array();
+//			SELECT *
+//			FROM  `ci_internet_logs`
+//			WHERE  `id_user_internet_log` = 3991
+//			AND  `event_date_internet_log` = '2011-09-01'
+//			ORDER BY  `id_internet_log` DESC
+//			LIMIT 1
 	}
+
+	public function getUserHourlyActivityByDay($id_user, $day)
+	{
+		$this->db->select("
+				SUM(transfer_size{$this->suffix}) AS traffic,
+				HOUR(event_time{$this->suffix}) AS hour
+		");
+		$this->db->from($this->table);
+		$this->db->where('event_date'.$this->suffix, $day);
+		$this->db->where('id_user'.$this->suffix, $id_user);
+		$this->db->group_by(array("HOUR(event_time{$this->suffix})", "id_user{$this->suffix}"));
+		$query = $this->db->get();
+
+//		print_r($this->db);
+		return $query->result_array();
+
+
+//				SELECT
+//				SUM(`transfer_size`) AS `sum`, HOUR(`event_time`) AS `hour`, `id_user`
+//				FROM `ci_internet_logs`
+//				WHERE `event_date` =  '$day'
+//				GROUP BY  HOUR(`event_time`), `id_user`
+	}
+
 
 }

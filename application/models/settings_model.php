@@ -5,7 +5,7 @@
  * @license 	Apache/BSD-style open source license
  */
 
-class Settings_model extends MY_Model
+class Settings_model extends BB_Model
 {
 
 	public $table = '';

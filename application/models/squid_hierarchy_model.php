@@ -5,19 +5,17 @@
  * @license 	Apache/BSD-style open source license
  */
 
-class Squid_hierarchy_model extends MY_Model
+class Squid_hierarchy_model extends BB_Model
 {
+	public $table = '';
+	public $idkey = '';
+	public $suffix = '';
 
-    public $table_name = '';
-    public $table_id_field = '';
-    public $table_base_name = '';
-
-    function __construct()
-    {
-	parent::__construct();
-	$this->table_base_name = 'squid_hierarchy';
-	$this->table_name = $this->db->dbprefix($this->table_base_name);
-	$this->table_id_field = 'id_' . $this->table_base_name;
-    }
-
+	function __construct()
+	{
+		parent::__construct();
+		$this->table = $this->db->dbprefix($this->db_structure['squid_hierarchy']['name']);
+		$this->idkey = 'id'.$this->db_structure['squid_hierarchy']['suffix'];
+		$this->suffix = $this->db_structure['squid_hierarchy']['suffix'];
+	}
 }

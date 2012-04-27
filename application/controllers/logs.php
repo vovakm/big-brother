@@ -56,15 +56,13 @@ class Logs extends CI_Controller
 //8-DEFAULT_PARENT/172.16.11.1 
 //9-text/html
 
-		$this->load->model(
-			'Content_type_model',
-			'Host_model',
-			'Http_code_model',
-			'Http_method_model',
-			'Squid_code_model',
-			'Squid_hierarchy_model'
-		);
 
+		$this->load->model('Content_type_model');
+		$this->load->model('Host_model');
+		$this->load->model('Http_code_model');
+		$this->load->model('Http_method_model');
+		$this->load->model('Squid_code_model');
+		$this->load->model('Squid_hierarchy_model');
 		// $dictionary = $this->Extend_dictionary_model->getAll();
 		$all_content_type = $this->Content_type_model->getAll();
 		$all_host = $this->Host_model->getAllIP();
@@ -72,14 +70,13 @@ class Logs extends CI_Controller
 		$all_http_method = $this->Http_method_model->getAll();
 		$all_squid_code = $this->Squid_code_model->getAll();
 		$all_squid_hierarchy = $this->Squid_hierarchy_model->getAll();
-
-
+;
 		$handle = fopen($path, "r");
 		$i = 0;
 		$k = 0;
-		echo '<pre>';
+
 		fseek($handle, $seek);
-		while ($i < 10000 && !feof($handle))
+		while ($i < 1000 && !feof($handle))
 		{
 			$i++;
 			$data = array();
@@ -169,6 +166,7 @@ class Logs extends CI_Controller
 			if (trim($data[7]) != '')
 			{
 				$data['id_user'] = $this->Users_model->getUserByName(trim($data[7]));
+
 				if ($data['id_user'] === FALSE)
 					continue;
 			}
@@ -234,7 +232,8 @@ class Logs extends CI_Controller
 		echo '--------------<br/>';
 		echo $i.'<br/>';
 
-		usleep(100);
+		usleep(19000);
+//		exit;
 		if (!feof($handle))
 		{
 			$seek = ftell($handle);

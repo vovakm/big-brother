@@ -5,7 +5,7 @@
  * @license 	Apache/BSD-style open source license
  */
 
-class Authorization_model extends CI_Model
+class Authorization_model extends BB_Model
 {
 
 

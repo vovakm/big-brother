@@ -5,11 +5,12 @@
  * @license 	Apache/BSD-style open source license
  */
 
-class Internet_logs_model extends CI_Model
+class Internet_logs_model extends BB_Model
 {
 
 	public $table = '';
 	public $idkey = '';
+	public $suffix = '';
 
 	function __construct()
 	{
@@ -45,11 +46,11 @@ class Internet_logs_model extends CI_Model
 
 		return $query = $this->db->query("
 				INSERT INTO `$this->table` (
-				`id_log{$this->suffix}`, `event_date{$this->suffix}`, `event_time{$this->suffix}`, `duration{$this->suffix}`,
+				`id{$this->suffix}`, `event_date{$this->suffix}`, `event_time{$this->suffix}`, `duration{$this->suffix}`,
 				`id_host_user{$this->suffix}`, `id_squid{$this->suffix}`, `id_http_code{$this->suffix}`,
 				`transfer_size{$this->suffix}`, `id_http_method{$this->suffix}`, `url{$this->suffix}`,
 				`id_user{$this->suffix}`, `id_squid_hierarchy{$this->suffix}`, `id_host_requested{$this->suffix}`,
-				`id_content_type`, `log_source`, `md5`) 
+				`id_content_type{$this->suffix}`, `log_source{$this->suffix}`, `md5{$this->suffix}`)
 				VALUES (
 				NULL,'{$data['event_date']}','{$data['event_time']}','{$data['duration']}',
 				'{$data['id_host_user']}','{$data['id_squid']}','{$data['id_http_code']}',

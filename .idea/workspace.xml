@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17af0396-2fbc-423d-af0e-938c262d3821" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/statistic_model.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/models/crud.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php" afterPath="$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/logs.php" afterPath="$PROJECT_DIR$/application/controllers/logs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/statistic.php" afterPath="$PROJECT_DIR$/application/controllers/statistic.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/BB_Model.php" afterPath="$PROJECT_DIR$/application/core/BB_Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/messages_helper.php" afterPath="$PROJECT_DIR$/application/helpers/messages_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/authorization_model.php" afterPath="$PROJECT_DIR$/application/models/authorization_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/content_type_model.php" afterPath="$PROJECT_DIR$/application/models/content_type_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/extend_dictionary_model.php" afterPath="$PROJECT_DIR$/application/models/extend_dictionary_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/host_model.php" afterPath="$PROJECT_DIR$/application/models/host_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/http_code_model.php" afterPath="$PROJECT_DIR$/application/models/http_code_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/http_method_model.php" afterPath="$PROJECT_DIR$/application/models/http_method_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/internet_logs_model.php" afterPath="$PROJECT_DIR$/application/models/internet_logs_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/settings_model.php" afterPath="$PROJECT_DIR$/application/models/settings_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/squid_code_model.php" afterPath="$PROJECT_DIR$/application/models/squid_code_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/squid_hierarchy_model.php" afterPath="$PROJECT_DIR$/application/models/squid_hierarchy_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/statistic_model.php" afterPath="$PROJECT_DIR$/application/models/statistic_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/users_model.php" afterPath="$PROJECT_DIR$/application/models/users_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js" />
     </list>
     <ignored path="myci.local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,49 +44,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="statistic.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/statistic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="24" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="by_users.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="11" selection-start="318" selection-end="318" vertical-scroll-proportion="0.14545454">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistic_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/statistic_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="8" selection-start="3419" selection-end="3419" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="internet_logs_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/internet_logs_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="62" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.0">
+            <state line="94" column="22" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_user_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/search_user_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="8" selection-start="1931" selection-end="1957" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/logs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="66" selection-start="1500" selection-end="1500" vertical-scroll-proportion="-23.96">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_type_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/content_type_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="175" selection-end="238" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BB_Model.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/core/BB_Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="43" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.7613219">
-              <folding>
-                <element signature="e#7#129#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,31 +97,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/big_brother_app/model/statistic/Stat_User.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/model/statistic/graph.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js" />
-        <option value="$PROJECT_DIR$/application/models/statistic.php" />
-        <option value="$PROJECT_DIR$/application/helpers/messages_helper.php" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js" />
-        <option value="$PROJECT_DIR$/application/controllers/statistic.php" />
-        <option value="$PROJECT_DIR$/application/models/internet_logs_model.php" />
-        <option value="$PROJECT_DIR$/application/models/statistic_model.php" />
+        <option value="$PROJECT_DIR$/application/models/http_code_model.php" />
+        <option value="$PROJECT_DIR$/application/models/authorization_model.php" />
+        <option value="$PROJECT_DIR$/application/models/search_user_model.php" />
         <option value="$PROJECT_DIR$/application/models/settings_model.php" />
-        <option value="$PROJECT_DIR$/application/models/users_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/logs.php" />
         <option value="$PROJECT_DIR$/application/models/content_type_model.php" />
+        <option value="$PROJECT_DIR$/application/models/squid_code_model.php" />
+        <option value="$PROJECT_DIR$/application/models/squid_hierarchy_model.php" />
+        <option value="$PROJECT_DIR$/application/models/extend_dictionary_model.php" />
+        <option value="$PROJECT_DIR$/application/models/internet_logs_model.php" />
+        <option value="$PROJECT_DIR$/application/models/host_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php" />
+        <option value="$PROJECT_DIR$/application/models/users_model.php" />
         <option value="$PROJECT_DIR$/application/core/BB_Model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/logs.php" />
+        <option value="$PROJECT_DIR$/application/models/statistic_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/statistic.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="32" />
-    <option name="width" value="1682" />
-    <option name="height" value="994" />
+    <option name="y" value="52" />
+    <option name="width" value="1680" />
+    <option name="height" value="973" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -170,16 +164,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -528,6 +512,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="file_parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -568,6 +574,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="file_parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -575,7 +613,8 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -585,7 +624,12 @@
       <recent name="$PROJECT_DIR$/application/controllers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.logs.php">
+    <configuration default="false" name="logs.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/application/controllers/logs.php">
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method>
@@ -599,12 +643,14 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.logs.php" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
@@ -639,23 +685,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="32" width="1682" height="994" extended-state="6" />
+    <frame x="0" y="52" width="1680" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290441" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20036764" sideWeight="0.67141163" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20649509" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49756494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -718,116 +765,116 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/statistic_model.php">
+    <entry file="file://$PROJECT_DIR$/application/models/http_method_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="8" selection-start="1688" selection-end="1938" vertical-scroll-proportion="0.0">
+        <state line="7" column="40" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/settings_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="37" selection-start="955" selection-end="955" vertical-scroll-proportion="0.7160804">
+        <state line="7" column="37" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/squid_hierarchy_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/http_code_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/host_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/http_method_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/messages_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="60" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.6407035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/search_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="-0.009791922">
+        <state line="7" column="44" selection-start="175" selection-end="175" vertical-scroll-proportion="0.07272727">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/squid_code_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="147" selection-end="153" vertical-scroll-proportion="0.07343941">
+        <state line="7" column="39" selection-start="170" selection-end="170" vertical-scroll-proportion="0.07272727">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/logs.php">
+    <entry file="file://$PROJECT_DIR$/application/models/host_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="66" selection-start="1500" selection-end="1500" vertical-scroll-proportion="-23.96">
+        <state line="34" column="39" selection-start="851" selection-end="851" vertical-scroll-proportion="0.56363636">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/MY_Model.php">
+    <entry file="file://$PROJECT_DIR$/application/models/extend_dictionary_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="311" selection-end="1684" vertical-scroll-proportion="0.28396574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/users_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="44" selection-end="372" vertical-scroll-proportion="0.07343941">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/content_type_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="175" selection-end="238" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/internet_logs_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="62" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.0">
+        <state line="18" column="29" selection-start="418" selection-end="432" vertical-scroll-proportion="0.27272728">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/search_user_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="8" selection-start="1931" selection-end="1957" vertical-scroll-proportion="0.0">
+        <state line="12" column="40" selection-start="239" selection-end="239" vertical-scroll-proportion="0.018181818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/file_parser/import_account_from_file_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="5" selection-start="429" selection-end="429" vertical-scroll-proportion="0.47272727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="59" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.6046798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/users_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.33582088">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/core/BB_Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="43" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.7613219">
+        <state line="88" column="0" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.43125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/logs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="28" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.5287206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/statistic_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="8" selection-start="3419" selection-end="3419" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/internet_logs_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="22" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/statistic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="24" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="318" selection-end="318" vertical-scroll-proportion="0.14545454">
           <folding>
-            <element signature="e#7#129#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

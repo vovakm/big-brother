@@ -78,18 +78,23 @@ class BB_Model extends CI_Model
 
 	public function getIdByName($name)
 	{
+
 		$this->db->cache_off();
 		$this->db->select($this->idkey);
 		$this->db->from($this->table);
-		$this->db->where('name'.$this->suffix);
+		$this->db->like("name$this->suffix", $name);
 		$this->db->limit(1);
 		$query = $this->db->get();
 		$return = $query->row_array();
+
 		$this->db->cache_on();
 		if (sizeof($return) == 0)
-			return $this->addNewItem($name);
+		{
+			$er = $this->addNewItem($name);
+			return $er;
+		}
 		else
-			return $return[$this->table_id_field];
+			return $return[$this->idkey];
 	}
 
 	public function addNewItem($name)

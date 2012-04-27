@@ -5,12 +5,11 @@
  * @license 	Apache/BSD-style open source license
  */
 
-class Extend_dictionary_model extends MY_Model
+class Extend_dictionary_model extends BB_Model
 {
-
-	public $table_name = '';
-	public $table_id_field = '';
-	public $table_base_name = '';
+	public $table = '';
+	public $idkey = '';
+	public $suffix = '';
 /*
 	function __construct()
 	{

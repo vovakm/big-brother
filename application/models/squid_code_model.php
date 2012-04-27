@@ -5,20 +5,17 @@
  * @license 	Apache/BSD-style open source license
  */
 
-class Squid_code_model extends MY_Model
+class Squid_code_model extends BB_Model
 {
+	public $table = '';
+	public $idkey = '';
+	public $suffix = '';
 
-    public $table_name = '';
-    public $table_id_field = '';
-    public $table_base_name = '';
-
-    function __construct()
-    {
-	parent::__construct();
-	$this->table_base_name = 'squid_code';
-	$this->table_name = $this->db->dbprefix($this->table_base_name);
-	$this->table_id_field = 'id_' . $this->table_base_name;
-    }
-
+	function __construct()
+	{
+		parent::__construct();
+		$this->table = $this->db->dbprefix($this->db_structure['squid_codes']['name']);
+		$this->idkey = 'id'.$this->db_structure['squid_codes']['suffix'];
+		$this->suffix = $this->db_structure['squid_codes']['suffix'];
+	}
 }
-

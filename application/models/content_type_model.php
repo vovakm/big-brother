@@ -5,7 +5,7 @@
  * @license 	Apache/BSD-style open source license
  */
 
-class Content_type_model extends MY_Model
+class Content_type_model extends BB_Model
 {
 	public $table = '';
 	public $idkey = '';

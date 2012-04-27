@@ -13,8 +13,11 @@ if (!defined('BASEPATH'))
 class Import_account_from_file extends CI_Controller
 {
 
-	public $file = 'tmp/accounts/fileToparselegend/Stud.txt';
-	public $sep = ';';
+	public $stud = 'tmp/accounts/fileToparselegend/Stud.txt';
+	public $base = 'tmp/accounts/fileToparselegend/test_no_delete.txt';
+	public $sep = '|';
+	public $file = 'b';
+
 
 	public function __construct()
 	{
@@ -27,47 +30,90 @@ class Import_account_from_file extends CI_Controller
 
 	public function index()
 	{
-		$rows = file($this->file);
-		foreach ($rows as $value)
+		if ($this->file == 's')
 		{
-			//проходимся по массиву и собираем группы. 
-			//после добавляем в БД группы пользователей и самбагруппу.
-			//контролируем связь
-			$fields = explode($this->sep, $value);
-			$ugroups[] = $fields[5];
-		}
-		$ugroups = array_unique($ugroups);
-		$this->insertUserGroup($ugroups);
-
-		foreach ($rows as $value)
-		{
-			$fields = explode($this->sep, $value);
-			if ($fields[0] !== '')
+			$this->sep = ';';
+			$rows = file($this->stud);
+			foreach ($rows as $value)
 			{
-				$pass_num = $fields[0]; //номер пропуска
-				$f_name = $fields[2]; //Имя
-				$l_name = $fields[1]; //Фамилмя
-				$m_name = $fields[3]; //Отчество
+				//проходимся по массиву и собираем группы.
+				//после добавляем в БД группы пользователей и самбагруппу.
+				//контролируем связь
+				$fields = explode($this->sep, $value);
+				$ugroups[] = $fields[5];
+			}
+			$ugroups = array_unique($ugroups);
+			$this->insertUserGroup($ugroups);
 
-				if (function_exists('date_parse_from_format'))
+			foreach ($rows as $value)
+			{
+				$fields = explode($this->sep, $value);
+				if ($fields[0] !== '')
 				{
-					$bdate = date_parse_from_format("d.m.Y", $fields[4]); //парсинг строки даты  в массив
-					$bdate = $bdate['year'] . '-' . $bdate['month'] . '-' . $bdate['day']; //собираем строку даты для MySQL
-				}
-				else
-					$bdate = substr($fields[4], 6, 4) . "-" . substr($fields[4], 3, 2) . "-" . substr($fields[4], 0, 2);
+					$pass_num = $fields[0]; //номер пропуска
+					$f_name = $fields[2]; //Имя
+					$l_name = $fields[1]; //Фамилмя
+					$m_name = $fields[3]; //Отчество
+
+					if (function_exists('date_parse_from_format'))
+					{
+						$bdate = date_parse_from_format("d.m.Y", $fields[4]); //парсинг строки даты  в массив
+						$bdate = $bdate['year'].'-'.$bdate['month'].'-'.$bdate['day']; //собираем строку даты для MySQL
+					}
+					else
+						$bdate = substr($fields[4], 6, 4)."-".substr($fields[4], 3, 2)."-".substr($fields[4], 0, 2);
 
 
-				$login = $this->generateLogin($l_name, $f_name, $m_name); // генерируем логин пользователя
-				$photo_file_name = explode('\\', $fields[6]); //разбираем строку пути к файлу
-				$image = $this->getImage(end($photo_file_name), 'tmp/accounts/fileToparselegend/Fotos/'); //получаем контент файла картинки
-				$password = hash('sha512', $pass_num);
-				$groups = $this->import_account_from_file_model->getUserGroupsId($fields[5]);
+					$login = $this->generateLogin($l_name, $f_name, $m_name); // генерируем логин пользователя
+					$photo_file_name = explode('\\', $fields[6]); //разбираем строку пути к файлу
+					$image = $this->getImage(end($photo_file_name), 'tmp/accounts/fileToparselegend/Fotos/'); //получаем контент файла картинки
+					$password = hash('sha512', $pass_num);
+					$groups = $this->import_account_from_file_model->getUserGroupsId($fields[5]);
 
-				//insert data to the main account table
-				$this->import_account_from_file_model->insertToMain(
+					//insert data to the main account table
+					$this->import_account_from_file_model->insertToMain(
 						$pass_num, $f_name, $l_name, $m_name, $bdate, $login, $password, $image, $groups
-				);
+					);
+				}
+			}
+		}
+		elseif ($this->file == 'b')
+		{
+			//default | default | marahovska_go | Мараховская Ганна Олександрівна | ec | ukrainian | /sbin/nologin | 0:0:0:0:257 | False | 50000:75000:5000:7500 | студент | ФК-110К | 13409
+			$this->sep = '|';
+			$rows = file($this->base);
+			foreach ($rows as $value)
+			{
+				//проходимся по массиву и собираем группы.
+				//после добавляем в БД группы пользователей и самбагруппу.
+				//контролируем связь
+				$fields = explode($this->sep, $value);
+				$ugroups[] = trim($fields[11]);
+			}
+			$ugroups = array_unique($ugroups);
+			$this->insertUserGroup($ugroups);
+
+			foreach ($rows as $value)
+			{
+				$fields = explode($this->sep, $value);
+				if ($fields[0] !== '')
+				{
+					$login = trim($fields[2]); //login
+					$pass_num = trim($fields[12]); //номер пропуска
+					$tmp = explode(' ', trim($fields[3]));
+					$f_name = $tmp[1]; //Имя
+					$l_name = $tmp[0]; //Фамилмя
+					$m_name = $tmp[2]; //Отчество
+					$bdate = '0000-00-00';
+					$password = hash('sha512', $pass_num);
+					$image = '';
+					$groups = $this->import_account_from_file_model->getUserGroupsId($fields[5]);
+
+					//insert data to the main account table
+					$this->import_account_from_file_model->insertToMain(
+						$pass_num, $f_name, $l_name, $m_name, $bdate, $login, $password, $image, $groups
+					);
+				}
 			}
 		}
 		echo 'done';
@@ -96,7 +142,7 @@ class Import_account_from_file extends CI_Controller
 
 	public function getImage($file_name, $path_to_folder)
 	{
-		$fname = $path_to_folder . $file_name;
+		$fname = $path_to_folder.$file_name;
 		$file = fopen($fname, "r");
 		$image = fread($file, filesize($fname));
 		fclose($file);
