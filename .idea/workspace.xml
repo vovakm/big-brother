@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17af0396-2fbc-423d-af0e-938c262d3821" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php" afterPath="$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/logs.php" afterPath="$PROJECT_DIR$/application/controllers/logs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/statistic.php" afterPath="$PROJECT_DIR$/application/controllers/statistic.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/BB_Model.php" afterPath="$PROJECT_DIR$/application/core/BB_Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/authorization_model.php" afterPath="$PROJECT_DIR$/application/models/authorization_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/content_type_model.php" afterPath="$PROJECT_DIR$/application/models/content_type_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/extend_dictionary_model.php" afterPath="$PROJECT_DIR$/application/models/extend_dictionary_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/host_model.php" afterPath="$PROJECT_DIR$/application/models/host_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/http_code_model.php" afterPath="$PROJECT_DIR$/application/models/http_code_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/http_method_model.php" afterPath="$PROJECT_DIR$/application/models/http_method_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/internet_logs_model.php" afterPath="$PROJECT_DIR$/application/models/internet_logs_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/settings_model.php" afterPath="$PROJECT_DIR$/application/models/settings_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/squid_code_model.php" afterPath="$PROJECT_DIR$/application/models/squid_code_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/squid_hierarchy_model.php" afterPath="$PROJECT_DIR$/application/models/squid_hierarchy_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/statistic_model.php" afterPath="$PROJECT_DIR$/application/models/statistic_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/users_model.php" afterPath="$PROJECT_DIR$/application/models/users_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/model/statistic/Stat_User.js" afterPath="$PROJECT_DIR$/js/big_brother_app/model/statistic/Stat_User.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js" />
     </list>
     <ignored path="myci.local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,19 +34,39 @@
       <file leaf-file-name="statistic.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/statistic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="24" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
+            <state line="116" column="24" selection-start="2749" selection-end="2749" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="by_users.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="by_users.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="11" selection-start="318" selection-end="318" vertical-scroll-proportion="0.14545454">
+            <state line="41" column="35" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_lines.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="18" selection-start="1235" selection-end="1235" vertical-scroll-proportion="1.1090909">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="34" selection-start="3094" selection-end="3094" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,10 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/models/http_code_model.php" />
-        <option value="$PROJECT_DIR$/application/models/authorization_model.php" />
-        <option value="$PROJECT_DIR$/application/models/search_user_model.php" />
-        <option value="$PROJECT_DIR$/application/models/settings_model.php" />
         <option value="$PROJECT_DIR$/application/models/content_type_model.php" />
         <option value="$PROJECT_DIR$/application/models/squid_code_model.php" />
         <option value="$PROJECT_DIR$/application/models/squid_hierarchy_model.php" />
@@ -113,6 +116,10 @@
         <option value="$PROJECT_DIR$/application/controllers/logs.php" />
         <option value="$PROJECT_DIR$/application/models/statistic_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/statistic.php" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/model/statistic/Stat_User.js" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js" />
       </list>
     </option>
   </component>
@@ -164,6 +171,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -596,14 +613,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -613,10 +638,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -685,28 +710,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1680" height="973" extended-state="6" />
+    <frame x="0" y="52" width="1680" height="973" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290441" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20649509" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20955883" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49756494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -765,114 +790,102 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/http_method_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/settings_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="37" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/squid_hierarchy_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="175" selection-end="175" vertical-scroll-proportion="0.07272727">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/squid_code_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="170" selection-end="170" vertical-scroll-proportion="0.07272727">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/host_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="39" selection-start="851" selection-end="851" vertical-scroll-proportion="0.56363636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/extend_dictionary_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="418" selection-end="432" vertical-scroll-proportion="0.27272728">
-          <folding />
-        </state>
+        <state line="18" column="29" selection-start="418" selection-end="432" vertical-scroll-proportion="0.27272728" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/search_user_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="239" selection-end="239" vertical-scroll-proportion="0.018181818">
-          <folding />
-        </state>
+        <state line="12" column="40" selection-start="239" selection-end="239" vertical-scroll-proportion="0.018181818" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/file_parser/import_account_from_file_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="429" selection-end="429" vertical-scroll-proportion="0.47272727">
-          <folding />
-        </state>
+        <state line="26" column="5" selection-start="429" selection-end="429" vertical-scroll-proportion="0.47272727" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="59" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.6046798">
-          <folding />
-        </state>
+        <state line="111" column="59" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.6046798" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/users_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.33582088">
-          <folding />
-        </state>
+        <state line="21" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.33582088" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/core/BB_Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.43125">
-          <folding />
-        </state>
+        <state line="88" column="0" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.43125" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/logs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="28" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.5287206">
-          <folding />
-        </state>
+        <state line="81" column="28" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.5287206" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/statistic_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="8" selection-start="3419" selection-end="3419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="105" column="8" selection-start="3419" selection-end="3419" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/internet_logs_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0">
+        <state line="94" column="22" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/model/statistic/Stat_User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="10" selection-start="461" selection-end="461" vertical-scroll-proportion="0.54545456">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="34" selection-start="3094" selection-end="3094" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/statistic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="24" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
+        <state line="116" column="24" selection-start="2749" selection-end="2749" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="318" selection-end="318" vertical-scroll-proportion="0.14545454">
+        <state line="41" column="35" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="18" selection-start="1235" selection-end="1235" vertical-scroll-proportion="1.1090909">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

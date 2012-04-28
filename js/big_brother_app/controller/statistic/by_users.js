@@ -9,14 +9,11 @@
 Ext.define('bb_cpanel.controller.statistic.by_users', {
 	extend:'Ext.app.Controller',
 	stores:[
-		'statistic.Stat_Users',
-		'statistic.graph-store'
+		'statistic.Stat_Users', 'statistic.graph-store'
 	],
 	models:['statistic.Stat_User'],
 	views:[
-		'statistic.itemslist.by_users',
-		'statistic.graphics.users_bars',
-		'statistic.graphics.users_lines'
+		'statistic.itemslist.by_users', 'statistic.graphics.users_bars', 'statistic.graphics.users_lines'
 	],
 	init:function () {
 		this.control({
@@ -38,19 +35,10 @@ Ext.define('bb_cpanel.controller.statistic.by_users', {
 		console.log(selected.data.hourly_traffic[0].hour);
 		var graph = Ext.getStore('statistic.graph-store');
 
-//		Ext.getStore('statistic.graph-store').loadData(
-//			[selected.data.hourly_traffic[0].hour, selected.data.hourly_traffic[0].traffic]
-//		)
-//		myStore.loadData([
-//			['Загловок №1', 'Автор №1'],
-//			['Заголово №2', 'Автор №2']
-//		]);
-		graph.loadData([
-			[selected.data.hourly_traffic[0].hour, selected.data.hourly_traffic[0].traffic],
-			[selected.data.hourly_traffic[1].hour, selected.data.hourly_traffic[1].traffic],
-			[selected.data.hourly_traffic[2].hour, selected.data.hourly_traffic[2].traffic],
-			[selected.data.hourly_traffic[3].hour, selected.data.hourly_traffic[3].traffic]
-		]);
+		var graphItems = [];
+		for (var i = 0; i < selected.data.hourly_traffic.length; i++) {
+			graphItems[i] = [selected.data.hourly_traffic[i].hour, selected.data.hourly_traffic[i].traffic];
+		}
+		graph.loadData(graphItems);
 	}
-})
-;
+});
