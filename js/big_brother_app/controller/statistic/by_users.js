@@ -19,7 +19,7 @@ Ext.define('bb_cpanel.controller.statistic.by_users', {
 		this.control({
 			'viewport #id-iUsers':{ //клик на кнопке Статистика
 				beforerender:this.loadItems,
-				beforeitemdblclick:this.showGraphics
+				beforeitemclick:this.showGraphics
 			}
 		});
 	},

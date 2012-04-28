@@ -74,7 +74,7 @@ class Statistic_model extends BB_Model
 		$this->db->join($hosts_t, "{$hosts_t}.{$hosts_i} = {$this->table}.id_host_user{$this->suffix}", 'left');
 		$this->db->where('event_date'.$this->suffix, $day);
 		$this->db->where('id_user'.$this->suffix, $id_user);
-		$this->db->order_by($this->idkey, $day);
+		$this->db->order_by($this->idkey, 'DESC');
 		$this->db->limit(1);
 		$query = $this->db->get();
 		//print_r($this->db);
@@ -109,6 +109,4 @@ class Statistic_model extends BB_Model
 //				WHERE `event_date` =  '$day'
 //				GROUP BY  HOUR(`event_time`), `id_user`
 	}
-
-
 }

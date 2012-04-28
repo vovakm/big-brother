@@ -42,33 +42,35 @@ Ext.define('bb_cpanel.view.statistic.graphics.users_lines', {
 					}
 				}
 			],
-			series: [{
-				type: 'line',
-				axis: 'left',
-				xField: 'hour',
-				yField: 'traffic',
-				tips: {
-					trackMouse: true,
-					width: 150,
-					height: 50,
-					renderer: function(storeItem, item) {
-						this.setTitle('Загруженно ' +storeItem.get('traffic') + 'Mb <br/> за ' + storeItem.get('hour')+' час' );
+			series:[
+				{
+					type:'line',
+					axis:'left',
+					xField:'hour',
+					yField:'traffic',
+					tips:{
+						trackMouse:true,
+						width:150,
+						height:50,
+						renderer:function (storeItem, item) {
+							this.setTitle('Загруженно ' + storeItem.get('traffic') + 'Mb <br/> за ' + storeItem.get('hour') + ' час');
+						}
+					},
+					style:{
+						fill:'#38B8BF',
+						stroke:'#38B8BF',
+						'stroke-width':3
+					},
+					markerConfig:{
+						type:'circle',
+						size:4,
+						radius:4,
+						'stroke-width':0,
+						fill:'#38B8BF',
+						stroke:'#38B8BF'
 					}
-				},
-				style: {
-					fill: '#38B8BF',
-					stroke: '#38B8BF',
-					'stroke-width': 3
-				},
-				markerConfig: {
-					type: 'circle',
-					size: 4,
-					radius: 4,
-					'stroke-width': 0,
-					fill: '#38B8BF',
-					stroke: '#38B8BF'
 				}
-			}]
+			]
 		}
 	]
 
