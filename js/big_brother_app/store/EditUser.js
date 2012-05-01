@@ -10,8 +10,9 @@ Ext.define('bb_cpanel.store.EditUser',{
 	//alias: 'widget.EditUser-store',
 	extend: 'Ext.data.Store',
 	model: 'bb_cpanel.model.EditUser',
+	id: 'EditUser',
 	autoLoad: false,
-	pageSize: 40,
+	pageSize: 1,
 	proxy:{
 		type: 'ajax',
 		url: 'users/getUserData',

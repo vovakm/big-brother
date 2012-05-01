@@ -11,7 +11,7 @@ Ext.define('bb_cpanel.store.statistic.Stat_Users',{
 	extend: 'Ext.data.Store',
 	model: 'bb_cpanel.model.statistic.Stat_User',
 	autoLoad: false,
-	pageSize: 50,
+	pageSize: 5,
 	proxy:{
 		type: 'ajax',
 		url: 'statistic',

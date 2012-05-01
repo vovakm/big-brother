@@ -23,7 +23,7 @@ Ext.define('bb_cpanel.view.users.EditUser',{
 	initComponent: function(){
 		this.items = {
 			xtype: 'form',
-			id: 'sf',
+			id: 'EditUserForm',
 			frame: true,
 			items: [{
 				xtype:'tabpanel',

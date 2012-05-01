@@ -61,10 +61,10 @@ class Users extends CI_Controller
 
 	public function getUserData()
 	{
-		//if ($this->input->post('action') == 'getUserData' && is_int($this->input->post('uid')))
+		if ($this->input->post('action') == 'getUserData' && intval($this->input->post('uid')))
 		{
 			$this->load->model('Users_model');
-			$user = $this->Users_model->getUserById(mt_rand(1, 15));
+			$user = $this->Users_model->getUserById(intval($this->input->post('uid')));
 			
 			echo json_encode(array(
 				'success' => TRUE,
