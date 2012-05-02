@@ -7,16 +7,23 @@
  */
 
 Ext.define('bb_cpanel.store.statistic.graph-store',{
-	//alias: 'widget.stat-user-store',
-	extend: 'Ext.data.ArrayStore',
-	//autoDestroy: true,
-	//storeId: 'myStore',
-	idIndex: 0,
+	extend: 'Ext.data.Store',
+	autoLoad: false,
 	fields: [
 		{name: 'hour', type: 'int'},
 		{name: 'traffic', type: 'float'}
-	]
+	],
+	proxy:{
+		type: 'ajax',
+		url: 'statistic',
+		actionMethods:{
+			method: 'post'
+		},
+		reader:{
+			type: 'json',
+			totalProperty: 'totalCount',
+			successProperty: 'success'
+		}
+	}
 });
-
-
 

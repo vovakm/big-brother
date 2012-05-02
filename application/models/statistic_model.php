@@ -32,7 +32,7 @@ class Statistic_model extends BB_Model
 	}
 
 
-	public function usersList($day, $start, $limit)
+	public function usersList($startDate, $endDate, $start, $limit)
 	{
 		$account_t = $this->db->dbprefix($this->db_structure['accounts']['name']);
 		$account_s = $this->db_structure['accounts']['suffix'];
@@ -51,17 +51,29 @@ class Statistic_model extends BB_Model
 			");
 		$this->db->join($account_t, "{$account_t}.{$account_i} = {$this->table}.id_user{$this->suffix}", "left");
 		$this->db->join($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$account_t}.id_usergroup{$account_s}", "left");
-		$this->db->like("event_date{$this->suffix}", $day);
+		$this->db->where("event_date{$this->suffix} >=", $startDate);
+		$this->db->where("event_date{$this->suffix} <=", $endDate);
 		$this->db->limit($limit, $start);
 		$this->db->group_by('id_user'.$this->suffix);
 		$this->db->order_by('daily_traffic', 'desc');
 		$this->db->from($this->table);
+		//print_r($this->db);
 		$query = $this->db->get();
 		return $query->result_array();
-
+	}
+	public function countUsers($startDate, $endDate)
+	{
+		$this->db->select("id_user{$this->suffix} AS users");
+		$this->db->where("event_date{$this->suffix} >=", $startDate);
+		$this->db->where("event_date{$this->suffix} <=", $endDate);
+		$this->db->group_by('id_user'.$this->suffix);
+		$this->db->from($this->table);
+		$count = $this->db->get();
+		$total = $count->result_array();
+		return sizeof($total);
 	}
 
-	public function getUserLastActivityByDay($id_user, $day)
+	public function getUserLastActivityByDay($id_user, $startDate, $endDate)
 	{
 		$hosts_t = $this->db->dbprefix($this->db_structure['hosts']['name']);
 		$hosts_s = $this->db_structure['hosts']['suffix'];
@@ -72,7 +84,8 @@ class Statistic_model extends BB_Model
 		");
 		$this->db->from($this->table);
 		$this->db->join($hosts_t, "{$hosts_t}.{$hosts_i} = {$this->table}.id_host_user{$this->suffix}", 'left');
-		$this->db->where('event_date'.$this->suffix, $day);
+		$this->db->where("event_date{$this->suffix} >=", $startDate);
+		$this->db->where("event_date{$this->suffix} <=", $endDate);
 		$this->db->where('id_user'.$this->suffix, $id_user);
 		$this->db->order_by($this->idkey, 'DESC');
 		$this->db->limit(1);
@@ -87,14 +100,15 @@ class Statistic_model extends BB_Model
 //			LIMIT 1
 	}
 
-	public function getUserHourlyActivityByDay($id_user, $day)
+	public function getUserHourlyActivityByDay($id_user, $startDate, $endDate)
 	{
 		$this->db->select("
 				SUM(transfer_size{$this->suffix}) AS traffic,
 				HOUR(event_time{$this->suffix}) AS hour
 		");
 		$this->db->from($this->table);
-		$this->db->where('event_date'.$this->suffix, $day);
+		$this->db->where("event_date{$this->suffix} >=", $startDate);
+		$this->db->where("event_date{$this->suffix} <=", $endDate);
 		$this->db->where('id_user'.$this->suffix, $id_user);
 		$this->db->group_by(array("HOUR(event_time{$this->suffix})", "id_user{$this->suffix}"));
 		$query = $this->db->get();

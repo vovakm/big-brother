@@ -39,5 +39,8 @@
 /*    right Side Panels */
 .information-ico   { background-image: url('/styles/img/icons/16/information.png') !important; }
 .settings-ico   { background-image: url('/styles/img/icons/16/setting_tools.png') !important; }
+.datepicker-ico   { background-image: url('/styles/img/icons/16/calendar_view_month.png') !important; }
+
+
 
 #search-simple input { border-radius: 2px !important; }

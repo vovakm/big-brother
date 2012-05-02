@@ -21,7 +21,7 @@ class Search_user_model extends BB_Model
 	{
 		parent::__construct();
 		$this->table = $this->db->dbprefix($this->db_structure['accounts']['name']);
-		$this->idkey = 'id' . $this->db_structure['accounts']['suffix'];
+		$this->idkey = 'id'.$this->db_structure['accounts']['suffix'];
 		$this->suffix = $this->db_structure['accounts']['suffix'];
 	}
 
@@ -35,7 +35,7 @@ class Search_user_model extends BB_Model
 
 		$usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
 		$usergroup_s = $this->db_structure['usergroups']['suffix'];
-		$usergroup_i = 'id' . $this->db_structure['usergroups']['suffix'];
+		$usergroup_i = 'id'.$this->db_structure['usergroups']['suffix'];
 		//num rows
 		$this->db->select("COUNT(`{$this->idkey}`) AS `total`");
 		$this->db->like("login{$this->suffix}", $login);
@@ -73,7 +73,7 @@ class Search_user_model extends BB_Model
 	{
 		$usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
 		$usergroup_s = $this->db_structure['usergroups']['suffix'];
-		$usergroup_i = 'id' . $this->db_structure['usergroups']['suffix'];
+		$usergroup_i = 'id'.$this->db_structure['usergroups']['suffix'];
 
 		$this->db->select("
 				id{$this->suffix} AS id,
@@ -107,7 +107,7 @@ class Search_user_model extends BB_Model
 
 		$usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
 		$usergroup_s = $this->db_structure['usergroups']['suffix'];
-		$usergroup_i = 'id' . $this->db_structure['usergroups']['suffix'];
+		$usergroup_i = 'id'.$this->db_structure['usergroups']['suffix'];
 
 		//WHERE
 		if ($action === 'search-by-login-form')

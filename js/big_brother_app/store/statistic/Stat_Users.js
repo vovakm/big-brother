@@ -11,9 +11,10 @@ Ext.define('bb_cpanel.store.statistic.Stat_Users',{
 	extend: 'Ext.data.Store',
 	model: 'bb_cpanel.model.statistic.Stat_User',
 	autoLoad: false,
-	pageSize: 5,
+	pageSize: 15,
 	proxy:{
 		type: 'ajax',
+		timeout: 120000, //2 minutes
 		url: 'statistic',
 		actionMethods:{
              method: 'post'

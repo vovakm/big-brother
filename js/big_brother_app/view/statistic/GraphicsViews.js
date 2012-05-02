@@ -8,6 +8,7 @@
 
 Ext.define('bb_cpanel.view.statistic.GraphicsViews', {
 	extend:'Ext.container.Container',
+	id: 'graphics-card-layout',
 	alias:'widget.graphics-card',
 	flex:3,
 	margins:'0 0 5 0',

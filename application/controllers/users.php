@@ -77,5 +77,5 @@ class Users extends CI_Controller
 
 }
 
-/* End of file main.php */
-/* Location: ./application/controllers/main.php */
+/* End of file users.php */
+/* Location: ./application/controllers/users.php */

@@ -19,11 +19,27 @@ Ext.define('bb_cpanel.controller.Statistic', {
 		this.control({
 			'globalMenu #Statistic-mb':{ //клик на пункте меню
 				click: this.statisticDefault
+			},
+			'#startdt-statistic-range':{
+				change: this.dateRange
+			},
+			'#enddt-statistic-range':{
+				change: this.dateRange
 			}
+
 		});
 	},
 	statisticDefault: function(){
-		console.log('statisticDefault');
-		Ext.getCmp('id-globalPanel').getLayout().setActiveItem('id-statistic-layout')
+		Ext.getCmp('id-globalPanel').getLayout().setActiveItem('id-statistic-layout');
+
+	},
+	dateRange: function(){
+		var data = new Object;
+		Ext.getCmp('enddt-statistic-range').setMinValue(Ext.getCmp('startdt-statistic-range').value);
+		data.startDate = Ext.Date.format(Ext.getCmp('startdt-statistic-range').value, "Y-m-d");
+		data.endDate = Ext.Date.format(Ext.getCmp('enddt-statistic-range').value, "Y-m-d");
+		data.type = 'users';
+		Ext.getStore('statistic.Stat_Users').getProxy().extraParams = data;
+		//Ext.getCmp('enddt').setMaxValue(Ext.getCmp('startdt').value)
 	}
 });

@@ -2,13 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17af0396-2fbc-423d-af0e-938c262d3821" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/cache.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/search_users+index/bf238ab3eba9963dfed7a271998eb6b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/search_users+index/e5ab00c3d84767a4c8408957c05dc78d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/005a02ac238acfd648707b936e45d6c3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/046d952e7e88f7491e87a2c17214c43a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/0b57f5013fc9856317c2e3fb828c3771" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/0d9ae726a066fd9dd9d57a9acc17caa1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/1052140fdd6ebd560fa7fb5047586311" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/1459cd1d7749bb030179cdd4a23a2b19" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/14f7c795c077521273ce5c6b2efed8fb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/19ccf1b99f3ed5a15078f94ffd1b6b1f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/19ffde4757ed3ea86cf2ed2518916f67" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/1ac132f5a59ba1675da65f60d29fe4c1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/1eee498e67246f3e8e2c293f38c18979" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/20a8ac2e8b9ba1b911c036fc771ca0f5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/23b2c8ed505eeeeae1539af2c7edad85" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/2ed89d9050897144888c3ee77b90900c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/2ff73b580469815fedeef6968ffe4af3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/31800742227e3b724bba07d11d83fefd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/31f275fc3348015212791cf416554bec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/386565fd7412853b808a91ac203c5a03" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/39f87f6408cc5f59a693950b234d6769" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/3a4169d227af24eab6543904679454c2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/3c3d05afaae8c572e92fa075bf651e03" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/3d9b9d999be6018bd71e5aae02a51211" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/4120f6ca16500897db3a62d78e2db134" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/431527802e53a7b45c34b8eae9306c51" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/433c1fb90f470a3ce39ae3e367e8126e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/45ab4b16b27203acb310494436a88e79" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/478b0cc95a91f7e62c98f82d1359779b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/4a437dd664af4816a465f5bafc595a0b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/4f981af64863836787312754e23a55c6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/52f0b6e11cede1f39ea0bbc1315a319a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/565f2554dd1768d8db2ec46812805d01" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/566f51c69aa41e71746d9a77232cd3a0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/5c2e1cfcc28eb0a08b0928e630731c46" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/653e1f05853880b78bc01a751a94b7d5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/6cdfb966749c2d003a146695ba2042fd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/6ce994c039bccb3268369de34ed383f1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/6da8d8868121fe38caea4fdc0e28c9ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/6fb190985560012f3a1a055ffdcce7fb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/70327c4608a2c9b2d7fc31cd7ff8a7bb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/729cb8f6015f0f1712a49cd07a42d982" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/74382cb6b2e86a86acde40374b28be94" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/74b6f56f92a8f6a272f4769655042716" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/7513dab37648265d1608e2e2fadd7bd8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/7a91eef4cc03d36ef20416ed4d92d860" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/7b1da0ca4ad81efb4c28c09e76b4a8c7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/7bf0e40533a1768be7a41a305d04cfbc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/7d3e620403f19de53e684db90becc396" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/82170d9a4fd1b51284d7c715f98d9abf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/83591f840ce780c06942cad523ac4b41" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/84c9798bbe4abcc4c8d2530bd8c20d70" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/862755f6a1174276d3622b3744a0a7c1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/867ef174ef52b25ea651623099436560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/8707a3589102a30b04d48375e1ccdc4a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/8e288e3acd5c497e60b3b3abcb668e2d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/8eb0893fcc6208482aaf71e65edc6ccc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/941c86f31e73add6cea8c6a1a85fc130" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/94ede22adc4fbde8b6fb2d2ee01ff638" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/959f79f533d6770ced26dad4ce833cec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/965560ac3b9c9505f9b86326a7bdc0c9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/965b986dd6a79c71e01f127646ff847e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/9b1ff44d025fb3cce09347e48f05d1db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/9f9ccea31fa482fe125e1fc53562b781" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/aa942857fff03696fb190c4723d97b39" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/ad56e421fb7ab0e45cbaaf656a9db6b7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/ae8ddb3c1150104f6d488566a973a33f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/b2df2a06f6dcb6dd4057008cadd6ddce" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/b45695bf9f2be826c5d63dd647072a4a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/b6a68037a72a40c950e413ef8c24f30a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/b7b0f7fefe185bfe6d3b3a6683b0f6f4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/b82c1b3d944fc7335db178d0c8e13243" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/bc817f50d02e22f7182b55304504113d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/c00e340a5938606e34baf57edfb8231f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/c1e265c6e87171df1177b40fdd82aaa4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/c56b3b7697c038905af4524208751f11" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/c758e4230927fd6b561aab88e775e1c4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/cd498887783296c956384bf30901cf01" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/cfafb478f4b11ee506d19090dd0e39e0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/d804b30c1df1be8e836ecc621739039a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/d9cf5b1dfadca5c4394eee6ea81a5b35" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/db28500e0c6866f03c66d92fee65cc2d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/de06414dc958a4264505acc74045c98f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/e0b32ba9584439236d784d37fa3d1420" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/e5433d81f7768d7de1df2b07d7d3a4d7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/e546c95e122abb96c0f928a1626b0d1d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/ea4fad3a537ddd946dd1d5275989c49e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/eba7a198f70f4b2753b4643ea9548970" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/ebd6ec960d76dc96480ef84443b28c21" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/eef3760e2cf185db2c3766270cba7d32" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/ef29dfa9263d0b78096afcccc86b2efa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/f09cb785d44da0933c0ce35b78a280d4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/f131aba591d5279fb9f2ffe042387054" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/f2312b7ea8c58a3eed9dd3e08f653984" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/f5ba3ad513611ff7ba4db0ade163c373" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/f9785d40f39a8d22f7be3b33b5e21dc5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/f9c5a1502478d3be1c97b238126b63fd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/fc5f36a71785defbc6dcbaa975ee734c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/statistic+index/fcf36ca554c0eda382c0c24bfecde7b8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/cache/users+getUserData/e669d61498c4d07c71c79a5cd5e7b28d" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/statistic.php" afterPath="$PROJECT_DIR$/application/controllers/statistic.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/users.php" afterPath="$PROJECT_DIR$/application/controllers/users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/search_user_model.php" afterPath="$PROJECT_DIR$/application/models/search_user_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/statistic_model.php" afterPath="$PROJECT_DIR$/application/models/statistic_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/SearchUsers.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/SearchUsers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/Statistic.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/Statistic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/Users.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/Users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/store/EditUser.js" afterPath="$PROJECT_DIR$/js/big_brother_app/store/EditUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js" afterPath="$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js" afterPath="$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/interface/globalMenu.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/interface/globalMenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/interface/rightSidePanel.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/interface/rightSidePanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/statistic/itemslist/by_users.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/statistic/itemslist/by_users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/users/SearchUsers.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/users/SearchUsers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/admin/main.css" afterPath="$PROJECT_DIR$/styles/admin/main.css" />
     </list>
     <ignored path="myci.local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,33 +147,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EditUser.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
+      <file leaf-file-name="by_users.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="38" selection-start="563" selection-end="563" vertical-scroll-proportion="-16.8">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="5" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.6">
+            <state line="52" column="76" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.65625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Users.js">
+      <file leaf-file-name="GraphicsViews.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="6" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
+            <state line="10" column="9" selection-start="221" selection-end="241" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graph-store.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="28" selection-start="153" selection-end="174" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stat_Users.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="16" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistic.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/statistic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="26" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistic_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/statistic_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="0" selection-start="4077" selection-end="4077" vertical-scroll-proportion="-23.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statistic.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Statistic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="26" selection-start="1073" selection-end="1078" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,22 +231,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php" />
-        <option value="$PROJECT_DIR$/application/models/users_model.php" />
-        <option value="$PROJECT_DIR$/application/core/BB_Model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/logs.php" />
-        <option value="$PROJECT_DIR$/application/models/statistic_model.php" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/model/statistic/Stat_User.js" />
-        <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/view/statistic/graphics/users_lines.js" />
-        <option value="$PROJECT_DIR$/application/controllers/statistic.php" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/store/EditUser.js" />
         <option value="$PROJECT_DIR$/js/big_brother_app/controller/Users.js" />
-        <option value="$PROJECT_DIR$/application/controllers/users.php" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/view/interface/globalMenu.js" />
+        <option value="$PROJECT_DIR$/application/models/search_user_model.php" />
+        <option value="$PROJECT_DIR$/styles/admin/main.css" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/controller/SearchUsers.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/view/users/SearchUsers.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/view/statistic/itemslist/by_users.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/view/interface/rightSidePanel.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/model/statistic/Stat_User.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/controller/Statistic.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js" />
+        <option value="$PROJECT_DIR$/application/models/statistic_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/statistic.php" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" />
       </list>
     </option>
   </component>
@@ -185,6 +336,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -252,6 +435,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big_brother_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itemslist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big_brother_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big_brother_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interface" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -529,24 +802,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myci.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myci.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -554,10 +809,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -633,7 +888,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2120098" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21507353" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49756494" order="7" side_tool="true" content_ui="tabs" />
@@ -706,60 +961,121 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/statistic_model.php">
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/SearchUsers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.74545455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/internet_logs_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="22" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.45454547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/userScripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="29" selection-start="869" selection-end="869" vertical-scroll-proportion="0.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/statistic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="14" selection-start="2762" selection-end="2762" vertical-scroll-proportion="0.54545456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="540" selection-end="540" vertical-scroll-proportion="0.43636364">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/Users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="116" column="37" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/SearchUsers.js">
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/List.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="84" column="17" selection-start="1536" selection-end="1541" vertical-scroll-proportion="0.4">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/statistic/itemslist/by_users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="19" selection-start="337" selection-end="357" vertical-scroll-proportion="0.3272727">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/interface/rightSidePanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="53" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.7090909">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/search_user_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="12" selection-start="6331" selection-end="6437" vertical-scroll-proportion="0.72727275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="12" selection-start="258" selection-end="258" vertical-scroll-proportion="0.14545454">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="5" selection-start="673" selection-end="673" vertical-scroll-proportion="0.38181818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Statistic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="26" selection-start="1073" selection-end="1078" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/statistic_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="0" selection-start="4077" selection-end="4077" vertical-scroll-proportion="-23.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/statistic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="26" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="221" selection-end="241" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="4" selection-start="344" selection-end="372" vertical-scroll-proportion="0.36363637">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="16" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/model/statistic/Stat_User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="275" selection-end="275" vertical-scroll-proportion="0.018181818">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="153" selection-end="174" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -768,68 +1084,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="6" selection-start="853" selection-end="853" vertical-scroll-proportion="0.6">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Statistic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="553" selection-end="553" vertical-scroll-proportion="0.036363635">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/EditUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="351" selection-end="362" vertical-scroll-proportion="0.3090909">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="38" selection-start="563" selection-end="563" vertical-scroll-proportion="-16.8">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="6" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="5" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.6">
+        <state line="52" column="76" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.65625">
           <folding />
         </state>
       </provider>
