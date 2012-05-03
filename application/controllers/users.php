@@ -12,7 +12,7 @@ class Users extends CI_Controller
 {
 
 	var $login_rules = array(array('field' => 'login', 'rules' =>
-			'required'), array('field' => 'password', 'rules' => 'required'),);
+	'required'), array('field' => 'password', 'rules' => 'required'),);
 
 	public function __construct()
 	{
@@ -36,7 +36,8 @@ class Users extends CI_Controller
 		$this->load->library('form_validation');
 
 		$this->form_validation->set_rules($this->login_rules);
-		if ($this->form_validation->run() == FALSE)
+		if ($this->form_validation->run() == FALSE
+		)
 			//validation error. login and password fields are required
 			echo json_encode(array('status' => 'no', 'errorMsg' => printMessage('errorLoginValidation')));
 		else
@@ -44,7 +45,7 @@ class Users extends CI_Controller
 			$this->load->model('Authorization_model');
 
 			$auth_result = $this->Authorization_model->authorization(
-					$this->input->post('login'), $this->input->post('password')
+				$this->input->post('login'), $this->input->post('password')
 			);
 
 			if ($auth_result)
@@ -65,13 +66,33 @@ class Users extends CI_Controller
 		{
 			$this->load->model('Users_model');
 			$user = $this->Users_model->getUserById(intval($this->input->post('uid')));
-			
+
 			echo json_encode(array(
 				'success' => TRUE,
 				'totalCount' => 1,
 				'user' => $user[0]
 			));
-			
+
+		}
+	}
+
+	public function pic($uid)
+	{
+		$uid = intval($uid);
+		if ($uid > 0)
+		{
+			$this->load->model('Users_model');
+			$image = $this->Users_model->showPhoto($uid);
+//			var_dump($image);
+			if ($image === FALSE || $image == '' || strlen($image) < 10)
+			{
+				$fname = 'images/system/user_no_photo.png';
+				$file = fopen($fname, "r");
+				$image = (fread($file, filesize($fname)));
+				fclose($file);
+			}
+			header("Content-type: image/png");
+			echo $image;
 		}
 	}
 

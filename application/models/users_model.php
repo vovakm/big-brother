@@ -67,10 +67,25 @@ class Users_model extends BB_Model
 
 		$this->db->limit(1);
 
-		$query = $this->db->from($this->table);
+		$this->db->from($this->table);
 		$query = $this->db->get();
 		
 		return $query->result_array();
+	}
+
+	public function showPhoto($id_user)
+	{
+//		echo $name;
+		$this->db->select("picture$this->suffix AS photo");
+		$this->db->from($this->table);
+		$this->db->where($this->idkey, $id_user);
+		$this->db->limit(1);
+		$query = $this->db->get();
+		$result = $query->row_array();
+		if (sizeof($result) == 1)
+			return $result['photo'];
+		else
+			return FALSE;
 	}
 
 }

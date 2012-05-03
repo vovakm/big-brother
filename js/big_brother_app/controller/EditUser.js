@@ -28,6 +28,11 @@ Ext.define('bb_cpanel.controller.EditUser', {
 		var store = Ext.getStore('EditUser');
 		store.on('load', function () {
 			Ext.getCmp('EditUserForm').loadRecord(store.data.first())
+			Ext.getCmp('userPhoto').html = '<img src="users/pic/' + Ext.getStore('EditUser').data.items[0].data.id + '" alt="" />'
 		})
+	},
+	imagge:function () {
+		//Ext.getStore('EditUser').data.items[0].data.id
+		//return '<img src="http://placehold.it/150x'+50+'" alt="" />'
 	}
 });

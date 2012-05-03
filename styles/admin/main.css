@@ -44,3 +44,4 @@
 
 
 #search-simple input { border-radius: 2px !important; }
+#userPhoto > img {height: 210px; border: 1px solid #777; border-radius: 2px;}
