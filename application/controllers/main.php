@@ -22,6 +22,13 @@ class Main extends CI_Controller
 	{
 		$this->load->view('admin/big_brother');
 	}
+	public function page()
+	{
+		$this->load->library('Web_page_information');
+        echo '<pre>';
+        print_r($this->web_page_information->getInformation('http://www.meebo.com/mcmd/send'));
+	}
+
 
 	
 

@@ -18,6 +18,8 @@ class Web_page_information
 
     public function getInformation($url)
     {
+        preg_match_all("#([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}#", $url, $tmp);
+        $siteUrl = $tmp[0][0];
         $tmp = array();
         if ($this->methodForGetContent === FALSE)
             return FALSE;
@@ -34,7 +36,7 @@ class Web_page_information
            */
         $information = array();
 //      Extract site info from META tags
-        $content = $this->getPageContent($url);
+        $content = $this->getPageContent('http://'.$siteUrl);
         $content = $this->convertToUTF8($content);
         $information['title'] = $this->getTitle($content);
         $information['author'] = $this->getAuthor($content);
@@ -46,8 +48,6 @@ class Web_page_information
 
 //      Get site info from yandex catalog (RUS)
         $information['yaca'] = array();
-        preg_match_all("#([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}#", $url, $tmp);
-        $siteUrl = $tmp[0][0];
         $content = $this->getPageContent($this->yandexCatalogSearchURL . $siteUrl);
         preg_match_all("#\<li.*?\"b-result__item\".*?\>(.*?)\<\/li\>#is", $content, $tmp);
         $firstItem = $tmp[1][0];
@@ -127,7 +127,7 @@ class Web_page_information
 
     private function getDescription($content)
     {
-        preg_match_all("#description.*?content=\"(.*?)\"[\s]*?\/\>#i", $content, $tmp);
+        preg_match_all("#description.*?content=\"(.*?)[\".*]\>#i", $content, $tmp);
         if (!empty($tmp[1][0]))
             return trim($tmp[1][0]);
         return FALSE;
@@ -136,7 +136,7 @@ class Web_page_information
 
     private function getKeywords($content)
     {
-        preg_match_all("#name=\"keywords\".*?content=\"(.*?)\"[\s]*?\/\>#i", $content, $tmp);
+        preg_match_all("#name=\"keywords\".*?content=\"(.*?)[\".*]\>#i", $content, $tmp);
         if (!empty($tmp[1][0]))
             return trim($tmp[1][0]);
         return FALSE;
@@ -144,7 +144,7 @@ class Web_page_information
 
     private function getBaseURL($content)
     {
-        preg_match_all("#<base.*?href=\"(.*?)\"[\s]*?\/\>#i", $content, $tmp);
+        preg_match_all("#<base.*?href=\"(.*?)[\".*]\>#i", $content, $tmp);
         if (!empty($tmp[1][0]))
             return trim($tmp[1][0]);
         return FALSE;
@@ -152,7 +152,7 @@ class Web_page_information
 
     private function getAuthor($content)
     {
-        preg_match_all("#name=\"author\".*?content=\"(.*?)\"[\s]*?\/\>#i", $content, $tmp);
+        preg_match_all("#name=\"author\".*?content=\"(.*?)[\".*]\>#i", $content, $tmp);
         if (!empty($tmp[1][0]))
             return trim($tmp[1][0]);
         return FALSE;
@@ -160,7 +160,7 @@ class Web_page_information
 
     private function getGenerator($content)
     {
-        preg_match_all("#name=\"generator\".*?content=\"(.*?)\"[\s]*?\/\>#i", $content, $tmp);
+        preg_match_all("#name=\"generator\".*?content=\"(.*?)[\".*]\>#i", $content, $tmp);
         if (!empty($tmp[1][0]))
             return trim($tmp[1][0]);
         return FALSE;
@@ -168,7 +168,7 @@ class Web_page_information
 
     private function getRobots($content)
     {
-        preg_match_all("#name=\"robots\".*?content=\"(.*?)\"[\s]*?\/\>#i", $content, $tmp);
+        preg_match_all("#name=\"robots\".*?content=\"(.*?)[\".*]\>#i", $content, $tmp);
         if (!empty($tmp[1][0]))
             return trim($tmp[1][0]);
         return FALSE;
