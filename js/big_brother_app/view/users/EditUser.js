@@ -237,33 +237,53 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 
                                 },
                                 {
-
-                                },
-                                {
-
                                     xtype:'fieldset',
                                     title:'Фотография',
                                     layout:'hbox',
                                     items:[
                                         {
-                                            xtype:'filefield',
-                                            id:'form-file',
-                                            emptyText:'Select an image',
-                                            fieldLabel:'Photo',
-                                            name:'photo-path',
-                                            buttonText:'',
-                                            buttonConfig:{
-                                                iconCls:'upload-icon'
-                                            },
-                                            flex: 1
-
+                                            xtype:'container',
+                                            layout:'vbox',
+                                            height: 100,
+                                            width:290,
+                                            items:[
+                                                {
+                                                    xtype:'filefield',
+                                                    emptyText:'Выберите изображение',
+                                                    fieldLabel:'Загрузить фотографию',
+                                                    labelWidth:135,
+                                                    width:290,
+                                                    name:'upload_photo',
+                                                    buttonText:'',
+                                                    buttonConfig:{
+                                                        iconCls:'picture-ico'
+                                                    }
+                                                },
+                                                {
+                                                    xtype:'filefield',
+                                                  emptyText:'Выберите изображение',
+                                                    fieldLabel:'Загрузить фотографию',
+                                                    labelWidth:135,
+                                                    width:290,
+                                                    name:'asd',
+                                                    buttonText:'',
+                                                    buttonConfig:{
+                                                        iconCls:'picture-ico'
+                                                    }
+                                                }
+                                            ]
                                         },
                                         {
-											id: 'userPhoto',
-                                            html: '',
-                                            height: 210,
-                                            flex: 1
-
+                                            html:'',
+                                            border:false,
+                                            width:65
+                                        },
+                                        {
+                                            id:'userPhoto',
+                                            html:'',
+                                            height:210,
+                                            margin:'0 0 3px 0',
+                                            width:170
                                         }
                                     ]
 

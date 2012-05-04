@@ -29,7 +29,7 @@
 .exit         { background-image: url('/styles/img/icons/16/door_out.png') !important; }
 
 #app-name div {
-	text-align: center; 
+	text-align: center;
 	font-size: 13px !important;
 	padding: 0 5px !important;
 	color: #777;
@@ -44,4 +44,20 @@
 
 
 #search-simple input { border-radius: 2px !important; }
-#userPhoto > img {height: 210px; border: 1px solid #777; border-radius: 2px;}
+
+/* photo */
+.picture-ico        { background-image: url('/styles/img/icons/16/picture.png') !important; }
+.picture-ico-add    { background-image: url('/styles/img/icons/16/picture_add.png') !important; }
+.picture-ico-delete { background-image: url('/styles/img/icons/16/picture_delete.png') !important; }
+.picture-ico-edit   { background-image: url('/styles/img/icons/16/picture_edit.png') !important; }
+
+#userPhoto {
+    height: 210px;
+    max-height: 210px;
+    max-width: 170px;
+    border: 1px solid #555;
+    border-radius: 2px;
+    /*margin-left: 50px;*/
+    /*margin-bottom: 8px;*/
+    text-align: center;
+}

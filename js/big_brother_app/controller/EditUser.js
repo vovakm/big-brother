@@ -26,13 +26,10 @@ Ext.define('bb_cpanel.controller.EditUser', {
 	},
 	loadAccountData:function () {
 		var store = Ext.getStore('EditUser');
+        //Ext.getCmp('EditUser-window').animate({to:{height:400}});
 		store.on('load', function () {
 			Ext.getCmp('EditUserForm').loadRecord(store.data.first())
-			Ext.getCmp('userPhoto').html = '<img src="users/pic/' + Ext.getStore('EditUser').data.items[0].data.id + '" alt="" />'
+			Ext.getCmp('userPhoto').html = '<img src="users/pic/' + Ext.getStore('EditUser').data.items[0].data.id +1000+ '" alt="" />'
 		})
-	},
-	imagge:function () {
-		//Ext.getStore('EditUser').data.items[0].data.id
-		//return '<img src="http://placehold.it/150x'+50+'" alt="" />'
 	}
 });

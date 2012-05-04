@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17af0396-2fbc-423d-af0e-938c262d3821" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/users.php" afterPath="$PROJECT_DIR$/application/controllers/users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/users_model.php" afterPath="$PROJECT_DIR$/application/models/users_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/system/user_no_photo.png" afterPath="$PROJECT_DIR$/images/system/user_no_photo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js" afterPath="$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/admin/main.css" afterPath="$PROJECT_DIR$/styles/admin/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/accounts/fileToparselegend/test_no_delete.txt" afterPath="$PROJECT_DIR$/tmp/accounts/fileToparselegend/test_no_delete.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cron.php" afterPath="$PROJECT_DIR$/tmp/cron.php" />
     </list>
     <ignored path="myci.local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +34,7 @@
       <file leaf-file-name="EditUser.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="262" column="51" selection-start="13418" selection-end="13418" vertical-scroll-proportion="0.0">
+            <state line="11" column="8" selection-start="247" selection-end="262" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -51,16 +45,16 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/admin/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="76" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.0">
+            <state line="51" column="1" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditUser.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="EditUser.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="64" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
+            <state line="35" column="0" selection-start="832" selection-end="832" vertical-scroll-proportion="0.6702619">
               <folding />
             </state>
           </provider>
@@ -75,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_user_model.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search_user_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/search_user_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.6727273">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +81,7 @@
       <file leaf-file-name="import_account_from_file.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="34" selection-start="4472" selection-end="4627" vertical-scroll-proportion="-24.88">
+            <state line="148" column="34" selection-start="4472" selection-end="4627" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,20 +121,20 @@
         <option value="$PROJECT_DIR$/application/libraries/Webpageinformation.php" />
         <option value="$PROJECT_DIR$/application/controllers/main.php" />
         <option value="$PROJECT_DIR$/application/libraries/Web_page_information.php" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" />
-        <option value="$PROJECT_DIR$/styles/admin/main.css" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" />
         <option value="$PROJECT_DIR$/application/models/users_model.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/application/controllers/users.php" />
+        <option value="$PROJECT_DIR$/styles/admin/main.css" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="52" />
-    <option name="width" value="1680" />
-    <option name="height" value="973" />
+    <option name="y" value="24" />
+    <option name="width" value="1600" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -731,10 +725,21 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="a59fa498-0da4-4118-a1c0-085541aef359">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -806,14 +811,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1680" height="973" extended-state="6" />
+    <frame x="0" y="24" width="1600" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290441" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22426471" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22774194" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49756494" order="7" side_tool="true" content_ui="tabs" />
@@ -886,11 +891,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="153" selection-end="174" vertical-scroll-proportion="0.14545454" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="16" selection-start="316" selection-end="316" vertical-scroll-proportion="0.23636363" />
@@ -921,65 +921,68 @@
         <state line="20" column="10" selection-start="421" selection-end="421" vertical-scroll-proportion="0.36363637" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="51" selection-start="13418" selection-end="13418" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/admin/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="76" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="5" selection-start="673" selection-end="673" vertical-scroll-proportion="0.38181818" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="64" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="81" selection-end="81" vertical-scroll-proportion="0.036363635">
-          <folding />
-        </state>
+        <state line="2" column="40" selection-start="81" selection-end="81" vertical-scroll-proportion="0.036363635" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="34" selection-start="4472" selection-end="4627" vertical-scroll-proportion="-24.88">
+        <state line="148" column="34" selection-start="4472" selection-end="4627" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/users_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="33" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="85" column="33" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/search_user_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.6727273">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/admin/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="1" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/SearchUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.651274">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="247" selection-end="262" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="832" selection-end="832" vertical-scroll-proportion="0.6702619">
           <folding />
         </state>
       </provider>
