@@ -52,12 +52,13 @@
 .picture-ico-edit   { background-image: url('/styles/img/icons/16/picture_edit.png') !important; }
 
 #userPhoto {
-    height: 210px;
-    max-height: 210px;
-    max-width: 170px;
-    border: 1px solid #555;
+    height: 212px;
+    max-height: 212px;
+    padding-bottom: 2px;
+}
+#userPhoto-body{
+	float: right;
+    max-width: 172px;
     border-radius: 2px;
-    /*margin-left: 50px;*/
-    /*margin-bottom: 8px;*/
-    text-align: center;
+    border: 1px solid #aaa;
 }
