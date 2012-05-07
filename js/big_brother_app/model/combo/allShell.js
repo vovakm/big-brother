@@ -6,11 +6,11 @@
  *  @description
  */
 
-Ext.define('bb_cpanel.model.combo.allUGroup',{
+Ext.define('bb_cpanel.model.combo.allShell',{
 	extend: 'Ext.data.Model',
 	fields: [{
 		name: 'id',
-		type: 'int'
+		type: 'string'
 	},{
 		name: 'name',
 		type: 'string'

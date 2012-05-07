@@ -34,11 +34,8 @@ class Users extends CI_Controller
 	{
 		//Проверяем соответствуют ли введенные пользователем данные правилам валидации		
 		$this->load->library('form_validation');
-
 		$this->form_validation->set_rules($this->login_rules);
-		if ($this->form_validation->run() == FALSE
-		)
-			//validation error. login and password fields are required
+		if ($this->form_validation->run() == FALSE) //validation error. login and password fields are required
 			echo json_encode(array('status' => 'no', 'errorMsg' => printMessage('errorLoginValidation')));
 		else
 		{
@@ -66,13 +63,11 @@ class Users extends CI_Controller
 		{
 			$this->load->model('Users_model');
 			$user = $this->Users_model->getUserById(intval($this->input->post('uid')));
-
 			echo json_encode(array(
 				'success' => TRUE,
 				'totalCount' => 1,
 				'user' => $user[0]
 			));
-
 		}
 	}
 
@@ -83,7 +78,6 @@ class Users extends CI_Controller
 		{
 			$this->load->model('Users_model');
 			$image = $this->Users_model->showPhoto($uid);
-//			var_dump($image);
 			if ($image === FALSE || $image == '' || strlen($image) < 10)
 			{
 				$fname = 'images/system/user_no_photo.png';
@@ -91,7 +85,7 @@ class Users extends CI_Controller
 				$image = (fread($file, filesize($fname)));
 				fclose($file);
 			}
-			header("Content-type: image/png");
+			header("Content-type: image/*");
 			echo $image;
 		}
 	}

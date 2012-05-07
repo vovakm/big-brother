@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17af0396-2fbc-423d-af0e-938c262d3821" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/big_brother_app/model/combo/allShell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/big_brother_app/store/combo/allSamba.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/big_brother_app/store/combo/allShell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/big_brother_app/store/combo/allUStatuses.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/big_brother_app/model/combo/allUGroup.js" afterPath="$PROJECT_DIR$/js/big_brother_app/model/combo/allList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/system/user_no_photo.png" afterPath="$PROJECT_DIR$/images/system/user_no_photo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/combo.php" afterPath="$PROJECT_DIR$/application/controllers/combo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/users.php" afterPath="$PROJECT_DIR$/application/controllers/users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/combo_model.php" afterPath="$PROJECT_DIR$/application/models/combo_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/search_user_model.php" afterPath="$PROJECT_DIR$/application/models/search_user_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/users_model.php" afterPath="$PROJECT_DIR$/application/models/users_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/model/EditUser.js" afterPath="$PROJECT_DIR$/js/big_brother_app/model/EditUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/store/combo/allUGroups.js" afterPath="$PROJECT_DIR$/js/big_brother_app/store/combo/allUGroups.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/admin/main.css" afterPath="$PROJECT_DIR$/styles/admin/main.css" />
     </list>
@@ -31,71 +44,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EditUser.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EditUser.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="400" column="54" selection-start="9591" selection-end="9591" vertical-scroll-proportion="1.0181818">
+            <state line="293" column="0" selection-start="6773" selection-end="6773" vertical-scroll-proportion="-2.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allShell.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/model/combo/allShell.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="17" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allShell.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/combo/allShell.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#7112#7793#0" expanded="false" />
-                <element signature="e#7805#8481#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/admin/main.css">
+      <file leaf-file-name="EditUser.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="24" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.0">
+            <state line="41" column="89" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.6363636">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="EditUser.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
+        <entry file="file://$PROJECT_DIR$/js/big_brother_app/model/EditUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="63" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchUsers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/SearchUsers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="69" column="26" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_user_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/search_user_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="import_account_from_file.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="34" selection-start="4472" selection-end="4627" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -103,7 +96,28 @@
       <file leaf-file-name="users_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/users_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="33" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.0">
+            <state line="53" column="53" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="combo.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/combo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="112" selection-start="1769" selection-end="1774" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1168#1387#0" expanded="false" />
+                <element signature="e#1330#1387#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="combo_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/combo_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="72" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,22 +138,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/big_brother_app/controller/Statistic.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/store/statistic/graph-store.js" />
-        <option value="$PROJECT_DIR$/application/models/statistic_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/statistic.php" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/view/statistic/GraphicsViews.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/store/statistic/Stat_Users.js" />
-        <option value="$PROJECT_DIR$/js/big_brother_app/controller/statistic/by_users.js" />
-        <option value="$PROJECT_DIR$/application/libraries/Webpageinformation.php" />
-        <option value="$PROJECT_DIR$/application/controllers/main.php" />
-        <option value="$PROJECT_DIR$/application/libraries/Web_page_information.php" />
-        <option value="$PROJECT_DIR$/application/models/users_model.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/application/controllers/users.php" />
         <option value="$PROJECT_DIR$/styles/admin/main.css" />
+        <option value="$PROJECT_DIR$/application/models/search_user_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/users.php" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/store/EditUser.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/model/combo/allList.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/store/combo/allUGroups.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/store/combo/allUStatuses.js" />
+        <option value="$PROJECT_DIR$/application/models/users_model.php" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/model/EditUser.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/store/combo/allSamba.js" />
+        <option value="$PROJECT_DIR$/application/models/combo_model.php" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/model/combo/allShell.js" />
+        <option value="$PROJECT_DIR$/js/big_brother_app/store/combo/allShell.js" />
         <option value="$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js" />
         <option value="$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js" />
+        <option value="$PROJECT_DIR$/application/controllers/combo.php" />
       </list>
     </option>
   </component>
@@ -487,6 +501,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="combo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big_brother_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -514,6 +554,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="statistic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myci.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big_brother_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="combo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -738,13 +804,15 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/big_brother_app/model/combo" />
+      <recent name="$PROJECT_DIR$/js/big_brother_app/store/combo" />
       <recent name="$PROJECT_DIR$/application/models" />
       <recent name="$PROJECT_DIR$/application/controllers" />
     </key>
@@ -812,15 +880,35 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="52" width="1680" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290441" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278496" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23100491" sideWeight="0.6709753" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18504901" sideWeight="0.96474737" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.49756494" order="7" side_tool="true" content_ui="tabs" />
@@ -893,74 +981,21 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/statistic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="26" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.76363635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/statistic_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="0" selection-start="4077" selection-end="4077" vertical-scroll-proportion="0.7090909" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Statistic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="26" selection-start="1073" selection-end="1078" vertical-scroll-proportion="0.72727275" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/Web_page_information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="21" selection-start="6269" selection-end="6269" vertical-scroll-proportion="0.23636363" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/EditUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="421" selection-end="421" vertical-scroll-proportion="0.36363637" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="673" selection-end="673" vertical-scroll-proportion="0.38181818" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="81" selection-end="81" vertical-scroll-proportion="0.036363635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/SearchUsers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.651274" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/search_user_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/file_parser/import_account_from_file.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="34" selection-start="4472" selection-end="4627" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/users_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="33" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/admin/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="24" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2857144">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/SearchUsers.js">
+    <entry file="file://$PROJECT_DIR$/application/core/BB_Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3653603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/Users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
@@ -969,21 +1004,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/model/combo/allList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="63" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
+        <state line="14" column="21" selection-start="257" selection-end="257" vertical-scroll-proportion="0.26119402">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/combo/allUStatuses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/combo/allUGroups.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="0.44061303">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/users_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="53" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/combo_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="72" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/combo/allSamba.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="232" selection-end="232" vertical-scroll-proportion="0.07272727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/EditUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/model/EditUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="26" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/combo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="112" selection-start="1769" selection-end="1774" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1168#1387#0" expanded="false" />
+            <element signature="e#1330#1387#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/big_brother_app/view/users/EditUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="400" column="54" selection-start="9591" selection-end="9591" vertical-scroll-proportion="1.0181818">
+        <state line="293" column="0" selection-start="6773" selection-end="6773" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/model/combo/allShell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/store/combo/allShell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#7112#7793#0" expanded="false" />
-            <element signature="e#7805#8481#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/big_brother_app/controller/EditUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="89" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.6363636">
+          <folding />
         </state>
       </provider>
     </entry>

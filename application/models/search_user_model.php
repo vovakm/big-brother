@@ -61,7 +61,7 @@ class Search_user_model extends BB_Model
 
 		$this->db->limit($limit, $start);
 
-		$query = $this->db->from($this->table);
+		$this->db->from($this->table);
 		$query = $this->db->get();
 		return array(
 			'num_rows' => $total[0]['total'],

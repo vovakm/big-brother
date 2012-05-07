@@ -6,20 +6,20 @@
  *  @description
  */
 
-Ext.define('bb_cpanel.store.combo.allUGroups',{
-	alias: 'widget.allUGroups-store',
+Ext.define('bb_cpanel.store.combo.allSamba',{
+//	alias: 'widget.allSamba-store',
 	extend: 'Ext.data.Store',
 	model: 'bb_cpanel.model.combo.allList',
 	autoLoad: true,
 	proxy:{
 		type: 'ajax',
-		url: 'combo/allUGroups',
+		url: 'combo/allSamba',
 		actionMethods:{
              method: 'post'
         },
 		reader:{
 			type: 'json',
-			root: 'groups',
+			root: 'samba',
 			successProperty: 'success'
 		}
 	}

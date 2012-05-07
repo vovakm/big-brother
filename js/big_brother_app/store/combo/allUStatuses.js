@@ -6,20 +6,20 @@
  *  @description
  */
 
-Ext.define('bb_cpanel.store.combo.allUGroups',{
-	alias: 'widget.allUGroups-store',
+Ext.define('bb_cpanel.store.combo.allUStatuses',{
+	alias: 'widget.allUStatuses-store',
 	extend: 'Ext.data.Store',
 	model: 'bb_cpanel.model.combo.allList',
 	autoLoad: true,
 	proxy:{
 		type: 'ajax',
-		url: 'combo/allUGroups',
+		url: 'combo/allUStatuses',
 		actionMethods:{
              method: 'post'
         },
 		reader:{
 			type: 'json',
-			root: 'groups',
+			root: 'statuses',
 			successProperty: 'success'
 		}
 	}

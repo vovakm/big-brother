@@ -6,20 +6,19 @@
  *  @description
  */
 
-Ext.define('bb_cpanel.store.combo.allUGroups',{
-	alias: 'widget.allUGroups-store',
+Ext.define('bb_cpanel.store.combo.allShell',{
 	extend: 'Ext.data.Store',
-	model: 'bb_cpanel.model.combo.allList',
+	model: 'bb_cpanel.model.combo.allShell',
 	autoLoad: true,
 	proxy:{
 		type: 'ajax',
-		url: 'combo/allUGroups',
+		url: 'combo/allShell',
 		actionMethods:{
              method: 'post'
         },
 		reader:{
 			type: 'json',
-			root: 'groups',
+			root: 'shell',
 			successProperty: 'success'
 		}
 	}

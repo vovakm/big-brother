@@ -66,6 +66,18 @@ Ext.define('bb_cpanel.model.EditUser',{
 	},{
 		name:'quota',
 		type: 'string'
+	},{
+		name:'user_group',
+		type: 'string'
+	},{
+		name:'id_user_group',
+		type: 'int'
+	},{
+		name:'id_status',
+		type: 'int'
+	},{
+		name:'id_samba_group',
+		type: 'int'
 	}
 	]
 });

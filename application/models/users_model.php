@@ -46,7 +46,9 @@ class Users_model extends BB_Model
 				password{$this->suffix} AS password,
 				first_name{$this->suffix} AS f_name, middle_name{$this->suffix} AS m_name, last_name{$this->suffix} AS l_name,
 				name{$usergroup_s} AS user_group,
+				id_usergroup{$this->suffix} AS id_user_group,
 				name{$status_s} AS status,
+				id_status{$this->suffix} AS id_status,
 				account_note{$this->suffix} AS note,
 				blocked{$this->suffix} AS block,
 				birthday_date{$this->suffix} AS bday,
@@ -56,8 +58,8 @@ class Users_model extends BB_Model
 				internet_lock{$this->suffix} AS internet_lock,
 				shell{$this->suffix} AS shell,
 				access_to_database{$this->suffix} AS access_to_database,
+				id_sambagroup{$this->suffix} AS id_samba_group,
 				in_samba{$this->suffix} AS in_samba,
-				
 				quota{$this->suffix} AS quota
 			");
 				/*picture{$this->suffix} AS picture,*/

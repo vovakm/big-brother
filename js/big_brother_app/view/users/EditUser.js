@@ -159,8 +159,8 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 												},
 												{
 													fieldLabel:'Группа',
-													//id: 'mmcombo',
 													flex:5,
+													id: 'comboUGroup',
 													margins:'0 0 0 6',
 													allowBlank:false,
 													name:'user_group',
@@ -178,7 +178,8 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 													valueNotFoundText:"Не найдено",
 													lazyRender:true,
 													forceSelection:true,
-													listClass:'x-combo-list-small'
+													listClass:'x-combo-list-small',
+													queryMode: 'model'
 												}
 											]
 										}
@@ -199,24 +200,22 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 										{
 											fieldLabel:'Статус пользователя',
 											margins:'0 0 0 6',
+											id: 'comboUStatus',
 											labelWidth:130,
 											allowBlank:false,
-											name:'statu_sname',
+											name:'status_name',
 											xtype:'combo',
-											hideTrigger:false,
-											typeAhead:false,
-											triggerAction:'query',
-											selectOnTab:true,
+											typeAhead:true,
+											triggerAction:'all',
 											mode:'local',
-											//                        store: 'combo.allUGroups',
+											store:'combo.allUStatuses',
 											valueField:'id',
 											displayField:'name',
-											shadow:true,
+											shadow:false,
 											minChars:1,
 											valueNotFoundText:"Не найдено",
-											lazyRender:false,
-											forceSelection:false,
-											listClass:'x-combo-list-small'
+											listClass:'x-combo-list-small',
+											queryMode: 'local'
 										}
 									]},
 								{
@@ -225,7 +224,6 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 									layout:'hbox',
 									items:[
 										{
-											//                                            name:'login',
 											fieldLabel:'Блокировка учетной записи',
 											flex:1,
 											labelWidth:160,
@@ -233,7 +231,6 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 
 										},
 										{
-											//                                            name:'password',
 											labelWidth:130,
 											xtype:'checkboxfield',
 											fieldLabel:'Блокировка Интернет',
@@ -281,8 +278,6 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 											flex:1
 										}
 									]
-
-
 								}
 							]
 						},
@@ -296,59 +291,51 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 									xtype:'fieldset',
 									title:'Сервер',
 									layout:'anchor',
-									defaults:{
-										anchor:'100%'
 
-									},
-//									height:300,
 									defaultType:'textfield',
 									items:[
 										{
-											width: 200,
+											width: 300,
 											fieldLabel:'Группа Samba',
+											id: 'comboSGroup',
 											margins:'0 0 0 6',
 											labelWidth:100,
 											allowBlank:false,
-											name:'statu_sname',
+											name:'samba_group',
 											xtype:'combo',
-											hideTrigger:false,
-											typeAhead:false,
-											triggerAction:'query',
-											selectOnTab:true,
+											typeAhead:true,
+											triggerAction:'all',
 											mode:'local',
-											//                        store: 'combo.allUGroups',
+											store:'combo.allSamba',
 											valueField:'id',
 											displayField:'name',
-											shadow:true,
+											shadow:false,
 											minChars:1,
 											valueNotFoundText:"Не найдено",
-											lazyRender:false,
-											forceSelection:false,
-											listClass:'x-combo-list-small'
+											listClass:'x-combo-list-small',
+											queryMode: 'local'
 										},
 										{
-											width: 200,
+											width: 300,
 
 											fieldLabel:'Shell',
+											id: 'comboShell',
 											margins:'0 0 0 6',
 											labelWidth:100,
 											allowBlank:false,
-											name:'statu_sname',
+											name:'shell_name',
 											xtype:'combo',
-											hideTrigger:false,
-											typeAhead:false,
-											triggerAction:'query',
-											selectOnTab:true,
+											typeAhead:true,
+											triggerAction:'all',
 											mode:'local',
-											//                        store: 'combo.allUGroups',
+											store:'combo.allShell',
 											valueField:'id',
 											displayField:'name',
-											shadow:true,
+											shadow:false,
 											minChars:1,
 											valueNotFoundText:"Не найдено",
-											lazyRender:false,
-											forceSelection:false,
-											listClass:'x-combo-list-small'
+											listClass:'x-combo-list-small',
+											queryMode: 'local'
 
 										},
 										{
@@ -396,7 +383,7 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 								},{
 
 									xtype:'fieldset',
-									title:'Квота',
+									title:'Права доступа',
 									collapsed:false,
 									collapsible: true,
 									layout:'anchor',
@@ -412,20 +399,7 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 									defaultType:'textfield',
 									items:[
 										{
-											fieldLabel:'Квота 1',
-											name:'quota0'
-										},
-										{
-											fieldLabel:'Квота 2',
-											name:'quota1'
-										},
-										{
-											fieldLabel:'Квота 3',
-											name:'quota2'
-										},
-										{
-											fieldLabel:'Квота 4',
-											name:'quota3'
+
 										}
 									]
 
@@ -435,7 +409,8 @@ Ext.define('bb_cpanel.view.users.EditUser', {
 					],
 					buttons:[
 						{
-							text:'Save'
+							text:'Save',
+							action: 'saveUser'
 						},
 						{
 							text:'Cancel'
