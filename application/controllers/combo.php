@@ -91,7 +91,7 @@ class Combo extends CI_Controller
 		$row = $this->Combo_model->allShell();
 		preg_match_all('/\'(.*?)\'/', $row['Type'], $enum_array);
 		if (!empty($enum_array[1]))
-			foreach ($enum_array[1] as $mkey => $mval) $enum_fields[$mkey + 1] = array('name'=>$mval,'id'=>$mval,);
+			foreach ($enum_array[1] as  $mval) $enum_fields[] = array('name'=>htmlentities($mval));
 
 		echo json_encode(array(
 			'success' => TRUE,

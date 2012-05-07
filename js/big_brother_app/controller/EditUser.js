@@ -39,8 +39,7 @@ Ext.define('bb_cpanel.controller.EditUser', {
 			Ext.getCmp('userPhoto').html = '<img src="users/pic/' + Ext.getStore('EditUser').data.items[0].data.id + '" alt="" />'
 			Ext.getCmp('comboUGroup').setValue(Ext.getStore('EditUser').getAt(0).get('id_user_group'));
 			Ext.getCmp('comboUStatus').setValue(Ext.getStore('EditUser').getAt(0).get('id_status'));
-//			Ext.getCmp('comboShell').setValue(Ext.getStore('EditUser').getAt(0).get('shell'));
-
+			Ext.getCmp('comboShell').setValue(Ext.getStore('EditUser').getAt(0).get('shell'));
 			Ext.getCmp('comboSGroup').setValue(Ext.getStore('EditUser').getAt(0).get('id_samba_group'));
 		})
 	},
