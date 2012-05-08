@@ -29,10 +29,14 @@ Ext.define('bb_cpanel.controller.EditUser', {
 			},
 			'EditUser-window button[action=saveUser]':{
 				click:this.saveUser
-			}
+			},
+            'EditUser-window button[action=cancelWindow]':{
+                click:this.cancelWindow
+            }
 		});
 	},
 	loadAccountData:function () {
+            Ext.getCmp('EditUser-window').setHeight(300);
 		var store = Ext.getStore('EditUser');
 		store.on('load', function () {
 			Ext.getCmp('EditUserForm').loadRecord(store.data.first())
@@ -44,29 +48,36 @@ Ext.define('bb_cpanel.controller.EditUser', {
 		})
 	},
 	changeFormHeight:function (item) {
-		console.log(item);
+//		console.log(item);
 		if (item === 'main')
 			Ext.getCmp('EditUser-window').animate({to:{height:300}});
 		if (item === 'advanced')
 			Ext.getCmp('EditUser-window').animate({to:{height:470}});
 		if (item === 'system')
-			Ext.getCmp('EditUser-window').animate({to:{height:450}});
+			Ext.getCmp('EditUser-window').animate({to:{height:350}});
 	},
 	saveUser:function (button) {
 		var win = button.up('window');
 		var form = win.down('form');
 
 		form.submit({
-			url:'users/update_user',
+			url:'users/userUpdate',
 			waitMsg:'Saving Data...',
-			success:function () {
-				if (form.getRecord() == undefined) { /* IF ADD USER */
-					Ext.getStore('Users').load({});
-				} else { /* IF UPDATE USER */
-					form.getRecord().set(form.getValues());
-				}
-				win.close();
-			}
+            success:function () {
+//                if (form.getRecord() == undefined) { /* IF ADD USER */
+//                    Ext.getStore('Users').load({});
+//                } else { /* IF UPDATE USER */
+//                    form.getRecord().set(form.getValues());
+//                }
+                win.close();
+            }
 		});
-	}
+	},
+    cancelWindow:function (button) {
+        var win = button.up('window');
+        var form = win.down('form');
+        form.removeAll();
+        win.close();
+
+    }
 });

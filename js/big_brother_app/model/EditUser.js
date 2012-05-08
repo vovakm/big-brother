@@ -64,9 +64,18 @@ Ext.define('bb_cpanel.model.EditUser',{
 		name:'in_samba',
 		type: 'int'
 	},{
-		name:'quota',
-		type: 'string'
-	},{
+        name:'quota0',
+        type: 'int'
+    },{
+        name:'quota1',
+        type: 'int'
+    },{
+        name:'quota2',
+        type: 'int'
+    },{
+        name:'quota3',
+        type: 'int'
+    },{
 		name:'user_group',
 		type: 'string'
 	},{

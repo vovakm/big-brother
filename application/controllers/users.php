@@ -90,6 +90,19 @@ class Users extends CI_Controller
 		}
 	}
 
+    public function userUpdate()
+    {
+//            print_r($_REQUEST);
+        $data = array();
+        $data['id'] = intval($_REQUEST['id']);
+        $data['login'] = $_REQUEST['login'];
+
+        echo json_encode(array(
+            'success' => TRUE,
+            $data
+        ));
+    }
+
 }
 
 /* End of file users.php */
