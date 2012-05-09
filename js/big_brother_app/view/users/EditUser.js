@@ -52,7 +52,6 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                     layout:'anchor',
                                     defaults:{
                                         anchor:'100%'
-
                                     },
                                     items:[
                                         {
@@ -129,7 +128,7 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                                     flex:6,
                                                     margins:'0 0 0 6',
                                                     emptyText:'Пароль',
-                                                    allowBlank:false
+                                                    allowBlank:true
                                                 }
                                             ]
                                         }
@@ -155,6 +154,11 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                             items:[
                                                 {
                                                     name:'pass_num',
+													xtype: 'numberfield',
+													hideTrigger: true,
+													spinUpEnabled: false,
+													spinDownEnabled: false,
+													mouseWheelEnabled: false,
                                                     fieldLabel:'Номер пропуска',
                                                     flex:5,
                                                     emptyText:'Номер пропуска',
@@ -209,13 +213,15 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                             labelWidth:130,
                                             allowBlank:false,
                                             xtype:'combo',
-                                            typeAhead:true,
+                                            typeAhead:false,
+											editable: false,
                                             triggerAction:'all',
                                             mode:'local',
                                             valueField:'id',
                                             displayField:'name',
                                             shadow:false,
                                             minChars:1,
+                                            value: 1,
                                             valueNotFoundText:"Не найдено",
                                             listClass:'x-combo-list-small',
                                             queryMode:'local'
@@ -231,6 +237,8 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                             name:'block',
                                             flex:1,
                                             labelWidth:160,
+											inputValue: '1',
+											uncheckedValue: '0',
                                             xtype:'checkboxfield'
 
                                         },
@@ -238,6 +246,8 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                             labelWidth:130,
                                             name:'internet_lock',
                                             xtype:'checkboxfield',
+											inputValue: '1',
+											uncheckedValue: '0',
                                             fieldLabel:'Блокировка Интернет',
                                             flex:1
                                         }
@@ -270,6 +280,8 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                                 {
                                                     xtype:'checkboxfield',
                                                     name:'delete_image',
+													inputValue: '1',
+													uncheckedValue: '0',
                                                     fieldLabel:'Удалить существующее фото',
                                                     labelWidth:170
                                                 }
@@ -308,13 +320,15 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                             labelWidth:100,
                                             allowBlank:false,
                                             xtype:'combo',
-                                            typeAhead:true,
+											typeAhead:false,
+											editable: false,
                                             triggerAction:'all',
                                             mode:'local',
                                             valueField:'id',
                                             displayField:'name',
                                             shadow:false,
                                             minChars:1,
+											value: 1,
                                             valueNotFoundText:"Не найдено",
                                             listClass:'x-combo-list-small',
                                             queryMode:'local'
@@ -329,13 +343,15 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                             labelWidth:100,
                                             allowBlank:false,
                                             xtype:'combo',
-                                            typeAhead:true,
+											typeAhead:false,
+											editable: false,
                                             triggerAction:'all',
                                             mode:'local',
                                             valueField:'name',
                                             displayField:'name',
                                             shadow:false,
                                             minChars:1,
+											value: '/sbin/nologin',
                                             valueNotFoundText:"Не найдено",
                                             listClass:'x-combo-list-small',
                                             queryMode:'local'
@@ -378,6 +394,8 @@ Ext.define('bb_cpanel.view.users.EditUser', {
                                         {
                                             xtype:'checkboxfield',
                                             name:'in_samba',
+											inputValue: '1',
+											uncheckedValue: '0',
                                             labelWidth:145,
                                             fieldLabel:'Запись внесена в Samba',
                                             disable:true

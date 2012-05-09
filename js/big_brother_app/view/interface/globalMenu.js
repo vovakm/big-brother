@@ -35,6 +35,7 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 		menu:{
 			items:[
 				{
+					disabled:true,
 					iconCls:'search-advanced',
 					action:'search-advanced',
 					text:'Рассширенный поиск'//, handler: onItemClick
@@ -91,21 +92,25 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 		menu:{
 			items:[
 				{
+					disabled:true,
 					iconCls:'stat-users',
 					action:'stat-users',
 					text:'по Пользователям'
 				},
 				{
+					disabled:true,
 					iconCls:'stat-sites',
 					action:'stat-sites',
 					text:'по Сайтам'
 				},
 				{
+					disabled:true,
 					iconCls:'stat-data',
 					action:'stat-data',
 					text:'по Данным'
 				},
 				{
+					disabled:true,
 					iconCls:'stat-date',
 					action:'stat-date',
 					text:'по Дням'
@@ -114,6 +119,7 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 		}
 	}, '->', {
 		text:'тыц',
+		disabled:true,
 		//        url: 'mailto:vovakop@gmail.com',
 		tooltip:'Предложения и замечания прошу отправлять на почту. <br/> vovakop@gmail.com'
 	}, '-', {
@@ -134,6 +140,7 @@ Ext.define('bb_cpanel.view.interface.globalMenu', {
 			});
 		}
 	}, '-', {
+		disabled:true,
 		height:34,
 		text:'Выйти',
 		iconCls:'exit',

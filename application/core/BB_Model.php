@@ -78,16 +78,12 @@ class BB_Model extends CI_Model
 
 	public function getIdByName($name)
 	{
-
-		$this->db->cache_off();
 		$this->db->select($this->idkey);
 		$this->db->from($this->table);
 		$this->db->like("name$this->suffix", $name);
 		$this->db->limit(1);
 		$query = $this->db->get();
 		$return = $query->row_array();
-
-		$this->db->cache_on();
 		if (sizeof($return) == 0)
 		{
 			$er = $this->addNewItem($name);
@@ -95,6 +91,18 @@ class BB_Model extends CI_Model
 		}
 		else
 			return $return[$this->idkey];
+	}
+	public function getById($id)
+	{
+		$this->db->from($this->table);
+		$this->db->where($this->idkey, $id);
+		$this->db->limit(1);
+		$query = $this->db->get();
+		$return = $query->row_array();
+		if (sizeof($return) == 0)
+			return FALSE;
+		else
+			return $return;
 	}
 
 	public function addNewItem($name)
@@ -107,7 +115,6 @@ class BB_Model extends CI_Model
 
 	public function getAll($type_order = 'DESC')
 	{
-		$this->db->cache_off();
 		$this->db->select("
 			$this->idkey AS id,
 			name{$this->suffix} AS name,
@@ -117,7 +124,6 @@ class BB_Model extends CI_Model
 		$this->db->order_by('hit'.$this->suffix, $type_order);
 		$query = $this->db->get();
 		$return = $query->result();
-		$this->db->cache_on();
 		if (sizeof($return) == 0)
 			return FALSE;
 		else

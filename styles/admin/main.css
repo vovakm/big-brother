@@ -51,6 +51,17 @@
 .picture-ico-delete { background-image: url('/styles/img/icons/16/picture_delete.png') !important; }
 .picture-ico-edit   { background-image: url('/styles/img/icons/16/picture_edit.png') !important; }
 
+/* additional icons*/
+.user_add   { background-image: url('/styles/img/icons/16/user_add.png') !important; }
+.add   { background-image: url('/styles/img/icons/16/add.png') !important; }
+.administrator   { background-image: url('/styles/img/icons/16/administrator.png') !important; }
+.cake   { background-image: url('/styles/img/icons/16/cake.png') !important; }
+.delete   { background-image: url('/styles/img/icons/16/delete.png') !important; }
+.lock   { background-image: url('/styles/img/icons/16/lock.png') !important; }
+.world_delete   { background-image: url('/styles/img/icons/16/world_delete.png') !important; }
+
+
+
 #userPhoto {
     height: 202px;
     max-height: 202px;
@@ -61,4 +72,12 @@
     max-width: 152px;
     border-radius: 2px;
     border: 1px solid #aaa;
+    line-height: 200px;
+	text-align: center;
+}
+
+#userPhoto-body img {
+	vertical-align: middle;
+	max-width: 152px;
+	max-height: 202px;
 }
