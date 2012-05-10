@@ -10,7 +10,7 @@ if (!defined('BASEPATH'))
  *  @description
  */
 
-class Statistic extends CI_Controller
+class Statistic extends BB_Controller
 {
 
 	public function __construct()

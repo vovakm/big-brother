@@ -10,7 +10,7 @@ if (!defined('BASEPATH'))
  *  @description
  */
 
-class Search_users extends CI_Controller
+class Search_users extends BB_Controller
 {
 
 	public function __construct()

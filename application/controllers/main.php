@@ -8,7 +8,7 @@
 if (!defined('BASEPATH'))
 	exit('No direct script access allowed');
 
-class Main extends CI_Controller
+class Main extends BB_Controller
 {
 
 	public function index()

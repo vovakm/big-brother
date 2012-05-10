@@ -10,7 +10,7 @@ if (!defined('BASEPATH'))
  *  @description
  */
 
-class Import_account_from_file extends CI_Controller
+class Import_account_from_file extends BB_Controller
 {
 
 	public $stud = 'tmp/accounts/fileToparselegend/Stud.txt';

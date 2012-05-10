@@ -8,7 +8,7 @@
 if (!defined('BASEPATH'))
 	exit('No direct script access allowed');
 
-class Create_account extends CI_Controller
+class Create_account extends BB_Controller
 {
 
 	public function __construct()

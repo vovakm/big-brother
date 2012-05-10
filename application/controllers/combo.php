@@ -10,7 +10,7 @@ if (!defined('BASEPATH'))
  *  @description
  */
 
-class Combo extends CI_Controller
+class Combo extends BB_Controller
 {
 
 	public function __construct()

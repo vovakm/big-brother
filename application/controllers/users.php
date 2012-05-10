@@ -8,7 +8,7 @@
 if (!defined('BASEPATH'))
 	exit('No direct script access allowed');
 
-class Users extends CI_Controller
+class Users extends BB_Controller
 {
 
 	var $login_rules = array(array('field' => 'login', 'rules' =>
