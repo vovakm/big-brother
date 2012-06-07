@@ -28,6 +28,15 @@ class Main extends BB_Controller
         echo '<pre>';
         print_r($this->web_page_information->getInformation('http://www.meebo.com/mcmd/send'));
 	}
+    public function adminLogin()
+    {
+        $udata = $this->session->userdata('userData');
+        if ($udata['access_to_database'] > 0 && $udata['id'] > 0) {
+            if (current_url() !== '/admin')
+            redirect('/admin', 'refresh');
+        }
+        $this->load->view('admin/login');
+    }
 
 
 	

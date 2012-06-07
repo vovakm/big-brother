@@ -8,26 +8,60 @@
 class Authorization_model extends BB_Model
 {
 
+    public $table = '';
+    public $idkey = '';
+    public $suffix = '';
+
+    function __construct()
+    {
+
+        parent::__construct();
+        $this->table = $this->db->dbprefix($this->db_structure['accounts']['name']);
+        $this->idkey = 'id'.$this->db_structure['accounts']['suffix'];
+        $this->suffix = $this->db_structure['accounts']['suffix'];
+    }
 
 
-	public function authorization($login, $password)
+    public function authorization($login, $password)
 	{
-		$query = $this->db->query(
-		'SELECT * FROM
-			`ci_statuses`
-			LEFT JOIN `myci`.`ci_accounts` ON `ci_statuses`.`id_status` = `ci_accounts`.`id_status` 
-			LEFT JOIN `myci`.`ci_sambagroups` ON `ci_accounts`.`id_samba_group` = `ci_sambagroups`.`id_samba_group` 
-			LEFT JOIN `myci`.`ci_usergroups` ON `ci_accounts`.`id_user_group` = `ci_usergroups`.`id_user_group` 
-			WHERE 
-				`login` = \'' . trim(($login)) . '\' AND 
-				`password` = \'' . md5($password . $this->config->item('encryption_key')) . '\' AND 
-				`deleted` = 0 AND
-				`access_to_database` != \'0000000000000000\'
-			LIMIT 1'
-		);
-		return $query->row();
-		
+
+        $usergroup_t = $this->db->dbprefix($this->db_structure['usergroups']['name']);
+        $usergroup_s = $this->db_structure['usergroups']['suffix'];
+        $usergroup_i = 'id'.$this->db_structure['usergroups']['suffix'];
+        $status_t = $this->db->dbprefix($this->db_structure['statuses']['name']);
+        $status_s = $this->db_structure['statuses']['suffix'];
+        $status_i = 'id'.$this->db_structure['statuses']['suffix'];
+        $this->db->select("
+				id{$this->suffix} AS id,
+				number_pass{$this->suffix} AS pass_num,
+				login{$this->suffix} AS login,
+				first_name{$this->suffix} AS f_name, middle_name{$this->suffix} AS m_name, last_name{$this->suffix} AS l_name,
+				name{$usergroup_s} AS user_group,
+				id_usergroup{$this->suffix} AS id_user_group,
+				name{$status_s} AS status,
+				id_status{$this->suffix} AS id_status,
+				account_note{$this->suffix} AS note,
+				blocked{$this->suffix} AS block,
+				birthday_date{$this->suffix} AS bday,
+				create_date{$this->suffix} AS cday,
+				update_date{$this->suffix} AS uday,
+				deleted{$this->suffix} AS deleted,
+				internet_lock{$this->suffix} AS internet_lock,
+				shell{$this->suffix} AS shell,
+				access_to_database{$this->suffix} AS access_to_database,
+				id_sambagroup{$this->suffix} AS id_samba_group,
+				in_samba{$this->suffix} AS in_samba,
+				quota{$this->suffix} AS quota
+			");
+        $this->db->like("login$this->suffix", $login);
+        $this->db->like("password$this->suffix", $password);
+
+        $this->db->join($usergroup_t, "{$usergroup_t}.{$usergroup_i} = {$this->table}.id_usergroup{$this->suffix}", "left");
+        $this->db->join($status_t, "{$status_t}.{$status_i} = {$this->table}.id_status{$this->suffix}", "left");
+        $this->db->limit(1);
+        $this->db->from($this->table);
+        $query = $this->db->get();
+
+        return $query->row_array();
 	}
-
 }
-

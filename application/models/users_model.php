@@ -95,7 +95,6 @@ class Users_model extends BB_Model
 	}
 	public function createUser($ud)
 	{
-
 		$this->db->insert($this->table, $ud);
 		return TRUE;
 	}
