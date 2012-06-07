@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17af0396-2fbc-423d-af0e-938c262d3821" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/vovakm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/big_brother_app/view/importWindow.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/configs/vovakm.tk.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/private.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/project.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/project.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nbproject/configs/vovakm.tk.properties" afterPath="$PROJECT_DIR$/js/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/routes.php" afterPath="$PROJECT_DIR$/application/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/main.php" afterPath="$PROJECT_DIR$/application/controllers/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/users.php" afterPath="$PROJECT_DIR$/application/controllers/users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/BB_Controller.php" afterPath="$PROJECT_DIR$/application/core/BB_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/authorization_model.php" afterPath="$PROJECT_DIR$/application/models/authorization_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/users_model.php" afterPath="$PROJECT_DIR$/application/models/users_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/controller/Main.js" afterPath="$PROJECT_DIR$/js/big_brother_app/controller/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/interface/globalMenu.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/interface/globalMenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/big_brother_app/view/users/SearchUsers.js" afterPath="$PROJECT_DIR$/js/big_brother_app/view/users/SearchUsers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-ui-1.8.16.custom.min.js" afterPath="$PROJECT_DIR$/js/jquery-ui-1.8.16.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/admin/main.css" afterPath="$PROJECT_DIR$/styles/admin/main.css" />
-    </list>
+    <list default="true" id="17af0396-2fbc-423d-af0e-938c262d3821" name="Default" comment="" />
     <ignored path="myci.local.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -592,7 +569,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1602" height="833" extended-state="6" />
+    <frame x="-1" y="24" width="1602" height="833" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290441" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
